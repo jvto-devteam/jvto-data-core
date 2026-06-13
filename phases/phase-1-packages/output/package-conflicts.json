@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-06-13",
+  "total_conflicts": 0,
+  "conflicts": [],
+  "notes": [
+    "llm-wiki and jvto-web package-registry.json are IDENTICAL (same SHA)",
+    "llm-wiki and jvto-web package-pricing.json are IDENTICAL (same SHA)",
+    "backoffice contributed 22 packages"
+  ]
+}

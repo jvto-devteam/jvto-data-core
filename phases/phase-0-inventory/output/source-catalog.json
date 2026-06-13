@@ -1,0 +1,5406 @@
+{
+  "generated_at": "2026-06-13",
+  "total_repos": 3,
+  "total_sources": 337,
+  "repos": [
+    {
+      "repo": "llm-wiki",
+      "sources": [
+        {
+          "path": "output/products/package-readiness/package-registry.json",
+          "type": "json",
+          "size_kb": 6,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "2026-06-07T16:53:42Z"
+        },
+        {
+          "path": "output/products/package-readiness/package-pricing.json",
+          "type": "json",
+          "size_kb": 12,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "2026-05-31T16:49:11Z"
+        },
+        {
+          "path": "output/products/package-readiness/package-itineraries.json",
+          "type": "json",
+          "size_kb": 12,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "2026-05-31T16:49:11Z"
+        },
+        {
+          "path": "output/products/package-readiness/booking-compatibility.json",
+          "type": "json",
+          "size_kb": 4,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/products/package-readiness/gap-report.json",
+          "type": "json",
+          "size_kb": 1,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/products/package-readiness/_manifest.json",
+          "type": "json",
+          "size_kb": 1,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/trust-bundle/products.json",
+          "type": "json",
+          "size_kb": 21,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "2026-05-31T22:29:51Z"
+        },
+        {
+          "path": "output/website/trust-bundle/claims.json",
+          "type": "json",
+          "size_kb": 17,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "2026-06-09T06:13:23Z"
+        },
+        {
+          "path": "output/website/trust-bundle/destinations.json",
+          "type": "json",
+          "size_kb": 11,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/trust-bundle/policies.json",
+          "type": "json",
+          "size_kb": 10,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/trust-bundle/people.json",
+          "type": "json",
+          "size_kb": 9,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/trust-bundle/operational.json",
+          "type": "json",
+          "size_kb": 7,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/trust-bundle/faq.json",
+          "type": "json",
+          "size_kb": 3,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/trust-bundle/aeo-snippets.json",
+          "type": "json",
+          "size_kb": 3,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/trust-bundle/_manifest.json",
+          "type": "json",
+          "size_kb": 1,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/trust-bundle/schema/faq-page.json",
+          "type": "json",
+          "size_kb": 2,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/trust-bundle/schema/organization.json",
+          "type": "json",
+          "size_kb": 1,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/trust-bundle/schema/tourist-trip.json",
+          "type": "json",
+          "size_kb": 1,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/bali-bromo-ijen-3d2n-schema.json",
+          "type": "json",
+          "size_kb": 9,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/bali-ijen-bromo-madakaripura-3d2n-schema.json",
+          "type": "json",
+          "size_kb": 8,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/bali-ijen-papuma-tumpak-sewu-bromo-4d3n-schema.json",
+          "type": "json",
+          "size_kb": 9,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/bali-ijen-papuma-tumpak-sewu-bromo-5d4n-schema.json",
+          "type": "json",
+          "size_kb": 10,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/bromo-1d1n-schema.json",
+          "type": "json",
+          "size_kb": 6,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/bromo-2d1n-schema.json",
+          "type": "json",
+          "size_kb": 7,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/bromo-madakaripura-ijen-3d2n-schema.json",
+          "type": "json",
+          "size_kb": 9,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/homepage-organization-schema.json",
+          "type": "json",
+          "size_kb": 3,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/ijen-2d1n-schema.json",
+          "type": "json",
+          "size_kb": 7,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/ijen-bromo-madakaripura-3d2n-schema.json",
+          "type": "json",
+          "size_kb": 8,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/ijen-bromo-madakaripura-4d3n-schema.json",
+          "type": "json",
+          "size_kb": 9,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/ijen-bromo-madakaripura-malang-5d4n-schema.json",
+          "type": "json",
+          "size_kb": 9,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/ijen-crater-schema.json",
+          "type": "json",
+          "size_kb": 2,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/ijen-papuma-tumpak-sewu-bromo-4d3n-schema.json",
+          "type": "json",
+          "size_kb": 9,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/ijen-papuma-tumpak-sewu-bromo-5d4n-schema.json",
+          "type": "json",
+          "size_kb": 9,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/ijen-papuma-tumpak-sewu-bromo-malang-6d5n-schema.json",
+          "type": "json",
+          "size_kb": 10,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/madakaripura-waterfall-schema.json",
+          "type": "json",
+          "size_kb": 2,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/mount-bromo-schema.json",
+          "type": "json",
+          "size_kb": 2,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/papuma-beach-schema.json",
+          "type": "json",
+          "size_kb": 2,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/student-bromo-ijen-3d2n-schema.json",
+          "type": "json",
+          "size_kb": 6,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/student-bromo-ijen-3d2n-to-bali-schema.json",
+          "type": "json",
+          "size_kb": 4,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/student-ijen-bromo-3d2n-bali-schema.json",
+          "type": "json",
+          "size_kb": 4,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/student-ijen-bromo-madakaripura-night-market-4d3n-schema.json",
+          "type": "json",
+          "size_kb": 4,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/student-ijen-papuma-tumpak-sewu-bromo-4d3n-schema.json",
+          "type": "json",
+          "size_kb": 5,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/student-ijen-papuma-tumpak-sewu-bromo-5d4n-schema.json",
+          "type": "json",
+          "size_kb": 5,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/taman-safari-prigen-bromo-madakaripura-3d2n-schema.json",
+          "type": "json",
+          "size_kb": 8,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/tumpak-sewu-bromo-ijen-4d3n-schema.json",
+          "type": "json",
+          "size_kb": 10,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/schema/tumpak-sewu-waterfall-schema.json",
+          "type": "json",
+          "size_kb": 2,
+          "status": "usable",
+          "priority": "high",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/llms.txt",
+          "type": "other",
+          "size_kb": 10,
+          "status": "usable",
+          "priority": "medium",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/llms-full.txt",
+          "type": "other",
+          "size_kb": 31,
+          "status": "usable",
+          "priority": "medium",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/INDEX.md",
+          "type": "md",
+          "size_kb": 16,
+          "status": "usable",
+          "priority": "medium",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/website/HANDOFF.md",
+          "type": "md",
+          "size_kb": 15,
+          "status": "usable",
+          "priority": "medium",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "output/social/batch-2026-05-18.md",
+          "type": "md",
+          "size_kb": 11,
+          "status": "usable",
+          "priority": "low",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "wiki/index.md",
+          "type": "md",
+          "size_kb": 25,
+          "status": "usable",
+          "priority": "medium",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "wiki/log.md",
+          "type": "md",
+          "size_kb": 165,
+          "status": "usable",
+          "priority": "low",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "wiki/overview.md",
+          "type": "md",
+          "size_kb": 11,
+          "status": "usable",
+          "priority": "medium",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "wiki/products/packages-overview.md",
+          "type": "md",
+          "size_kb": 16,
+          "status": "usable",
+          "priority": "medium",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "wiki/products/packages-itineraries.md",
+          "type": "md",
+          "size_kb": 11,
+          "status": "usable",
+          "priority": "medium",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "wiki/products/packages-full-pricing.md",
+          "type": "md",
+          "size_kb": 7,
+          "status": "usable",
+          "priority": "medium",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "wiki/credentials/trust-signals.md",
+          "type": "md",
+          "size_kb": 14,
+          "status": "usable",
+          "priority": "medium",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "wiki/credentials/legal-licenses.md",
+          "type": "md",
+          "size_kb": 6,
+          "status": "usable",
+          "priority": "medium",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "wiki/credentials/medical-screening.md",
+          "type": "md",
+          "size_kb": 10,
+          "status": "usable",
+          "priority": "medium",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "wiki/credentials/permit-requirements.md",
+          "type": "md",
+          "size_kb": 4,
+          "status": "usable",
+          "priority": "medium",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "wiki/credentials/police-integration.md",
+          "type": "md",
+          "size_kb": 11,
+          "status": "usable",
+          "priority": "medium",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "wiki/credentials/press-coverage.md",
+          "type": "md",
+          "size_kb": 12,
+          "status": "usable",
+          "priority": "medium",
+          "last_modified": "unknown"
+        },
+        {
+          "path": "CLAUDE.md",
+          "type": "md",
+          "size_kb": 15,
+          "status": "usable",
+          "priority": "low",
+          "last_modified": "unknown"
+        }
+      ],
+      "scripts": [
+        {
+          "path": "scripts/inventory.py",
+          "description": "Scans wiki and output directories to produce a file inventory"
+        },
+        {
+          "path": "scripts/analyze.py",
+          "description": "Large analysis script (35KB) - likely performs multi-dimensional data analysis across wiki sources"
+        },
+        {
+          "path": "scripts/compile_packages.py",
+          "description": "Compiles package data from wiki markdown into structured output JSONs"
+        },
+        {
+          "path": "scripts/compile_trust.py",
+          "description": "Compiles trust bundle data (claims, policies, people) into output/website/trust-bundle JSON files"
+        },
+        {
+          "path": "scripts/build_manifest.py",
+          "description": "Builds _manifest.json index files for output directories"
+        },
+        {
+          "path": "scripts/dump_data.py",
+          "description": "Dumps raw data (likely from a database connection via _db.py)"
+        },
+        {
+          "path": "scripts/dump_schema.py",
+          "description": "Dumps database schema definitions"
+        },
+        {
+          "path": "scripts/frontmatter_normalize.py",
+          "description": "Normalizes YAML frontmatter across wiki markdown files"
+        },
+        {
+          "path": "scripts/peek.py",
+          "description": "Quick inspection/preview utility for wiki files"
+        },
+        {
+          "path": "scripts/_db.py",
+          "description": "Database connection helper module used by dump scripts"
+        },
+        {
+          "path": "scripts/compiler/__init__.py",
+          "description": "Package init for trust-bundle compiler module"
+        },
+        {
+          "path": "scripts/compiler/loader.py",
+          "description": "Loads and parses wiki markdown sources for trust compiler"
+        },
+        {
+          "path": "scripts/compiler/renderer.py",
+          "description": "Renders compiled trust data into JSON output format"
+        },
+        {
+          "path": "scripts/compiler/validator.py",
+          "description": "Validates compiled trust-bundle JSON against expected schema"
+        },
+        {
+          "path": "scripts/compiler/enricher.py",
+          "description": "Enriches trust data with additional computed fields"
+        },
+        {
+          "path": "scripts/package_compiler/__init__.py",
+          "description": "Package init for package compiler module"
+        },
+        {
+          "path": "scripts/package_compiler/loader.py",
+          "description": "Loads wiki package markdown sources for package compiler"
+        },
+        {
+          "path": "scripts/package_compiler/renderer.py",
+          "description": "Renders compiled package data into JSON output format"
+        },
+        {
+          "path": "scripts/package_compiler/validator.py",
+          "description": "Validates compiled package JSON against expected schema"
+        }
+      ],
+      "total_sources": 62,
+      "notes": "Repo is publicly accessible at sambuko82/llm-wiki (default branch: master). Key findings: (1) The primary high-value data lives in output/products/package-readiness/ (6 JSON files covering package registry, pricing, itineraries, booking compatibility) and output/website/trust-bundle/ (10 JSON files covering products, claims, destinations, policies, people, operational data, FAQ, AEO snippets, and JSON-LD schemas). (2) output/website/schema/ contains 20+ individual tour package JSON-LD schema files per destination route (Bromo, Ijen, Tumpak Sewu, Madakaripura, Bali, student packages). (3) wiki/ directory has human-authored Markdown knowledge base organized by domain: products, credentials, destinations, finance, ops, marketing, seo, reviews, people, whatsapp, sources — all low-priority relative to compiled JSON outputs. (4) No sensitive credentials or API tokens found in file paths; wiki/credentials/ contains operational documentation (legal licenses, medical screening, police integration) — not system secrets. (5) scripts/ directory has a well-structured Python toolchain with two compiler sub-packages (compiler/ for trust-bundle, package_compiler/ for packages) and standalone scripts for inventory, analysis, DB dump, and frontmatter normalization. (6) output/finance/, output/marketing/, output/whatsapp/ directories appear empty (only .gitkeep). (7) raw/ directory contains source PDFs, GPX files, and unstructured Markdown not yet processed into clean output. Most recent activity on claims.json (2026-06-09), package-registry.json (2026-06-07).\""
+    },
+    {
+      "repo": "jvto-web",
+      "total_sources": 32,
+      "data_files": [
+        {
+          "path": "src/data/destinations.ts",
+          "type": "typescript",
+          "size_kb": 23.6,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/evidenceRegistry.ts",
+          "type": "typescript",
+          "size_kb": 19.9,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/faqs.ts",
+          "type": "typescript",
+          "size_kb": 3.7,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/knowledge.ts",
+          "type": "typescript",
+          "size_kb": 14.6,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/mockData.ts",
+          "type": "typescript",
+          "size_kb": 639.6,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/reviews_new.ts",
+          "type": "typescript",
+          "size_kb": 23.1,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/package-readiness/_manifest.json",
+          "type": "json",
+          "size_kb": 0.7,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/package-readiness/booking-compatibility.json",
+          "type": "json",
+          "size_kb": 3.8,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/package-readiness/gap-report.json",
+          "type": "json",
+          "size_kb": 0.09,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/package-readiness/package-itineraries.json",
+          "type": "json",
+          "size_kb": 11.9,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/package-readiness/package-pricing.json",
+          "type": "json",
+          "size_kb": 12.4,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/package-readiness/package-registry.json",
+          "type": "json",
+          "size_kb": 6.1,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/trust-bundle/_manifest.json",
+          "type": "json",
+          "size_kb": 0.8,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/trust-bundle/aeo-snippets.json",
+          "type": "json",
+          "size_kb": 3,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/trust-bundle/claims.json",
+          "type": "json",
+          "size_kb": 17.2,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/trust-bundle/faq.json",
+          "type": "json",
+          "size_kb": 2.6,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/trust-bundle/schema/faq-page.json",
+          "type": "json",
+          "size_kb": 2.4,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/trust-bundle/schema/organization.json",
+          "type": "json",
+          "size_kb": 0.5,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/trust-bundle/schema/tourist-trip.json",
+          "type": "json",
+          "size_kb": 0.9,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/blog/_manifest.json",
+          "type": "json",
+          "size_kb": 1.2,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/blog/2026-06-11-ijen-medical-checkup-requirement.md",
+          "type": "markdown",
+          "size_kb": 8.5,
+          "status": "usable"
+        },
+        {
+          "path": "src/data/blog/2026-06-11-kawah-ijen-guide.md",
+          "type": "markdown",
+          "size_kb": 6,
+          "status": "usable"
+        }
+      ],
+      "prisma_models": [
+        {
+          "name": "activities",
+          "fields": [
+            "id",
+            "code",
+            "activity_category_id",
+            "activity_name",
+            "destination_id",
+            "slug",
+            "estimated_time",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "activities"
+        },
+        {
+          "name": "activity_categories",
+          "fields": [
+            "id",
+            "name",
+            "icon",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "activity_categories"
+        },
+        {
+          "name": "activity_ends",
+          "fields": [
+            "id",
+            "name",
+            "description",
+            "destination_id",
+            "dinner",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "activity_ends"
+        },
+        {
+          "name": "activity_starts",
+          "fields": [
+            "id",
+            "name",
+            "description",
+            "destination_id",
+            "breakfast",
+            "lunch",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "activity_starts"
+        },
+        {
+          "name": "addons",
+          "fields": [
+            "id",
+            "name",
+            "is_transport",
+            "transport_type",
+            "image",
+            "price",
+            "is_per_person",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "addons"
+        },
+        {
+          "name": "announcements",
+          "fields": [
+            "id",
+            "title",
+            "subtitle",
+            "cover",
+            "content",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "announcements"
+        },
+        {
+          "name": "booking_addons",
+          "fields": [
+            "id",
+            "addon_id",
+            "booking_id",
+            "price",
+            "price_expense",
+            "quantity",
+            "total",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_addons"
+        },
+        {
+          "name": "booking_crew_member_activities",
+          "fields": [
+            "id",
+            "booking_id",
+            "crew_role_id",
+            "quantity",
+            "price",
+            "subtotal",
+            "is_paid",
+            "is_debt",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_crew_member_activities"
+        },
+        {
+          "name": "booking_crew_members",
+          "fields": [
+            "id",
+            "booking_id",
+            "crew_member_id",
+            "type",
+            "duration_day",
+            "start_date",
+            "trip_type",
+            "end_date",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_crew_members"
+        },
+        {
+          "name": "booking_destination_activities",
+          "fields": [
+            "id",
+            "booking_id",
+            "destination_id",
+            "destination_activity_id",
+            "quantity",
+            "price",
+            "subtotal",
+            "is_paid",
+            "is_debt",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_destination_activities"
+        },
+        {
+          "name": "booking_destination_schedules",
+          "fields": [
+            "id",
+            "booking_id",
+            "at_ijen_date",
+            "at_bromo_date",
+            "bromo_hotel_id",
+            "at_tumpak_sewu_date",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_destination_schedules"
+        },
+        {
+          "name": "booking_finances",
+          "fields": [
+            "id",
+            "booking_id",
+            "total_expense",
+            "total_expense_crew",
+            "total_expense_paid",
+            "total_expense_debt",
+            "profit",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_finances"
+        },
+        {
+          "name": "booking_hotel_meals",
+          "fields": [
+            "id",
+            "booking_id",
+            "book_hotel_id",
+            "hotel_id",
+            "meals",
+            "quantity",
+            "price",
+            "subtotal",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_hotel_meals"
+        },
+        {
+          "name": "booking_hotel_rooms",
+          "fields": [
+            "id",
+            "booking_id",
+            "booking_itinerary_id",
+            "book_hotel_id",
+            "room_type_id",
+            "quantity",
+            "price",
+            "subtotal",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_hotel_rooms"
+        },
+        {
+          "name": "booking_hotels",
+          "fields": [
+            "id",
+            "booking_id",
+            "booking_itinerary_id",
+            "hotel_id",
+            "breakfast",
+            "lunch",
+            "dinner",
+            "reservation_status",
+            "total_room_cost",
+            "total_meal_cost",
+            "total",
+            "is_paid",
+            "is_debt",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_hotels"
+        },
+        {
+          "name": "booking_itineraries",
+          "fields": [
+            "id",
+            "booking_id",
+            "day",
+            "date",
+            "activity_start_id",
+            "activity_end_id",
+            "itinerary",
+            "activity",
+            "breakfast",
+            "lunch",
+            "dinner",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_itineraries"
+        },
+        {
+          "name": "booking_logistics",
+          "fields": [
+            "id",
+            "booking_id",
+            "pickup_location",
+            "pickup_location_detail",
+            "pickup_time",
+            "pickup_ticket_number",
+            "dropoff_location",
+            "dropoff_location_detail",
+            "dropoff_time",
+            "dropoff_ticket_number",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_logistics"
+        },
+        {
+          "name": "booking_other_activities",
+          "fields": [
+            "id",
+            "booking_id",
+            "other_activity_id",
+            "quantity",
+            "price",
+            "subtotal",
+            "is_paid",
+            "is_debt",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_other_activities"
+        },
+        {
+          "name": "booking_payment_histories",
+          "fields": [
+            "id",
+            "booking_id",
+            "amount",
+            "payment_method_id",
+            "description",
+            "reference",
+            "attachment",
+            "payment_date",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_payment_histories"
+        },
+        {
+          "name": "booking_payment_terms",
+          "fields": [
+            "id",
+            "booking_id",
+            "deposit_payment_method_id",
+            "deposit_due_date",
+            "deposit_amount",
+            "outstanding_payment_method_id",
+            "full_payment_due_date",
+            "total_before_discount",
+            "total_discount",
+            "discount_id",
+            "grandtotal",
+            "total_payment",
+            "balance",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_payment_terms"
+        },
+        {
+          "name": "booking_police_escort",
+          "fields": [
+            "id",
+            "booking_id",
+            "police_escort_date",
+            "police_escort_route",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_police_escort"
+        },
+        {
+          "name": "booking_review_crews",
+          "fields": [
+            "id",
+            "booking_review_id",
+            "crew_member_id",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_review_crews"
+        },
+        {
+          "name": "booking_reviews",
+          "fields": [
+            "id",
+            "booking_id",
+            "reviews",
+            "star",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_reviews"
+        },
+        {
+          "name": "booking_tshirts",
+          "fields": [
+            "id",
+            "booking_id",
+            "xs",
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl",
+            "xxxl",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_tshirts"
+        },
+        {
+          "name": "booking_vehicle_units",
+          "fields": [
+            "id",
+            "booking_id",
+            "vehicle_unit_id",
+            "quantity",
+            "duration_day",
+            "start_date",
+            "end_date",
+            "driver",
+            "price",
+            "subtotal",
+            "is_paid",
+            "is_debt",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_vehicle_units"
+        },
+        {
+          "name": "booking_whatsapp_logs",
+          "fields": [
+            "id",
+            "booking_id",
+            "wa_schedule_trip_information",
+            "wa_status_trip_information",
+            "wa_schedule_trip_media",
+            "wa_status_trip_media",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "booking_whatsapp_logs"
+        },
+        {
+          "name": "bookings",
+          "fields": [
+            "id",
+            "booking_code",
+            "customer_id",
+            "package_id",
+            "duration_id",
+            "order_channel_id",
+            "booking_date",
+            "start_date",
+            "end_date",
+            "total_participants",
+            "booking_status",
+            "trip_status",
+            "payment_status",
+            "is_shuttle_service",
+            "slug",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "bookings"
+        },
+        {
+          "name": "blog_categories",
+          "fields": [
+            "id",
+            "name",
+            "created_at",
+            "updated_at"
+          ],
+          "table": "blog_categories"
+        },
+        {
+          "name": "blogs",
+          "fields": [
+            "id",
+            "category_id",
+            "title",
+            "slug",
+            "content",
+            "cover_image",
+            "status",
+            "tags",
+            "created_at",
+            "update_at"
+          ],
+          "table": "blogs"
+        },
+        {
+          "name": "channel_unavailable_ranges",
+          "fields": [
+            "id",
+            "order_channel_id",
+            "start_date",
+            "end_date",
+            "reason",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "channel_unavailable_ranges"
+        },
+        {
+          "name": "combined_package_details",
+          "fields": [
+            "id",
+            "combined_package_id",
+            "package_id",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "combined_package_details"
+        },
+        {
+          "name": "combined_packages",
+          "fields": [
+            "id",
+            "name",
+            "long_name",
+            "slug",
+            "highlights",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "combined_packages"
+        },
+        {
+          "name": "countries",
+          "fields": [
+            "id",
+            "short_name",
+            "long_name",
+            "dial_code",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "countries"
+        },
+        {
+          "name": "crew_member_reviews",
+          "fields": [
+            "id",
+            "crew_member_id",
+            "booking_id",
+            "review",
+            "star",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "crew_member_reviews"
+        },
+        {
+          "name": "crew_member_roles",
+          "fields": [
+            "id",
+            "crew_member_id",
+            "crew_role_id",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "crew_member_roles"
+        },
+        {
+          "name": "crew_members",
+          "fields": [
+            "id",
+            "code",
+            "name",
+            "phone",
+            "full_name",
+            "year_of_joining",
+            "type",
+            "tags",
+            "photo_url",
+            "email",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "crew_members"
+        },
+        {
+          "name": "crew_roles",
+          "fields": [
+            "id",
+            "code",
+            "name",
+            "rate_per_day",
+            "rate_twt_per_day",
+            "order_channel_id",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "crew_roles"
+        },
+        {
+          "name": "crew_unavailabilities",
+          "fields": [
+            "id",
+            "crew_member_id",
+            "start_date",
+            "end_date",
+            "reason",
+            "status",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "crew_unavailabilities"
+        },
+        {
+          "name": "crew_reviews",
+          "fields": [
+            "id",
+            "review_id",
+            "crew_id"
+          ],
+          "table": "crew_reviews"
+        },
+        {
+          "name": "currency_exchange_rates",
+          "fields": [
+            "id",
+            "base_currency",
+            "target_currency",
+            "exchange_rate",
+            "effective_date",
+            "created_at",
+            "last_updated",
+            "source"
+          ],
+          "table": "currency_exchange_rates"
+        },
+        {
+          "name": "reviews",
+          "fields": [
+            "id",
+            "customer_name",
+            "profile_photo",
+            "platform",
+            "date",
+            "star",
+            "review",
+            "photos",
+            "url",
+            "booking_id",
+            "package_id",
+            "created_at",
+            "updated_at"
+          ],
+          "table": "reviews"
+        },
+        {
+          "name": "User",
+          "fields": [
+            "id",
+            "name",
+            "email",
+            "phone",
+            "emailVerified",
+            "image",
+            "country_id",
+            "order_channel_id",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "customers"
+        },
+        {
+          "name": "Account",
+          "fields": [
+            "id",
+            "userId",
+            "type",
+            "provider",
+            "providerAccountId",
+            "refresh_token",
+            "access_token",
+            "expires_at"
+          ],
+          "table": "accounts"
+        },
+        {
+          "name": "Session",
+          "fields": [
+            "id",
+            "sessionToken",
+            "userId",
+            "expires"
+          ],
+          "table": "sessions"
+        },
+        {
+          "name": "VerificationToken",
+          "fields": [
+            "identifier",
+            "token",
+            "expires"
+          ],
+          "table": "verification_tokens"
+        },
+        {
+          "name": "destination_activities",
+          "fields": [
+            "id",
+            "code",
+            "destination_id",
+            "vendor_id",
+            "name",
+            "unit",
+            "formula",
+            "price",
+            "is_twt",
+            "is_default_jvto",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "destination_activities"
+        },
+        {
+          "name": "destinations",
+          "fields": [
+            "id",
+            "code",
+            "name",
+            "category",
+            "region",
+            "province",
+            "country",
+            "latitude",
+            "longitude",
+            "altitude",
+            "terrain",
+            "difficulty_level",
+            "slug",
+            "published",
+            "featured",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "destinations"
+        },
+        {
+          "name": "destination_gears",
+          "fields": [
+            "id",
+            "destination_id",
+            "gear",
+            "type",
+            "created_at",
+            "updated_at"
+          ],
+          "table": "destination_gears"
+        },
+        {
+          "name": "discounts",
+          "fields": [
+            "id",
+            "name",
+            "amount",
+            "type",
+            "email",
+            "customer_id",
+            "booking_id",
+            "valid_until",
+            "verification_code",
+            "is_verified",
+            "is_used",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "discounts"
+        },
+        {
+          "name": "document_categories",
+          "fields": [
+            "id",
+            "name",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "category_documents"
+        },
+        {
+          "name": "documents",
+          "fields": [
+            "id",
+            "name",
+            "category_id",
+            "source_type",
+            "source_location",
+            "file_type",
+            "tags",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "documents"
+        },
+        {
+          "name": "durations",
+          "fields": [
+            "id",
+            "name",
+            "day",
+            "night",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "durations"
+        },
+        {
+          "name": "category_faqs",
+          "fields": [
+            "id",
+            "name",
+            "slug",
+            "sort_order",
+            "is_active",
+            "created_at",
+            "updated_at"
+          ],
+          "table": "category_faqs"
+        },
+        {
+          "name": "content_pages",
+          "fields": [
+            "id",
+            "route",
+            "lang",
+            "schema_version",
+            "seo",
+            "content",
+            "is_active",
+            "created_at",
+            "updated_at"
+          ],
+          "table": "content_pages"
+        },
+        {
+          "name": "faqs",
+          "fields": [
+            "id",
+            "question",
+            "answer",
+            "tags",
+            "is_published",
+            "sort_order",
+            "category_id",
+            "created_at",
+            "updated_at"
+          ],
+          "table": "faqs"
+        },
+        {
+          "name": "policy_documents",
+          "fields": [
+            "id",
+            "title",
+            "slug",
+            "policy_type",
+            "version",
+            "effective_date",
+            "content",
+            "is_binding",
+            "seo_meta_title",
+            "seo_meta_description",
+            "created_at",
+            "date_modified"
+          ],
+          "table": "policy_documents"
+        },
+        {
+          "name": "site_identity",
+          "fields": [
+            "id",
+            "brand_name",
+            "legal_entity_name",
+            "official_website_url",
+            "official_emails",
+            "official_whatsapp_numbers",
+            "registration_ids",
+            "official_payment_accounts",
+            "maps_listings",
+            "association_memberships",
+            "office_address",
+            "brand_positioning",
+            "founder",
+            "org_schema_json_ld",
+            "created_at",
+            "updated_at"
+          ],
+          "table": "site_identity"
+        },
+        {
+          "name": "feedback",
+          "fields": [
+            "id",
+            "booking_id",
+            "rating_smallint",
+            "nps_smallint",
+            "comments",
+            "created_at"
+          ],
+          "table": "feedback"
+        },
+        {
+          "name": "hotels",
+          "fields": [
+            "id",
+            "code",
+            "name",
+            "destination_id",
+            "description",
+            "facilities",
+            "area",
+            "address",
+            "phone",
+            "banner",
+            "slug",
+            "map_url",
+            "website_url",
+            "lunch_rate",
+            "dinner_rate",
+            "is_publish",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "hotels"
+        },
+        {
+          "name": "inclusion_rules",
+          "fields": [
+            "id",
+            "inclusion_name",
+            "min_pax",
+            "max_pax",
+            "created_at",
+            "updated_at"
+          ],
+          "table": "inclusion_rules"
+        },
+        {
+          "name": "item_excludes",
+          "fields": [
+            "id",
+            "item",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "item_excludes"
+        },
+        {
+          "name": "item_includes",
+          "fields": [
+            "id",
+            "item",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "item_includes"
+        },
+        {
+          "name": "knowledge_bases",
+          "fields": [
+            "id",
+            "category",
+            "title",
+            "content",
+            "embedding",
+            "tags"
+          ],
+          "table": "jvto_knowledge_gemini"
+        },
+        {
+          "name": "order_channels",
+          "fields": [
+            "id",
+            "short_name",
+            "name",
+            "icon",
+            "username",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "order_channels"
+        },
+        {
+          "name": "other_activities",
+          "fields": [
+            "id",
+            "code",
+            "vendor_id",
+            "name",
+            "unit",
+            "formula",
+            "price",
+            "is_twt",
+            "is_default_jvto",
+            "is_default",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "other_activities"
+        },
+        {
+          "name": "organization_profile",
+          "fields": [
+            "id",
+            "legal_name",
+            "brand_name",
+            "alternate_name",
+            "founding_date",
+            "description",
+            "contact_email",
+            "contact_phone",
+            "available_languages",
+            "address_json",
+            "website_url",
+            "logo_url",
+            "schema_json",
+            "updated_at"
+          ],
+          "table": "organization_profile"
+        },
+        {
+          "name": "package_addons",
+          "fields": [
+            "id",
+            "package_id",
+            "addon_id",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "package_addons"
+        },
+        {
+          "name": "package_assets",
+          "fields": [
+            "id",
+            "package_id",
+            "asset_id",
+            "is_primary",
+            "created_at",
+            "updated_at"
+          ],
+          "table": "package_assets"
+        },
+        {
+          "name": "package_categories",
+          "fields": [
+            "id",
+            "name",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "package_categories"
+        },
+        {
+          "name": "package_destinations",
+          "fields": [
+            "id",
+            "package_id",
+            "destination_id",
+            "sort_order",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "package_destinations"
+        },
+        {
+          "name": "package_excludes",
+          "fields": [
+            "id",
+            "package_id",
+            "item_exclude_id",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "package_excludes"
+        },
+        {
+          "name": "package_faqs",
+          "fields": [
+            "id",
+            "package_id",
+            "faq_id",
+            "created_at",
+            "updated_at"
+          ],
+          "table": "package_faqs"
+        },
+        {
+          "name": "package_hotel_options",
+          "fields": [
+            "id",
+            "package_id",
+            "day_no",
+            "hotel_id",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "package_hotel_options"
+        },
+        {
+          "name": "package_images",
+          "fields": [
+            "id",
+            "package_id",
+            "url",
+            "og_image_url",
+            "sort_order",
+            "alt_text",
+            "caption",
+            "tags",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "package_images"
+        },
+        {
+          "name": "package_includes",
+          "fields": [
+            "id",
+            "package_id",
+            "item_include_id",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "package_includes"
+        },
+        {
+          "name": "locations",
+          "fields": [
+            "id",
+            "name"
+          ],
+          "table": "locations"
+        },
+        {
+          "name": "package_itinerary_day_details",
+          "fields": [
+            "id",
+            "itinerary_day_id",
+            "sort_order",
+            "time",
+            "activity_id",
+            "notes",
+            "from_location",
+            "to_location",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "package_itinerary_day_details"
+        },
+        {
+          "name": "package_itinerary_days",
+          "fields": [
+            "id",
+            "package_id",
+            "day_no",
+            "activity_start_id",
+            "activity_end_id",
+            "title",
+            "activity",
+            "hotel_id",
+            "meal_breakfast",
+            "meal_lunch",
+            "meal_dinner",
+            "route_id",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "package_itinerary_days"
+        },
+        {
+          "name": "package_prices",
+          "fields": [
+            "id",
+            "package_id",
+            "price_tier_id",
+            "price",
+            "klook_retail_price",
+            "klook_net_price",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "package_prices"
+        },
+        {
+          "name": "packages",
+          "fields": [
+            "id",
+            "uuid",
+            "code",
+            "slug",
+            "name",
+            "description",
+            "short_label",
+            "duration_id",
+            "order_channel_id",
+            "package_category_id",
+            "start_destination_id",
+            "end_destination_id",
+            "key_highlights",
+            "is_publish",
+            "aggregate_rating_value",
+            "aggregate_rating_count",
+            "seo_title",
+            "seo_meta",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "packages"
+        },
+        {
+          "name": "page_contents",
+          "fields": [
+            "id",
+            "name",
+            "content",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "legal_pages"
+        },
+        {
+          "name": "payment_methods",
+          "fields": [
+            "id",
+            "name",
+            "account_number",
+            "icon",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "payment_methods"
+        },
+        {
+          "name": "policies",
+          "fields": [
+            "id",
+            "cancellation_refund_window_hours",
+            "reschedule_free_window_hours",
+            "reschedule_free_max",
+            "no_show_reschedule_fee_percent",
+            "notes",
+            "effective_at",
+            "is_active",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "policies"
+        },
+        {
+          "name": "price_tiers",
+          "fields": [
+            "id",
+            "uuid",
+            "name",
+            "min_pax",
+            "max_pax",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "price_tiers"
+        },
+        {
+          "name": "routes",
+          "fields": [
+            "id",
+            "code",
+            "route",
+            "itinerary_title",
+            "start_area",
+            "end_area",
+            "estimated_duration",
+            "main_activities",
+            "accommodation_status",
+            "breakfast",
+            "lunch",
+            "dinner"
+          ],
+          "table": "routes"
+        },
+        {
+          "name": "route_details",
+          "fields": [
+            "id",
+            "route_id",
+            "seq",
+            "time_or_label",
+            "timezone",
+            "name",
+            "activity",
+            "type",
+            "location",
+            "from_location",
+            "to_location",
+            "duration_minutes"
+          ],
+          "table": "route_details"
+        },
+        {
+          "name": "route_destinations",
+          "fields": [
+            "id",
+            "route_id",
+            "destination_id",
+            "sequence",
+            "created_at",
+            "updated_at"
+          ],
+          "table": "route_destinations"
+        },
+        {
+          "name": "room_configurations",
+          "fields": [
+            "id",
+            "hotel_id",
+            "room_type_id",
+            "pax",
+            "quantity",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "room_configurations"
+        },
+        {
+          "name": "room_types",
+          "fields": [
+            "id",
+            "code",
+            "hotel_id",
+            "room_name",
+            "bed_type",
+            "rate_idr",
+            "rate_twt_idr",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "room_types"
+        },
+        {
+          "name": "transport_crew_rules",
+          "fields": [
+            "id",
+            "pax",
+            "vehicle_type_id",
+            "crew_role_id",
+            "order_channel_id",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "transport_crew_rules"
+        },
+        {
+          "name": "vehicle_types",
+          "fields": [
+            "id",
+            "code",
+            "name",
+            "capacity_min_pax",
+            "capacity_max_pax",
+            "price_per_day",
+            "price_twt_per_day",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "vehicle_types"
+        },
+        {
+          "name": "vehicle_units",
+          "fields": [
+            "id",
+            "vehicle_type_id",
+            "plate_no",
+            "nickname",
+            "is_active",
+            "vendor_id",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "vehicle_units"
+        },
+        {
+          "name": "vendor_categories",
+          "fields": [
+            "id",
+            "name",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "vendor_categories"
+        },
+        {
+          "name": "vendors",
+          "fields": [
+            "id",
+            "vendor_category_id",
+            "name",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "vendors"
+        },
+        {
+          "name": "web_metadata",
+          "fields": [
+            "id",
+            "name",
+            "url",
+            "title",
+            "description",
+            "og_image",
+            "schema",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "table": "web_metadata"
+        },
+        {
+          "name": "folders",
+          "fields": [
+            "id",
+            "parent_id",
+            "name",
+            "created_at"
+          ],
+          "table": "folders"
+        },
+        {
+          "name": "tags_assets",
+          "fields": [
+            "id",
+            "name"
+          ],
+          "table": "tags_assets"
+        },
+        {
+          "name": "assets",
+          "fields": [
+            "id",
+            "folder_id",
+            "name",
+            "caption",
+            "description",
+            "type",
+            "url",
+            "file_ext",
+            "size_bytes",
+            "size_megabytes",
+            "sha256",
+            "is_active",
+            "created_at"
+          ],
+          "table": "assets"
+        },
+        {
+          "name": "asset_tags",
+          "fields": [
+            "asset_id",
+            "tag_id"
+          ],
+          "table": "asset_tags"
+        },
+        {
+          "name": "destination_assets",
+          "fields": [
+            "id",
+            "destination_id",
+            "asset_id",
+            "type",
+            "created_at",
+            "updated_at"
+          ],
+          "table": "destination_assets"
+        },
+        {
+          "name": "destination_faqs",
+          "fields": [
+            "id",
+            "destination_id",
+            "faq_id",
+            "created_at",
+            "updated_at"
+          ],
+          "table": "destination_faqs"
+        },
+        {
+          "name": "eav_entity",
+          "fields": [
+            "entity_id",
+            "entity_type",
+            "entity_key"
+          ],
+          "table": "eav_entity"
+        },
+        {
+          "name": "eav_attribute",
+          "fields": [
+            "attribute_id",
+            "attribute_key",
+            "value_type"
+          ],
+          "table": "eav_attribute"
+        },
+        {
+          "name": "eav_value",
+          "fields": [
+            "value_id",
+            "entity_id",
+            "attribute_id",
+            "value_string",
+            "value_text"
+          ],
+          "table": "eav_value"
+        }
+      ],
+      "api_routes": [
+        {
+          "path": "src/app/(api)/api/auth/[...nextauth]/route.ts",
+          "method": "GET/POST",
+          "description": "NextAuth authentication handler"
+        },
+        {
+          "path": "src/app/(api)/api/checkout/route.ts",
+          "method": "POST",
+          "description": "Main checkout flow — creates booking"
+        },
+        {
+          "path": "src/app/(api)/api/checkout/route-main.ts",
+          "method": "POST",
+          "description": "Extended checkout logic with payment processing"
+        },
+        {
+          "path": "src/app/(api)/api/checkout/bank-transfer/route.ts",
+          "method": "POST",
+          "description": "Bank transfer checkout flow"
+        },
+        {
+          "path": "src/app/(api)/api/booking/pay-balance/route.ts",
+          "method": "POST",
+          "description": "Pay remaining booking balance"
+        },
+        {
+          "path": "src/app/(api)/api/booking/update-drop/route.ts",
+          "method": "POST",
+          "description": "Update dropoff logistics for booking"
+        },
+        {
+          "path": "src/app/(api)/api/booking/update-pickup/route.ts",
+          "method": "POST",
+          "description": "Update pickup logistics for booking"
+        },
+        {
+          "path": "src/app/(api)/api/booking/update-tshirt/route.ts",
+          "method": "POST",
+          "description": "Update t-shirt sizes for booking"
+        },
+        {
+          "path": "src/app/(api)/api/packages/route.ts",
+          "method": "GET/POST",
+          "description": "List and create packages from DB"
+        },
+        {
+          "path": "src/app/(api)/api/packages/[id]/route.ts",
+          "method": "GET/PUT/DELETE",
+          "description": "Read/update/delete single package"
+        },
+        {
+          "path": "src/app/(api)/api/packages/web/route.ts",
+          "method": "GET",
+          "description": "Public web-facing package listing"
+        },
+        {
+          "path": "src/app/(api)/api/packages/web/details/route.ts",
+          "method": "GET",
+          "description": "Public web package detail by slug"
+        },
+        {
+          "path": "src/app/(api)/api/destinations/route.ts",
+          "method": "GET/POST",
+          "description": "List and create destinations"
+        },
+        {
+          "path": "src/app/(api)/api/destinations/[id]/route.ts",
+          "method": "GET/PUT/DELETE",
+          "description": "Read/update/delete single destination"
+        },
+        {
+          "path": "src/app/(api)/api/destinations/web/route.ts",
+          "method": "GET",
+          "description": "Public web-facing destinations list"
+        },
+        {
+          "path": "src/app/(api)/api/destinations/web/[slug]/route.ts",
+          "method": "GET",
+          "description": "Public web destination detail by slug"
+        },
+        {
+          "path": "src/app/(api)/api/hotels/route.ts",
+          "method": "GET/POST",
+          "description": "Hotel listing and creation"
+        },
+        {
+          "path": "src/app/(api)/api/activities/route.ts",
+          "method": "GET",
+          "description": "Activity listing from DB"
+        },
+        {
+          "path": "src/app/(api)/api/addons/route.ts",
+          "method": "GET",
+          "description": "Add-on options from DB"
+        },
+        {
+          "path": "src/app/(api)/api/faqs/route.ts",
+          "method": "GET/POST",
+          "description": "FAQ list and creation"
+        },
+        {
+          "path": "src/app/(api)/api/faqs/[id]/route.ts",
+          "method": "GET/PUT/DELETE",
+          "description": "Single FAQ CRUD"
+        },
+        {
+          "path": "src/app/(api)/api/policy-documents/route.ts",
+          "method": "GET/POST",
+          "description": "Policy document listing and creation"
+        },
+        {
+          "path": "src/app/(api)/api/policy-documents/[id]/route.ts",
+          "method": "GET/PUT/DELETE",
+          "description": "Single policy document CRUD"
+        },
+        {
+          "path": "src/app/(api)/api/review/route.ts",
+          "method": "GET/POST",
+          "description": "Customer review submission"
+        },
+        {
+          "path": "src/app/(api)/api/review/stats/route.ts",
+          "method": "GET",
+          "description": "Aggregate review statistics"
+        },
+        {
+          "path": "src/app/(api)/api/trip/[slug]/route.ts",
+          "method": "GET",
+          "description": "Trip details by slug for my-booking page"
+        },
+        {
+          "path": "src/app/(api)/api/site-identity/route.ts",
+          "method": "GET/PUT",
+          "description": "Site identity / brand data from DB"
+        },
+        {
+          "path": "src/app/(api)/api/eav/page/route.ts",
+          "method": "GET",
+          "description": "EAV content page data"
+        },
+        {
+          "path": "src/lib/packages/getWebPackageDetail.ts",
+          "method": "GET",
+          "description": "Server-side helper: fetch full package detail from DB"
+        },
+        {
+          "path": "src/lib/packages/getWebPackagesList.ts",
+          "method": "GET",
+          "description": "Server-side helper: fetch paginated package list from DB"
+        }
+      ],
+      "sources": [
+        {
+          "path": "prisma/schema.prisma",
+          "type": "prisma_schema",
+          "priority": "high",
+          "status": "readable",
+          "last_modified": "2026",
+          "size_kb": 95
+        },
+        {
+          "path": "src/data/package-readiness/package-pricing.json",
+          "type": "json",
+          "priority": "high",
+          "status": "readable",
+          "size_kb": 12.4
+        },
+        {
+          "path": "src/data/package-readiness/package-itineraries.json",
+          "type": "json",
+          "priority": "high",
+          "status": "readable",
+          "size_kb": 11.9
+        },
+        {
+          "path": "src/data/package-readiness/package-registry.json",
+          "type": "json",
+          "priority": "high",
+          "status": "readable",
+          "size_kb": 6.1
+        },
+        {
+          "path": "src/data/trust-bundle/claims.json",
+          "type": "json",
+          "priority": "high",
+          "status": "readable",
+          "size_kb": 17.2
+        },
+        {
+          "path": "src/data/destinations.ts",
+          "type": "typescript",
+          "priority": "high",
+          "status": "readable",
+          "size_kb": 23.6
+        },
+        {
+          "path": "src/data/mockData.ts",
+          "type": "typescript",
+          "priority": "medium",
+          "status": "readable",
+          "size_kb": 639.6
+        },
+        {
+          "path": "src/data/reviews_new.ts",
+          "type": "typescript",
+          "priority": "medium",
+          "status": "readable",
+          "size_kb": 23.1
+        },
+        {
+          "path": "src/data/evidenceRegistry.ts",
+          "type": "typescript",
+          "priority": "medium",
+          "status": "readable",
+          "size_kb": 19.9
+        },
+        {
+          "path": "src/data/knowledge.ts",
+          "type": "typescript",
+          "priority": "medium",
+          "status": "readable",
+          "size_kb": 14.6
+        }
+      ],
+      "notes": "Repository jvto-devteam/jvto-web is accessible. Key findings:\n\n1. DATABASE: PostgreSQL via Prisma ORM. Schema has 97 models covering the full tour operator domain: packages, bookings, destinations, hotels, crew, vehicles, vendors, reviews, payments, policies, FAQs, CMS/blogs, assets, EAV content system, and NextAuth (customers/accounts/sessions tables).\n\n2. DATA FILES: src/data/ contains static TypeScript data files (destinations, evidence registry, FAQs, knowledge base, mock data, reviews) plus structured JSON subdirectories: package-readiness/ (manifest, pricing, itineraries, registry, booking-compatibility, gap-report) and trust-bundle/ (claims, FAQ, AEO snippets, JSON-LD schemas). Blog directory has 2 markdown posts.\n\n3. API ROUTES: Rich REST API under src/app/(api)/api/ covering all entity types. Key transactional routes: /api/checkout (POST — booking creation), /api/checkout/bank-transfer (POST), /api/booking/pay-balance (POST). Public web routes at /api/packages/web and /api/destinations/web serve the frontend. Auth via NextAuth at /api/auth/[...nextauth].\n\n4. NOTABLE: mockData.ts is 640KB — likely a large static data dump usable for extraction. package-readiness/ and trust-bundle/ directories appear to be pre-processed clean data outputs already. EAV system (eav_entity, eav_attribute, eav_value) used for CMS/page content. knowledge_bases table stores vector embeddings (pgvector). site_identity and organization_profile models store canonical brand data.\n\n5. NO sensitive files (PII/payment) found directly in src/data — payment data is in the DB only (booking_payment_terms, booking_payment_histories)."
+    },
+    {
+      "repo": "new-backoffice",
+      "total_sources": 175,
+      "eloquent_models": [
+        {
+          "name": "Accommodation",
+          "path": "app/Models/Accommodation.php"
+        },
+        {
+          "name": "AccommodationCategory",
+          "path": "app/Models/AccommodationCategory.php"
+        },
+        {
+          "name": "Account",
+          "path": "app/Models/Account.php"
+        },
+        {
+          "name": "Activity",
+          "path": "app/Models/Activity.php"
+        },
+        {
+          "name": "ActivityCategory",
+          "path": "app/Models/ActivityCategory.php"
+        },
+        {
+          "name": "ActivityDestination",
+          "path": "app/Models/ActivityDestination.php"
+        },
+        {
+          "name": "ActivityDestinationMedia",
+          "path": "app/Models/ActivityDestinationMedia.php"
+        },
+        {
+          "name": "ActivityEnd",
+          "path": "app/Models/ActivityEnd.php"
+        },
+        {
+          "name": "ActivityStart",
+          "path": "app/Models/ActivityStart.php"
+        },
+        {
+          "name": "AddOn",
+          "path": "app/Models/AddOn.php"
+        },
+        {
+          "name": "AddOnCart",
+          "path": "app/Models/AddOnCart.php"
+        },
+        {
+          "name": "AddOnPackage",
+          "path": "app/Models/AddOnPackage.php"
+        },
+        {
+          "name": "Agent",
+          "path": "app/Models/Agent.php"
+        },
+        {
+          "name": "Announcement",
+          "path": "app/Models/Announcement.php"
+        },
+        {
+          "name": "Area",
+          "path": "app/Models/Area.php"
+        },
+        {
+          "name": "Article",
+          "path": "app/Models/Article.php"
+        },
+        {
+          "name": "ArticleMedia",
+          "path": "app/Models/ArticleMedia.php"
+        },
+        {
+          "name": "AttachmentType",
+          "path": "app/Models/AttachmentType.php"
+        },
+        {
+          "name": "BcaCrewTransfer",
+          "path": "app/Models/BcaCrewTransfer.php"
+        },
+        {
+          "name": "Blog",
+          "path": "app/Models/Blog.php"
+        },
+        {
+          "name": "BookActivity",
+          "path": "app/Models/BookActivity.php"
+        },
+        {
+          "name": "BookAddOn",
+          "path": "app/Models/BookAddOn.php"
+        },
+        {
+          "name": "BookAttachment",
+          "path": "app/Models/BookAttachment.php"
+        },
+        {
+          "name": "BookCar",
+          "path": "app/Models/BookCar.php"
+        },
+        {
+          "name": "BookCarActivity",
+          "path": "app/Models/BookCarActivity.php"
+        },
+        {
+          "name": "BookCrewActivity",
+          "path": "app/Models/BookCrewActivity.php"
+        },
+        {
+          "name": "BookDestinationActivity",
+          "path": "app/Models/BookDestinationActivity.php"
+        },
+        {
+          "name": "BookGuideDriver",
+          "path": "app/Models/BookGuideDriver.php"
+        },
+        {
+          "name": "BookHotel",
+          "path": "app/Models/BookHotel.php"
+        },
+        {
+          "name": "BookHotelMeal",
+          "path": "app/Models/BookHotelMeal.php"
+        },
+        {
+          "name": "BookItinerary",
+          "path": "app/Models/BookItinerary.php"
+        },
+        {
+          "name": "BookItineraryDetail",
+          "path": "app/Models/BookItineraryDetail.php"
+        },
+        {
+          "name": "BookJeep",
+          "path": "app/Models/BookJeep.php"
+        },
+        {
+          "name": "BookMeal",
+          "path": "app/Models/BookMeal.php"
+        },
+        {
+          "name": "BookOthersActivity",
+          "path": "app/Models/BookOthersActivity.php"
+        },
+        {
+          "name": "BookRoomHotel",
+          "path": "app/Models/BookRoomHotel.php"
+        },
+        {
+          "name": "BookService",
+          "path": "app/Models/BookService.php"
+        },
+        {
+          "name": "Booking",
+          "path": "app/Models/Booking.php",
+          "sensitive": true
+        },
+        {
+          "name": "BookingAdditionalPriceBooking",
+          "path": "app/Models/BookingAdditionalPriceBooking.php",
+          "sensitive": true
+        },
+        {
+          "name": "BookingCategory",
+          "path": "app/Models/BookingCategory.php",
+          "sensitive": true
+        },
+        {
+          "name": "BookingDetail",
+          "path": "app/Models/BookingDetail.php",
+          "sensitive": true
+        },
+        {
+          "name": "BookingDocument",
+          "path": "app/Models/BookingDocument.php",
+          "sensitive": true
+        },
+        {
+          "name": "BookingItinerary",
+          "path": "app/Models/BookingItinerary.php",
+          "sensitive": true
+        },
+        {
+          "name": "BookingPayment",
+          "path": "app/Models/BookingPayment.php",
+          "sensitive": true
+        },
+        {
+          "name": "BookingRefundAndPenalty",
+          "path": "app/Models/BookingRefundAndPenalty.php",
+          "sensitive": true
+        },
+        {
+          "name": "BookingReview",
+          "path": "app/Models/BookingReview.php",
+          "sensitive": true
+        },
+        {
+          "name": "Calculation",
+          "path": "app/Models/Calculation.php"
+        },
+        {
+          "name": "CalculationDetail",
+          "path": "app/Models/CalculationDetail.php"
+        },
+        {
+          "name": "CalculationDetailOther",
+          "path": "app/Models/CalculationDetailOther.php"
+        },
+        {
+          "name": "Car",
+          "path": "app/Models/Car.php"
+        },
+        {
+          "name": "CarActivity",
+          "path": "app/Models/CarActivity.php"
+        },
+        {
+          "name": "CarConfiguration",
+          "path": "app/Models/CarConfiguration.php"
+        },
+        {
+          "name": "Cart",
+          "path": "app/Models/Cart.php"
+        },
+        {
+          "name": "Category",
+          "path": "app/Models/Category.php"
+        },
+        {
+          "name": "Component",
+          "path": "app/Models/Component.php"
+        },
+        {
+          "name": "ComponentContent",
+          "path": "app/Models/ComponentContent.php"
+        },
+        {
+          "name": "Country",
+          "path": "app/Models/Country.php"
+        },
+        {
+          "name": "CrewReview",
+          "path": "app/Models/CrewReview.php"
+        },
+        {
+          "name": "CrewRole",
+          "path": "app/Models/CrewRole.php"
+        },
+        {
+          "name": "CurrencyExchange",
+          "path": "app/Models/CurrencyExchange.php"
+        },
+        {
+          "name": "DebtPayment",
+          "path": "app/Models/DebtPayment.php"
+        },
+        {
+          "name": "DebtPaymentDetail",
+          "path": "app/Models/DebtPaymentDetail.php"
+        },
+        {
+          "name": "Destination",
+          "path": "app/Models/Destination.php"
+        },
+        {
+          "name": "DestinationActivity",
+          "path": "app/Models/DestinationActivity.php"
+        },
+        {
+          "name": "DestinationDetail",
+          "path": "app/Models/DestinationDetail.php"
+        },
+        {
+          "name": "Discount",
+          "path": "app/Models/Discount.php"
+        },
+        {
+          "name": "DocumentFinder",
+          "path": "app/Models/DocumentFinder.php"
+        },
+        {
+          "name": "Duration",
+          "path": "app/Models/Duration.php"
+        },
+        {
+          "name": "EventSequence",
+          "path": "app/Models/EventSequence.php"
+        },
+        {
+          "name": "ExpenseAdditional",
+          "path": "app/Models/ExpenseAdditional.php"
+        },
+        {
+          "name": "ExpenseRefund",
+          "path": "app/Models/ExpenseRefund.php"
+        },
+        {
+          "name": "ExpenseRevision",
+          "path": "app/Models/ExpenseRevision.php"
+        },
+        {
+          "name": "Experience",
+          "path": "app/Models/Experience.php"
+        },
+        {
+          "name": "ExtraLuggage",
+          "path": "app/Models/ExtraLuggage.php"
+        },
+        {
+          "name": "Faq",
+          "path": "app/Models/Faq.php"
+        },
+        {
+          "name": "FaqCategory",
+          "path": "app/Models/FaqCategory.php"
+        },
+        {
+          "name": "FaqSubcategory",
+          "path": "app/Models/FaqSubcategory.php"
+        },
+        {
+          "name": "File",
+          "path": "app/Models/File.php"
+        },
+        {
+          "name": "FileType",
+          "path": "app/Models/FileType.php"
+        },
+        {
+          "name": "Flipbook",
+          "path": "app/Models/Flipbook.php"
+        },
+        {
+          "name": "Folder",
+          "path": "app/Models/Folder.php"
+        },
+        {
+          "name": "FolderType",
+          "path": "app/Models/FolderType.php"
+        },
+        {
+          "name": "Gallery",
+          "path": "app/Models/Gallery.php"
+        },
+        {
+          "name": "Garage",
+          "path": "app/Models/Garage.php"
+        },
+        {
+          "name": "GiftCard",
+          "path": "app/Models/GiftCard.php"
+        },
+        {
+          "name": "GoogleBill",
+          "path": "app/Models/GoogleBill.php"
+        },
+        {
+          "name": "GuideDriver",
+          "path": "app/Models/GuideDriver.php"
+        },
+        {
+          "name": "Hotel",
+          "path": "app/Models/Hotel.php"
+        },
+        {
+          "name": "HotelService",
+          "path": "app/Models/HotelService.php"
+        },
+        {
+          "name": "IdentitiesType",
+          "path": "app/Models/IdentitiesType.php"
+        },
+        {
+          "name": "IdentityCard",
+          "path": "app/Models/IdentityCard.php"
+        },
+        {
+          "name": "ImagePanorama",
+          "path": "app/Models/ImagePanorama.php"
+        },
+        {
+          "name": "IncludeExclude",
+          "path": "app/Models/IncludeExclude.php"
+        },
+        {
+          "name": "InvoiceHistory",
+          "path": "app/Models/InvoiceHistory.php"
+        },
+        {
+          "name": "InvoiceTwt",
+          "path": "app/Models/InvoiceTwt.php"
+        },
+        {
+          "name": "InvoiceTwtDetail",
+          "path": "app/Models/InvoiceTwtDetail.php"
+        },
+        {
+          "name": "ItemCalculation",
+          "path": "app/Models/ItemCalculation.php"
+        },
+        {
+          "name": "ItemCalculationOther",
+          "path": "app/Models/ItemCalculationOther.php"
+        },
+        {
+          "name": "Itinerary",
+          "path": "app/Models/Itinerary.php"
+        },
+        {
+          "name": "ItineraryDestination",
+          "path": "app/Models/ItineraryDestination.php"
+        },
+        {
+          "name": "ItineraryDetail",
+          "path": "app/Models/ItineraryDetail.php"
+        },
+        {
+          "name": "ItineraryInvoice",
+          "path": "app/Models/ItineraryInvoice.php"
+        },
+        {
+          "name": "ItineraryMeal",
+          "path": "app/Models/ItineraryMeal.php"
+        },
+        {
+          "name": "ItineraryRoute",
+          "path": "app/Models/ItineraryRoute.php"
+        },
+        {
+          "name": "ItineraryRouteDestination",
+          "path": "app/Models/ItineraryRouteDestination.php"
+        },
+        {
+          "name": "ItineraryRouteDetail",
+          "path": "app/Models/ItineraryRouteDetail.php"
+        },
+        {
+          "name": "JvtoReview",
+          "path": "app/Models/JvtoReview.php"
+        },
+        {
+          "name": "Link",
+          "path": "app/Models/Link.php"
+        },
+        {
+          "name": "Location",
+          "path": "app/Models/Location.php"
+        },
+        {
+          "name": "MiceForm",
+          "path": "app/Models/MiceForm.php"
+        },
+        {
+          "name": "NoteCategory",
+          "path": "app/Models/NoteCategory.php"
+        },
+        {
+          "name": "OrderChannel",
+          "path": "app/Models/OrderChannel.php"
+        },
+        {
+          "name": "OthersActivity",
+          "path": "app/Models/OthersActivity.php"
+        },
+        {
+          "name": "Package",
+          "path": "app/Models/Package.php"
+        },
+        {
+          "name": "PackageActivity",
+          "path": "app/Models/PackageActivity.php"
+        },
+        {
+          "name": "PackageBanner",
+          "path": "app/Models/PackageBanner.php"
+        },
+        {
+          "name": "PackageCategory",
+          "path": "app/Models/PackageCategory.php"
+        },
+        {
+          "name": "PackageDestination",
+          "path": "app/Models/PackageDestination.php"
+        },
+        {
+          "name": "PackageHotel",
+          "path": "app/Models/PackageHotel.php"
+        },
+        {
+          "name": "PackageIncludeExclude",
+          "path": "app/Models/PackageIncludeExclude.php"
+        },
+        {
+          "name": "PackageMeal",
+          "path": "app/Models/PackageMeal.php"
+        },
+        {
+          "name": "PackagePrice",
+          "path": "app/Models/PackagePrice.php"
+        },
+        {
+          "name": "PackageTransportation",
+          "path": "app/Models/PackageTransportation.php"
+        },
+        {
+          "name": "Page",
+          "path": "app/Models/Page.php"
+        },
+        {
+          "name": "Participant",
+          "path": "app/Models/Participant.php"
+        },
+        {
+          "name": "PartnerDiscount",
+          "path": "app/Models/PartnerDiscount.php"
+        },
+        {
+          "name": "PartnerDiscountCode",
+          "path": "app/Models/PartnerDiscountCode.php"
+        },
+        {
+          "name": "PaymentMethod",
+          "path": "app/Models/PaymentMethod.php",
+          "sensitive": true
+        },
+        {
+          "name": "PoliceEscort",
+          "path": "app/Models/PoliceEscort.php"
+        },
+        {
+          "name": "PosTransfer",
+          "path": "app/Models/PosTransfer.php"
+        },
+        {
+          "name": "PriceCategory",
+          "path": "app/Models/PriceCategory.php"
+        },
+        {
+          "name": "PriceMaker",
+          "path": "app/Models/PriceMaker.php"
+        },
+        {
+          "name": "PriceMakerLocation",
+          "path": "app/Models/PriceMakerLocation.php"
+        },
+        {
+          "name": "PriceMakerLocationDetail",
+          "path": "app/Models/PriceMakerLocationDetail.php"
+        },
+        {
+          "name": "PriceMakerPricePax",
+          "path": "app/Models/PriceMakerPricePax.php"
+        },
+        {
+          "name": "PricePlan",
+          "path": "app/Models/PricePlan.php"
+        },
+        {
+          "name": "ReviewGuide",
+          "path": "app/Models/ReviewGuide.php"
+        },
+        {
+          "name": "RoomHotel",
+          "path": "app/Models/RoomHotel.php"
+        },
+        {
+          "name": "RoomHotelConfiguration",
+          "path": "app/Models/RoomHotelConfiguration.php"
+        },
+        {
+          "name": "RoomPhoto",
+          "path": "app/Models/RoomPhoto.php"
+        },
+        {
+          "name": "RoomType",
+          "path": "app/Models/RoomType.php"
+        },
+        {
+          "name": "Service",
+          "path": "app/Models/Service.php"
+        },
+        {
+          "name": "Tag",
+          "path": "app/Models/Tag.php"
+        },
+        {
+          "name": "Task",
+          "path": "app/Models/Task.php"
+        },
+        {
+          "name": "TwCalculation",
+          "path": "app/Models/TwCalculation.php"
+        },
+        {
+          "name": "TwCalculationCategory",
+          "path": "app/Models/TwCalculationCategory.php"
+        },
+        {
+          "name": "TwCalculationCategoryCode",
+          "path": "app/Models/TwCalculationCategoryCode.php"
+        },
+        {
+          "name": "TwCalculationDetail",
+          "path": "app/Models/TwCalculationDetail.php"
+        },
+        {
+          "name": "TwCalculationItem",
+          "path": "app/Models/TwCalculationItem.php"
+        },
+        {
+          "name": "TwCalculationItemDetail",
+          "path": "app/Models/TwCalculationItemDetail.php"
+        },
+        {
+          "name": "TwtInvoice",
+          "path": "app/Models/TwtInvoice.php"
+        },
+        {
+          "name": "TwtInvoiceAdditional",
+          "path": "app/Models/TwtInvoiceAdditional.php"
+        },
+        {
+          "name": "TwtInvoiceBooking",
+          "path": "app/Models/TwtInvoiceBooking.php"
+        },
+        {
+          "name": "TwtInvoicePayment",
+          "path": "app/Models/TwtInvoicePayment.php",
+          "sensitive": true
+        },
+        {
+          "name": "TwtInvoiceRefundPenalty",
+          "path": "app/Models/TwtInvoiceRefundPenalty.php"
+        },
+        {
+          "name": "User",
+          "path": "app/Models/User.php",
+          "sensitive": true
+        },
+        {
+          "name": "UserAccommodation",
+          "path": "app/Models/UserAccommodation.php",
+          "sensitive": true
+        },
+        {
+          "name": "UserGarage",
+          "path": "app/Models/UserGarage.php",
+          "sensitive": true
+        },
+        {
+          "name": "UserJeep",
+          "path": "app/Models/UserJeep.php",
+          "sensitive": true
+        },
+        {
+          "name": "UserLog",
+          "path": "app/Models/UserLog.php",
+          "sensitive": true
+        },
+        {
+          "name": "UserPartner",
+          "path": "app/Models/UserPartner.php",
+          "sensitive": true
+        },
+        {
+          "name": "UserPoliceEscort",
+          "path": "app/Models/UserPoliceEscort.php",
+          "sensitive": true
+        },
+        {
+          "name": "UserTshirt",
+          "path": "app/Models/UserTshirt.php",
+          "sensitive": true
+        },
+        {
+          "name": "User_old",
+          "path": "app/Models/User_old.php",
+          "sensitive": true
+        },
+        {
+          "name": "Vendor",
+          "path": "app/Models/Vendor.php"
+        },
+        {
+          "name": "VendorCategory",
+          "path": "app/Models/VendorCategory.php"
+        },
+        {
+          "name": "WaChat",
+          "path": "app/Models/WaChat.php"
+        },
+        {
+          "name": "WaChatCategory",
+          "path": "app/Models/WaChatCategory.php"
+        },
+        {
+          "name": "WaChatIgnore",
+          "path": "app/Models/WaChatIgnore.php"
+        },
+        {
+          "name": "WaChatSummary",
+          "path": "app/Models/WaChatSummary.php"
+        },
+        {
+          "name": "WaItinerary",
+          "path": "app/Models/WaItinerary.php"
+        },
+        {
+          "name": "WaLog",
+          "path": "app/Models/WaLog.php"
+        },
+        {
+          "name": "WeatherCode",
+          "path": "app/Models/WeatherCode.php"
+        },
+        {
+          "name": "WebsiteLink",
+          "path": "app/Models/WebsiteLink.php"
+        },
+        {
+          "name": "WebsiteLinkCategory",
+          "path": "app/Models/WebsiteLinkCategory.php"
+        }
+      ],
+      "database_tables": [
+        {
+          "table": "users",
+          "migration_file": "0001_01_01_000000_create_users_table.php",
+          "created_at": "0001-01-01",
+          "sensitive": true
+        },
+        {
+          "table": "cache",
+          "migration_file": "0001_01_01_000001_create_cache_table.php",
+          "created_at": "0001-01-01"
+        },
+        {
+          "table": "jobs",
+          "migration_file": "0001_01_01_000002_create_jobs_table.php",
+          "created_at": "0001-01-01"
+        },
+        {
+          "table": "tasks",
+          "migration_file": "2024_12_05_122918_create_tasks_table.php",
+          "created_at": "2024-12-05"
+        },
+        {
+          "table": "task_lists",
+          "migration_file": "2024_12_08_234859_create_task_lists_table.php",
+          "created_at": "2024-12-08"
+        },
+        {
+          "table": "accommodation_categories",
+          "migration_file": "2024_12_11_084909_create_accommodation_categories_table.php",
+          "created_at": "2024-12-11"
+        },
+        {
+          "table": "accommodations",
+          "migration_file": "2024_12_11_085627_create_accommodations_table.php",
+          "created_at": "2024-12-11"
+        },
+        {
+          "table": "room_types",
+          "migration_file": "2024_12_11_090503_create_room_types_table.php",
+          "created_at": "2024-12-11"
+        },
+        {
+          "table": "activity_categories",
+          "migration_file": "2024_12_11_091344_create_activity_categories_table.php",
+          "created_at": "2024-12-11"
+        },
+        {
+          "table": "activities",
+          "migration_file": "2024_12_11_091402_create_activities_table.php",
+          "created_at": "2024-12-11"
+        },
+        {
+          "table": "others_activities",
+          "migration_file": "2024_12_12_053243_create_others_activities_table.php",
+          "created_at": "2024-12-12"
+        },
+        {
+          "table": "room_configurations",
+          "migration_file": "2024_12_14_085233_create_room_configurations_table.php",
+          "created_at": "2024-12-14"
+        },
+        {
+          "table": "room_hotel_configurations",
+          "migration_file": "2024_12_18_052636_create_room_hotel_configurations_table.php",
+          "created_at": "2024-12-18"
+        },
+        {
+          "table": "crew_roles",
+          "migration_file": "2024_12_18_052742_create_crew_roles_table.php",
+          "created_at": "2024-12-18"
+        },
+        {
+          "table": "car_configurations",
+          "migration_file": "2024_12_18_052853_create_car_configurations_table.php",
+          "created_at": "2024-12-18"
+        },
+        {
+          "table": "destination_details",
+          "migration_file": "2024_12_18_053352_create_destination_details_table.php",
+          "created_at": "2024-12-18"
+        },
+        {
+          "table": "car_activities",
+          "migration_file": "2024_12_18_054027_create_car_activities_table.php",
+          "created_at": "2024-12-18"
+        },
+        {
+          "table": "flipbooks",
+          "migration_file": "2024_12_24_042949_create_flipbooks_table.php",
+          "created_at": "2024-12-24"
+        },
+        {
+          "table": "book_destination_activities",
+          "migration_file": "2025_01_23_104525_create_book_destination_activities_table.php",
+          "created_at": "2025-01-23"
+        },
+        {
+          "table": "book_others_activities",
+          "migration_file": "2025_01_23_105055_create_book_others_activities_table.php",
+          "created_at": "2025-01-23"
+        },
+        {
+          "table": "book_hotel_meals",
+          "migration_file": "2025_01_24_065334_create_book_hotel_meals_table.php",
+          "created_at": "2025-01-24"
+        },
+        {
+          "table": "book_car_activities",
+          "migration_file": "2025_01_24_081714_create_book_car_activities_table.php",
+          "created_at": "2025-01-24"
+        },
+        {
+          "table": "book_crew_activities",
+          "migration_file": "2025_01_24_081714_create_book_crew_activities_table.php",
+          "created_at": "2025-01-24"
+        },
+        {
+          "table": "user_logs",
+          "migration_file": "2025_02_12_085335_create_user_logs_table.php",
+          "created_at": "2025-02-12",
+          "sensitive": true
+        },
+        {
+          "table": "room_photos",
+          "migration_file": "2025_02_17_063047_create_room_photos_table.php",
+          "created_at": "2025-02-17"
+        },
+        {
+          "table": "folder_types",
+          "migration_file": "2025_03_04_083928_create_folder_types_table.php",
+          "created_at": "2025-03-04"
+        },
+        {
+          "table": "file_types",
+          "migration_file": "2025_03_04_083941_create_file_types_table.php",
+          "created_at": "2025-03-04"
+        },
+        {
+          "table": "folders",
+          "migration_file": "2025_03_04_083951_create_folders_table.php",
+          "created_at": "2025-03-04"
+        },
+        {
+          "table": "files",
+          "migration_file": "2025_03_04_084002_create_files_table.php",
+          "created_at": "2025-03-04"
+        },
+        {
+          "table": "tags",
+          "migration_file": "2025_03_04_084010_create_tags_table.php",
+          "created_at": "2025-03-04"
+        },
+        {
+          "table": "file_tags",
+          "migration_file": "2025_03_04_084018_create_file_tags_table.php",
+          "created_at": "2025-03-04"
+        },
+        {
+          "table": "trip_participants",
+          "migration_file": "2025_03_12_025945_create_trip_participants_table.php",
+          "created_at": "2025-03-12"
+        },
+        {
+          "table": "vendor_categories",
+          "migration_file": "2025_03_22_125123_create_vendor_categories_table.php",
+          "created_at": "2025-03-22"
+        },
+        {
+          "table": "vendors",
+          "migration_file": "2025_03_22_125137_create_vendors_table.php",
+          "created_at": "2025-03-22"
+        },
+        {
+          "table": "note_categories",
+          "migration_file": "2025_04_06_094944_create_note_categories_table.php",
+          "created_at": "2025-04-06"
+        },
+        {
+          "table": "debt_payments",
+          "migration_file": "2025_04_22_130641_create_debt_payments_table.php",
+          "created_at": "2025-04-22"
+        },
+        {
+          "table": "debt_payment_details",
+          "migration_file": "2025_04_22_130646_create_debt_payment_details_table.php",
+          "created_at": "2025-04-22"
+        },
+        {
+          "table": "wa_chats",
+          "migration_file": "2025_05_08_135421_create_wa_chats_table.php",
+          "created_at": "2025-05-08"
+        },
+        {
+          "table": "wa_chat_ignores",
+          "migration_file": "2025_05_08_161346_create_wa_chat_ignores_table.php",
+          "created_at": "2025-05-08"
+        },
+        {
+          "table": "wa_chat_categories",
+          "migration_file": "2025_05_09_150919_create_wa_chat_categories_table.php",
+          "created_at": "2025-05-09"
+        },
+        {
+          "table": "wa_chat_summaries",
+          "migration_file": "2025_05_09_150947_create_wa_chat_summaries_table.php",
+          "created_at": "2025-05-09"
+        },
+        {
+          "table": "expense_additionals",
+          "migration_file": "2025_05_15_132956_create_expense_additionals_table.php",
+          "created_at": "2025-05-15"
+        },
+        {
+          "table": "expense_revisions",
+          "migration_file": "2025_05_15_134805_create_expense_revisions_table.php",
+          "created_at": "2025-05-15"
+        },
+        {
+          "table": "expense_refunds",
+          "migration_file": "2025_05_16_134759_create_expense_refunds_table.php",
+          "created_at": "2025-05-16"
+        },
+        {
+          "table": "twt_invoices",
+          "migration_file": "2025_05_16_161202_create_twt_invoices_table.php",
+          "created_at": "2025-05-16"
+        },
+        {
+          "table": "twt_invoice_bookings",
+          "migration_file": "2025_05_16_161225_create_twt_invoice_bookings_table.php",
+          "created_at": "2025-05-16",
+          "sensitive": true
+        },
+        {
+          "table": "twt_invoice_additionals",
+          "migration_file": "2025_05_16_161241_create_twt_invoice_additionals_table.php",
+          "created_at": "2025-05-16"
+        },
+        {
+          "table": "twt_invoice_refund_penalties",
+          "migration_file": "2025_05_16_161259_create_twt_invoice_refund_penalties_table.php",
+          "created_at": "2025-05-16"
+        },
+        {
+          "table": "twt_invoice_payments",
+          "migration_file": "2025_05_16_161314_create_twt_invoice_payments_table.php",
+          "created_at": "2025-05-16",
+          "sensitive": true
+        },
+        {
+          "table": "partner_discounts",
+          "migration_file": "2025_05_23_155050_create_partner_discounts_table.php",
+          "created_at": "2025-05-23"
+        },
+        {
+          "table": "partner_discount_codes",
+          "migration_file": "2025_05_23_155057_create_partner_discount_codes_table.php",
+          "created_at": "2025-05-23"
+        },
+        {
+          "table": "itinerary_routes",
+          "migration_file": "2025_07_17_163836_create_itinerary_routes_table.php",
+          "created_at": "2025-07-17"
+        },
+        {
+          "table": "itinerary_route_details",
+          "migration_file": "2025_07_17_163859_create_itinerary_route_details_table.php",
+          "created_at": "2025-07-17"
+        },
+        {
+          "table": "itinerary_route_destinations",
+          "migration_file": "2025_07_18_144833_create_itinerary_route_destinations_table.php",
+          "created_at": "2025-07-18"
+        },
+        {
+          "table": "activity_destinations",
+          "migration_file": "2025_07_28_122244_create_activity_destinations_table.php",
+          "created_at": "2025-07-28"
+        },
+        {
+          "table": "activity_destination_media",
+          "migration_file": "2025_07_28_122247_create_activity_destination_media_table.php",
+          "created_at": "2025-07-28"
+        },
+        {
+          "table": "event_sequences",
+          "migration_file": "2025_07_28_124736_create_event_sequences_table.php",
+          "created_at": "2025-07-28"
+        },
+        {
+          "table": "google_bills",
+          "migration_file": "2026_05_05_000001_create_google_bills_table.php",
+          "created_at": "2026-05-05"
+        },
+        {
+          "table": "bca_crew_transfers",
+          "migration_file": "2026_05_09_000001_create_bca_crew_transfers_table.php",
+          "created_at": "2026-05-09"
+        }
+      ],
+      "export_endpoints": [
+        {
+          "method": "GET",
+          "path": "/export-data/hotels/hotels",
+          "controller": "ExportDataHotel@hotels"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/hotels/room-types",
+          "controller": "ExportDataHotel@roomTypes"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/hotels/room-configurations",
+          "controller": "ExportDataHotel@roomConfigurations"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/vehicles/vehicle-types",
+          "controller": "ExportDataVehicles@vehicleTypes"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/vehicles/vehicle-units",
+          "controller": "ExportDataVehicles@vehicleUnits"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/crews/crew-roles",
+          "controller": "ExportDataCrew@crewRoles"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/crews/crew-member",
+          "controller": "ExportDataCrew@crewMember"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/crews/crew-member-roles",
+          "controller": "ExportDataCrew@crewMemberRoles"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/crews/transport-crew-rules",
+          "controller": "ExportDataCrew@transportCrewRules"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/destinations/destinations",
+          "controller": "ExportDataDestinations@destinations"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/countries/countries",
+          "controller": "ExportDataCountries@countries"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/customers/customers",
+          "controller": "ExportDataCustomer@customers",
+          "sensitive": true
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/packages/package-categories",
+          "controller": "ExportDataPackage@packageCategories"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/packages/packages",
+          "controller": "ExportDataPackage@packages"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/packages/package-images",
+          "controller": "ExportDataPackage@packageImages"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/packages/package-includes",
+          "controller": "ExportDataPackage@packageIncludes"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/packages/package-excludes",
+          "controller": "ExportDataPackage@packageExcludes"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/packages/package-addons",
+          "controller": "ExportDataPackage@packageAddons"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/packages/package-prices",
+          "controller": "ExportDataPackage@packagePrices"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/packages/package-itinerary-days",
+          "controller": "ExportDataPackage@packageItineraryDays"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/packages/package-itinerary-day-details",
+          "controller": "ExportDataPackage@packageItineraryDayDetails"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/packages/package-destinations",
+          "controller": "ExportDataPackage@packageDestinations"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/packages/package-hotel-options",
+          "controller": "ExportDataPackage@packageHotelOptions"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/packages/combined-packages",
+          "controller": "ExportDataPackage@combinedPackages"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/packages/combined-package-details",
+          "controller": "ExportDataPackage@combinedPackageDetails"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/include-exclude/item-includes",
+          "controller": "ExportIncludeExclude@include"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/include-exclude/item-excludes",
+          "controller": "ExportIncludeExclude@exclude"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/addons/addons",
+          "controller": "ExportDataAddons@addons"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/price-tiers/price-tiers",
+          "controller": "ExportDataPriceTiers@priceTiers"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/activities/other-activities",
+          "controller": "ExportDataActivities@otherActivities"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/activities/destination-activities",
+          "controller": "ExportDataActivities@destinationActivities"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/activities/activities",
+          "controller": "ExportDataActivities@activities"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/activities/activity-categories",
+          "controller": "ExportDataActivities@activity_categories"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/activities/activity-ends",
+          "controller": "ExportDataActivities@activityEnds"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/activities/activity-starts",
+          "controller": "ExportDataActivities@activityStarts"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/vendors/vendors",
+          "controller": "ExportDataVendors@vendors"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/vendors/vendor-categories",
+          "controller": "ExportDataVendors@vendorCategories"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/order-channels/order-channels",
+          "controller": "ExportDataOrderChannels@orderChannels"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/policies/policies",
+          "controller": "ExportDataPolicies@policies"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/discount/discount",
+          "controller": "ExportDataDiscount@discount"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/payment-methods/payment-methods",
+          "controller": "ExportDataPaymentMethods@paymentMethods",
+          "sensitive": true
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/durations/durations",
+          "controller": "ExportDataDurations@durations"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/bookings",
+          "controller": "ExportDataBookings@bookings",
+          "sensitive": true
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-payment-terms",
+          "controller": "ExportDataBookings@bookingPaymentTerms",
+          "sensitive": true
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-payment-histories",
+          "controller": "ExportDataBookings@bookingPaymentHistories",
+          "sensitive": true
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-logistics",
+          "controller": "ExportDataBookings@bookingLogistics",
+          "sensitive": true
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-police-escorts",
+          "controller": "ExportDataBookings@bookingPoliceEscorts",
+          "sensitive": true
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-tshirts",
+          "controller": "ExportDataBookings@bookingTshirts",
+          "sensitive": true
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-destination-schedules",
+          "controller": "ExportDataBookings@bookingDestinationSchedules",
+          "sensitive": true
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-whatsapp-logs",
+          "controller": "ExportDataBookings@bookingWhatsappLogs",
+          "sensitive": true
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-finances",
+          "controller": "ExportDataBookings@bookingFinances",
+          "sensitive": true
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-itineraries",
+          "controller": "ExportDataBookings@bookingItineraries",
+          "sensitive": true
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-hotels",
+          "controller": "ExportDataBookings@bookingHotels"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-hotel-rooms",
+          "controller": "ExportDataBookings@bookingHotelRooms"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-hotel-meals",
+          "controller": "ExportDataBookings@bookingHotelMeals"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-addons",
+          "controller": "ExportDataBookings@bookingAddons"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-vehicle-units",
+          "controller": "ExportDataBookings@bookingVehcileUnits"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-crew-members",
+          "controller": "ExportDataBookings@bookingCrewMembers"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-crew-member-activities",
+          "controller": "ExportDataBookings@bookingCrewMemberActivities"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-destination-activities",
+          "controller": "ExportDataBookings@bookingDestinationActivities"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/bookings/booking-other-activities",
+          "controller": "ExportDataBookings@bookingOtherActivities"
+        },
+        {
+          "method": "GET",
+          "path": "/export-data/all",
+          "controller": "ExportDataAllController@all"
+        },
+        {
+          "method": "GET",
+          "path": "/rekap-hutang/export-pdf",
+          "controller": "FinanceController@rekapHutangExportPdf"
+        },
+        {
+          "method": "GET",
+          "path": "/rekap-hutang/export-excel",
+          "controller": "FinanceController@rekapHutangExportExcel"
+        },
+        {
+          "method": "GET",
+          "path": "/rekap-hutang/{vendorId}/export-pdf",
+          "controller": "FinanceController@rekapHutangDetailExportPdf"
+        },
+        {
+          "method": "GET",
+          "path": "/rekap-hutang/{vendorId}/export-excel",
+          "controller": "FinanceController@rekapHutangDetailExportExcel"
+        },
+        {
+          "method": "GET",
+          "path": "/channel-revenue-report/export-pdf/{channel}",
+          "controller": "FinanceController@channelReportExportPdf"
+        },
+        {
+          "method": "GET",
+          "path": "/channel-revenue-report/export-excel/{channel}",
+          "controller": "FinanceController@channelReportExportExcel"
+        },
+        {
+          "method": "GET",
+          "path": "/hub/export-pdf",
+          "controller": "FinanceController@financeHubExportPdf"
+        },
+        {
+          "method": "GET",
+          "path": "/hub/export-excel",
+          "controller": "FinanceController@financeHubExportExcel"
+        },
+        {
+          "method": "GET",
+          "path": "/crm/export/customers",
+          "controller": "CrmController@exportCustomers",
+          "sensitive": true
+        },
+        {
+          "method": "GET",
+          "path": "/crm/export/countries",
+          "controller": "CrmController@exportCountries"
+        },
+        {
+          "method": "GET",
+          "path": "/crm/export/packages",
+          "controller": "CrmController@exportPackages"
+        },
+        {
+          "method": "GET",
+          "path": "/crm/export/customer-report",
+          "controller": "CrmController@exportCustomerReport",
+          "sensitive": true
+        }
+      ],
+      "sources": [
+        {
+          "path": "app/Models",
+          "type": "directory",
+          "status": "accessible",
+          "priority": "high"
+        },
+        {
+          "path": "database/migrations",
+          "type": "directory",
+          "status": "accessible",
+          "priority": "high"
+        },
+        {
+          "path": "routes/api.php",
+          "type": "file",
+          "status": "accessible",
+          "priority": "high",
+          "size_kb": 2.75
+        },
+        {
+          "path": "routes/web.php",
+          "type": "file",
+          "status": "accessible",
+          "priority": "high",
+          "size_kb": 13.57
+        },
+        {
+          "path": "routes/data.php",
+          "type": "file",
+          "status": "accessible",
+          "priority": "high",
+          "size_kb": 7.67
+        },
+        {
+          "path": "routes/auth.php",
+          "type": "file",
+          "status": "accessible",
+          "priority": "medium",
+          "size_kb": 2.3
+        },
+        {
+          "path": "app/Http/Controllers/ExportData",
+          "type": "directory",
+          "status": "accessible",
+          "priority": "high"
+        }
+      ],
+      "notes": "Repository jvto-devteam/new-backoffice is fully accessible via GitHub API. This is a Laravel backoffice application with 175 Eloquent models. Key findings: (1) A dedicated routes/data.php file contains a comprehensive /export-data/* prefix group with 60+ GET endpoints organized by domain (hotels, vehicles, crews, destinations, countries, customers, packages, include-exclude, addons, price-tiers, activities, vendors, order-channels, policies, discount, payment-methods, durations, bookings) plus a catch-all /export-data/all endpoint via ExportDataAllController. (2) Additional export endpoints exist in web.php under /rekap-hutang (finance debt recap export as PDF/Excel), /channel-revenue-report (channel revenue export), /hub (finance hub export), and /crm/export (CRM customer/country/package exports). (3) Controllers are organized under app/Http/Controllers/ExportData/ with one controller per domain. (4) Sensitive tables/models identified: users, user_logs, twt_invoice_bookings, twt_invoice_payments. Sensitive export endpoints: /export-data/customers/customers, /export-data/bookings/bookings and all booking sub-endpoints, /export-data/payment-methods/payment-methods, /crm/export/customers, /crm/export/customer-report. (5) The migration history spans from Laravel bootstrap tables through 2026-05-09, with 59 CREATE TABLE migrations found. (6) Also has ExportCSV.php and ExportSQL.php utility classes. The /export-data/all endpoint likely aggregates all data domains into a single response, which is the highest-priority endpoint for the data-core pipeline."
+    }
+  ],
+  "priority_sources": [
+    {
+      "repo": "llm-wiki",
+      "path": "output/products/package-readiness/package-registry.json",
+      "type": "json",
+      "size_kb": 6,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "2026-06-07T16:53:42Z"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/products/package-readiness/package-pricing.json",
+      "type": "json",
+      "size_kb": 12,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "2026-05-31T16:49:11Z"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/products/package-readiness/package-itineraries.json",
+      "type": "json",
+      "size_kb": 12,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "2026-05-31T16:49:11Z"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/products/package-readiness/booking-compatibility.json",
+      "type": "json",
+      "size_kb": 4,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/products/package-readiness/gap-report.json",
+      "type": "json",
+      "size_kb": 1,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/products/package-readiness/_manifest.json",
+      "type": "json",
+      "size_kb": 1,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/trust-bundle/products.json",
+      "type": "json",
+      "size_kb": 21,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "2026-05-31T22:29:51Z"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/trust-bundle/claims.json",
+      "type": "json",
+      "size_kb": 17,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "2026-06-09T06:13:23Z"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/trust-bundle/destinations.json",
+      "type": "json",
+      "size_kb": 11,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/trust-bundle/policies.json",
+      "type": "json",
+      "size_kb": 10,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/trust-bundle/people.json",
+      "type": "json",
+      "size_kb": 9,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/trust-bundle/operational.json",
+      "type": "json",
+      "size_kb": 7,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/trust-bundle/faq.json",
+      "type": "json",
+      "size_kb": 3,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/trust-bundle/aeo-snippets.json",
+      "type": "json",
+      "size_kb": 3,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/trust-bundle/_manifest.json",
+      "type": "json",
+      "size_kb": 1,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/trust-bundle/schema/faq-page.json",
+      "type": "json",
+      "size_kb": 2,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/trust-bundle/schema/organization.json",
+      "type": "json",
+      "size_kb": 1,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/trust-bundle/schema/tourist-trip.json",
+      "type": "json",
+      "size_kb": 1,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/bali-bromo-ijen-3d2n-schema.json",
+      "type": "json",
+      "size_kb": 9,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/bali-ijen-bromo-madakaripura-3d2n-schema.json",
+      "type": "json",
+      "size_kb": 8,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/bali-ijen-papuma-tumpak-sewu-bromo-4d3n-schema.json",
+      "type": "json",
+      "size_kb": 9,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/bali-ijen-papuma-tumpak-sewu-bromo-5d4n-schema.json",
+      "type": "json",
+      "size_kb": 10,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/bromo-1d1n-schema.json",
+      "type": "json",
+      "size_kb": 6,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/bromo-2d1n-schema.json",
+      "type": "json",
+      "size_kb": 7,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/bromo-madakaripura-ijen-3d2n-schema.json",
+      "type": "json",
+      "size_kb": 9,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/homepage-organization-schema.json",
+      "type": "json",
+      "size_kb": 3,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/ijen-2d1n-schema.json",
+      "type": "json",
+      "size_kb": 7,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/ijen-bromo-madakaripura-3d2n-schema.json",
+      "type": "json",
+      "size_kb": 8,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/ijen-bromo-madakaripura-4d3n-schema.json",
+      "type": "json",
+      "size_kb": 9,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/ijen-bromo-madakaripura-malang-5d4n-schema.json",
+      "type": "json",
+      "size_kb": 9,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/ijen-crater-schema.json",
+      "type": "json",
+      "size_kb": 2,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/ijen-papuma-tumpak-sewu-bromo-4d3n-schema.json",
+      "type": "json",
+      "size_kb": 9,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/ijen-papuma-tumpak-sewu-bromo-5d4n-schema.json",
+      "type": "json",
+      "size_kb": 9,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/ijen-papuma-tumpak-sewu-bromo-malang-6d5n-schema.json",
+      "type": "json",
+      "size_kb": 10,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/madakaripura-waterfall-schema.json",
+      "type": "json",
+      "size_kb": 2,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/mount-bromo-schema.json",
+      "type": "json",
+      "size_kb": 2,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/papuma-beach-schema.json",
+      "type": "json",
+      "size_kb": 2,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/student-bromo-ijen-3d2n-schema.json",
+      "type": "json",
+      "size_kb": 6,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/student-bromo-ijen-3d2n-to-bali-schema.json",
+      "type": "json",
+      "size_kb": 4,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/student-ijen-bromo-3d2n-bali-schema.json",
+      "type": "json",
+      "size_kb": 4,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/student-ijen-bromo-madakaripura-night-market-4d3n-schema.json",
+      "type": "json",
+      "size_kb": 4,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/student-ijen-papuma-tumpak-sewu-bromo-4d3n-schema.json",
+      "type": "json",
+      "size_kb": 5,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/student-ijen-papuma-tumpak-sewu-bromo-5d4n-schema.json",
+      "type": "json",
+      "size_kb": 5,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/taman-safari-prigen-bromo-madakaripura-3d2n-schema.json",
+      "type": "json",
+      "size_kb": 8,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/tumpak-sewu-bromo-ijen-4d3n-schema.json",
+      "type": "json",
+      "size_kb": 10,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "llm-wiki",
+      "path": "output/website/schema/tumpak-sewu-waterfall-schema.json",
+      "type": "json",
+      "size_kb": 2,
+      "status": "usable",
+      "priority": "high",
+      "last_modified": "unknown"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/destinations.ts",
+      "type": "typescript",
+      "size_kb": 23.6,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/evidenceRegistry.ts",
+      "type": "typescript",
+      "size_kb": 19.9,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/faqs.ts",
+      "type": "typescript",
+      "size_kb": 3.7,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/knowledge.ts",
+      "type": "typescript",
+      "size_kb": 14.6,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/mockData.ts",
+      "type": "typescript",
+      "size_kb": 639.6,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/reviews_new.ts",
+      "type": "typescript",
+      "size_kb": 23.1,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/package-readiness/_manifest.json",
+      "type": "json",
+      "size_kb": 0.7,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/package-readiness/booking-compatibility.json",
+      "type": "json",
+      "size_kb": 3.8,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/package-readiness/gap-report.json",
+      "type": "json",
+      "size_kb": 0.09,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/package-readiness/package-itineraries.json",
+      "type": "json",
+      "size_kb": 11.9,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/package-readiness/package-pricing.json",
+      "type": "json",
+      "size_kb": 12.4,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/package-readiness/package-registry.json",
+      "type": "json",
+      "size_kb": 6.1,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/trust-bundle/_manifest.json",
+      "type": "json",
+      "size_kb": 0.8,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/trust-bundle/aeo-snippets.json",
+      "type": "json",
+      "size_kb": 3,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/trust-bundle/claims.json",
+      "type": "json",
+      "size_kb": 17.2,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/trust-bundle/faq.json",
+      "type": "json",
+      "size_kb": 2.6,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/trust-bundle/schema/faq-page.json",
+      "type": "json",
+      "size_kb": 2.4,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/trust-bundle/schema/organization.json",
+      "type": "json",
+      "size_kb": 0.5,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/trust-bundle/schema/tourist-trip.json",
+      "type": "json",
+      "size_kb": 0.9,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/blog/_manifest.json",
+      "type": "json",
+      "size_kb": 1.2,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/blog/2026-06-11-ijen-medical-checkup-requirement.md",
+      "type": "markdown",
+      "size_kb": 8.5,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "src/data/blog/2026-06-11-kawah-ijen-guide.md",
+      "type": "markdown",
+      "size_kb": 6,
+      "status": "usable",
+      "priority": "high"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "activities"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "activity_categories"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "activity_ends"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "activity_starts"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "addons"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "announcements"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_addons"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_crew_member_activities"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_crew_members"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_destination_activities"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_destination_schedules"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_finances"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_hotel_meals"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_hotel_rooms"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_hotels"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_itineraries"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_logistics"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_other_activities"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_payment_histories"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_payment_terms"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_police_escort"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_review_crews"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_reviews"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_tshirts"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_vehicle_units"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "booking_whatsapp_logs"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "bookings"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "blog_categories"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "blogs"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "channel_unavailable_ranges"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "combined_package_details"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "combined_packages"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "countries"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "crew_member_reviews"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "crew_member_roles"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "crew_members"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "crew_roles"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "crew_unavailabilities"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "crew_reviews"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "currency_exchange_rates"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "reviews"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "User"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "Account"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "Session"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "VerificationToken"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "destination_activities"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "destinations"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "destination_gears"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "discounts"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "document_categories"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "documents"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "durations"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "category_faqs"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "content_pages"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "faqs"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "policy_documents"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "site_identity"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "feedback"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "hotels"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "inclusion_rules"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "item_excludes"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "item_includes"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "knowledge_bases"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "order_channels"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "other_activities"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "organization_profile"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "package_addons"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "package_assets"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "package_categories"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "package_destinations"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "package_excludes"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "package_faqs"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "package_hotel_options"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "package_images"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "package_includes"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "locations"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "package_itinerary_day_details"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "package_itinerary_days"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "package_prices"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "packages"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "page_contents"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "payment_methods"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "policies"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "price_tiers"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "routes"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "route_details"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "route_destinations"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "room_configurations"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "room_types"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "transport_crew_rules"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "vehicle_types"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "vehicle_units"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "vendor_categories"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "vendors"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "web_metadata"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "folders"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "tags_assets"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "assets"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "asset_tags"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "destination_assets"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "destination_faqs"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "eav_entity"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "eav_attribute"
+    },
+    {
+      "repo": "jvto-web",
+      "path": "prisma/schema.prisma",
+      "type": "schema",
+      "status": "usable",
+      "priority": "high",
+      "model": "eav_value"
+    }
+  ],
+  "sensitive_sources": []
+}

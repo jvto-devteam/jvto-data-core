@@ -1,0 +1,505 @@
+{
+  "generated_at": "2026-06-13",
+  "entity_type": "package",
+  "total_entities": 35,
+  "entities": [
+    {
+      "entity_id": "bromo-1d1n",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "llm-wiki",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        },
+        {
+          "repo": "jvto-web",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "bromo-2d1n",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "llm-wiki",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        },
+        {
+          "repo": "jvto-web",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "ijen-2d1n",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "llm-wiki",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        },
+        {
+          "repo": "jvto-web",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "ijen-bromo-madakaripura-3d2n",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "llm-wiki",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        },
+        {
+          "repo": "jvto-web",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "bromo-madakaripura-ijen-3d2n",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "llm-wiki",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        },
+        {
+          "repo": "jvto-web",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "ijen-papuma-tumpak-sewu-bromo-4d3n",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "llm-wiki",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        },
+        {
+          "repo": "jvto-web",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "ijen-bromo-madakaripura-4d3n",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "llm-wiki",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        },
+        {
+          "repo": "jvto-web",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "tumpak-sewu-bromo-ijen-4d3n",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "llm-wiki",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        },
+        {
+          "repo": "jvto-web",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "ijen-papuma-tumpak-sewu-bromo-5d4n",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "llm-wiki",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        },
+        {
+          "repo": "jvto-web",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "ijen-bromo-madakaripura-malang-5d4n",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "llm-wiki",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        },
+        {
+          "repo": "jvto-web",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "ijen-papuma-tumpak-sewu-bromo-malang-6d5n",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "llm-wiki",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        },
+        {
+          "repo": "jvto-web",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "taman-safari-prigen-bromo-madakaripura-3d2n",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "llm-wiki",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        },
+        {
+          "repo": "jvto-web",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "bromo-ijen-3d2n",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "llm-wiki",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        },
+        {
+          "repo": "jvto-web",
+          "sha_registry": "b67551c5f99fbfce18183f93a5d8e83740c48d89",
+          "sha_pricing": "1263885bf8345ff7f71a834df20f83f13775d3b3",
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "1-day-bromo-midnight-experience-from-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 73,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "2-day-ijen-blue-fire-expedition-from-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 47,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "2-day-bromo-sunrise-adventure-from-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 48,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "3-day-bromo-and-madakaripura-waterfall-and-ijen-overland-from-surabaya-to-bali",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 28,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "3-day-ijen-and-bromo-and-madakaripura-waterfall-from-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 29,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "4-day-ijen-and-bromo-and-madakaripura-waterfall-from-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 32,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "4-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 33,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "4-day-tumpak-sewu-waterfall-and-bromo-and-ijen-adventure-from-surabaya-to-bali",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 34,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "5-day-ijen-and-bromo-and-madakaripura-waterfall-and-malang-city-adventure-from-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 43,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "4-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-bali-to-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 54,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "5-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-bali-to-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 55,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "5-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 56,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "3-day-ijen-and-bromo-and-madakaripura-waterfall-from-bali-to-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 63,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "3-day-bromo-and-madakaripura-waterfall-getaway-from-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 65,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "6-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-and-malang-city-discovery-from-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 74,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "3-day-bromo-and-ijen-volcano-discovery-from-bali",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 80,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "3d2n-mount-bromo-madakaripura-waterfall-ijen-crater-tour-from-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 82,
+          "is_publish": false,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "4d3n-mount-bromo-ijen-crater-surabaya-night-market-from-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 83,
+          "is_publish": false,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "4d3n-ijen-crater-papuma-beach-tumpak-sewu-waterfall-mount-bromo-from-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 84,
+          "is_publish": false,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "3-day-bromo-and-ijen-volcano-trip-from-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 85,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "3-day-tumpak-sewu-waterfall-and-bromo-explorer-from-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 86,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "entity_id": "3-day-taman-safari-prigen-and-bromo-and-madakaripura-waterfall-family-adventure-from-surabaya",
+      "entity_type": "package",
+      "sources": [
+        {
+          "repo": "new-backoffice",
+          "db_id": 91,
+          "is_publish": true,
+          "extracted_at": "2026-06-13"
+        }
+      ]
+    }
+  ]
+}
