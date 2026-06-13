@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+*.log
+.env
+.env.local
+raw-snapshots/
+clean-data/
+source-trace/
+conflicts/
+indexes/
+exports/
