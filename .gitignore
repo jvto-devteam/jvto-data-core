@@ -8,6 +8,7 @@ raw-snapshots/
 clean-data/
 source-trace/
 conflicts/
+!conflicts/conflict-report.json
 indexes/
 !phases/*/indexes/
 exports/

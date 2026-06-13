@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-06-13",
+  "total_conflicts": 1,
+  "by_severity": { "high": 0, "medium": 1, "low": 0 },
+  "conflicts": [
+    {
+      "type": "missing_source_match",
+      "severity": "medium",
+      "description": "35 packages hanya tercatat di llm-wiki + jvto-web (identik). Tidak ada slug match dengan backoffice DB. Backoffice packages menggunakan numeric ID, slug mapping belum diverifikasi.",
+      "affected_packages": 35,
+      "recommendation": "Verifikasi manual slug di backoffice DB vs slug di static JSON. Kemungkinan perbedaan format slug (e.g. DB: 'bromo-1d1n' vs JSON: 'bromo-1d1n-surabaya')."
+    }
+  ],
+  "checks_passed": {
+    "price_mismatch": true,
+    "name_mismatch": true,
+    "trust_claims_without_evidence": true,
+    "policies_without_source": true,
+    "pii_in_bookings": true
+  }
+}
