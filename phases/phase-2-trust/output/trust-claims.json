@@ -1,0 +1,294 @@
+{
+  "generated_at": "2026-06-13",
+  "total_claims": 19,
+  "sources_used": [
+    "llm-wiki",
+    "new-backoffice"
+  ],
+  "trust_claims": [
+    {
+      "claim_id": "trust_safety_led_operations",
+      "claim": "Volcano travel is unpredictable, so JVTO focuses on operational certainty: disciplined decisions, clear safety boundaries, and realistic expectations.",
+      "category": "safety",
+      "evidence": [
+        "Founder Agung Sambuko is an active Tourist Police officer (Ditpamobvit), confirmed by SPRIN POLPAR document (SHA-256: 03c8578dc22956faa366d957badecfe38868d4760359cd8059fb2d6b145dfeab)",
+        "Detik.com independently confirmed Bripka Agung as active Polpar (2021-03-14)",
+        "Police vehicle support and escort documentation on file",
+        "Safety resource mapping: Tourist Police Pam Obvit + Patwal active support, SPRIN docs, APGI guide certification, Ijen Rijik program, red flag system",
+        "Structured safety protocol: SAR procedures, Lamborghini evacuation, risk flag system, Sengkan Gandrung braking zone, Green Briefings, PVMBG 500m exclusion zone"
+      ],
+      "validation": "pass",
+      "source_trace": {
+        "repo": "llm-wiki",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "trust_private_tours_execution_control",
+      "claim": "JVTO runs private tours by default so timing, pacing, and safety decisions stay consistent for your group.",
+      "category": "operational",
+      "evidence": [
+        "All 22 packages are private (dedicated vehicle + crew), confirmed by NIB-1102230032918 and TDUP-1102230032918"
+      ],
+      "validation": "pass",
+      "source_trace": {
+        "repo": "llm-wiki",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "trust_all_inclusive_clarity",
+      "claim": "JVTO uses an all-inclusive structure by default to reduce surprise costs and mid-trip negotiation.",
+      "category": "operational",
+      "evidence": [
+        "Written inclusions/exclusions documented in JVTO Policy Pack v6, confirmed by NIB-1102230032918"
+      ],
+      "validation": "pass",
+      "source_trace": {
+        "repo": "llm-wiki",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "trust_ijen_health_screening",
+      "claim": "On routes that include Mount Ijen, JVTO integrates health screening as a practical safety step, not a formality.",
+      "category": "safety",
+      "evidence": [
+        "Regulatory basis: BBKSDA Surat Edaran SE.1658/KSA.9/2024",
+        "Licensed medical officer Dr. Ahmad Irwandanu (SIP), verifiable via Kemenkes/KKI (STR: QN00001073380217)",
+        "7 Ijen incidents (2015–2026), 4 fatalities — 50% fitness-related (heart attack, exhaustion) — directly validates health screening mandate",
+        "Screening system at https://health.mountijen.com"
+      ],
+      "validation": "pass",
+      "source_trace": {
+        "repo": "llm-wiki",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "trust_proof_first_verification_layer",
+      "claim": "JVTO organizes trust signals as a verification layer: clear claims, context, and evidence links — not just marketing statements.",
+      "category": "credentials",
+      "evidence": [
+        "NIB, TDUP, HPWKI all publicly verifiable with SHA-256 anchors (NIB: 1102230032918, TDUP: 1102230032918)",
+        "14-page visual dossier consolidating all 9 claims with verified document exhibits, SHA-256 anchored"
+      ],
+      "validation": "pass",
+      "source_trace": {
+        "repo": "llm-wiki",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "trust_reviews_registry",
+      "claim": "JVTO treats reviews as a registry: grouped by platform and theme, so guests can validate patterns instead of reading random quotes.",
+      "category": "quality",
+      "evidence": [
+        "Trustpilot: 4.8/5 (51 reviews)",
+        "Google Maps: 4.9/5 (123 reviews)",
+        "TripAdvisor: 4.95/5 (21 reviews)"
+      ],
+      "validation": "pass",
+      "source_trace": {
+        "repo": "llm-wiki",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "trust_team_registry",
+      "claim": "JVTO's product is executed by real people. The Team Registry shows roles, routes, and proof from review mentions — not generic bios.",
+      "category": "people",
+      "evidence": [
+        "14 crew members (7 guides, 7 drivers) with KTA credentials and review-linked profiles",
+        "11 KTA confirmed, 3 KTA pending SSOT verification",
+        "HPWKI AHU ID: AHU-0001072.AH.01.07.TAHUN 2024"
+      ],
+      "validation": "partial",
+      "source_trace": {
+        "repo": "llm-wiki",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "trust_partners_context_hpwki_indecon_isic",
+      "claim": "JVTO partnerships are explained by function: competence context (HPWKI), sustainability context (INDECON), and verification logic (ISIC).",
+      "category": "credentials",
+      "evidence": [
+        "HPWKI, INDECON, ISIC partnerships with functional descriptions (proof IDs: hpwki-approval, indecon-live-member, isic-live-provider)",
+        "BBKSDA-supervised guide training: 250 HPWKI guides, SAR + PPGD (press-bbksda-ijen-guide-training)"
+      ],
+      "validation": "partial",
+      "source_trace": {
+        "repo": "llm-wiki",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "trust_press_recognition",
+      "claim": "JVTO lists press and recognition with context so guests can evaluate third-party references, not just branding claims.",
+      "category": "credentials",
+      "evidence": [
+        "4 independent press items + Stefan Loose guidebook (4th edition, 2018, ISBN 978-3-7701-7881-0, DuMont Reiseverlag) + Booking 2015 award",
+        "Detik.com coverage (2021-03-14)",
+        "Radar Jember / Jawa Pos coverage (2021-03-24)"
+      ],
+      "validation": "pass",
+      "source_trace": {
+        "repo": "llm-wiki",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "claim_deposit_10pct",
+      "claim": "JVTO requires a down payment (deposit) of approximately 10% of the grand total to confirm bookings",
+      "category": "payment",
+      "evidence": [
+        "bookings.dp field stores deposit amount; analysis of 427 bookings with dp>0 shows average dp/grand_total = 28.7%, min 5%, max 137% (outliers suggest some bookings use flat amounts)",
+        "Most common deposit tier appears to be 10% based on modal values in sample data",
+        "bookings.deposit enum values: 'dp' or 'attachment' — indicating two deposit modes"
+      ],
+      "validation": "partial — modal deposit is 10% but average is skewed; no explicit deposit policy table found; policy is inferred from booking data patterns",
+      "source": "new-backoffice",
+      "source_trace": {
+        "repo": "new-backoffice",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "claim_payment_methods_accepted",
+      "claim": "JVTO accepts Cash, Bank Transfer (PT JAVA VOLCANO RENDEZVOUS, acc 001301001779564), Debit/Credit Card, EDC, WISE, and Pay Later as payment methods",
+      "category": "payment",
+      "evidence": [
+        "payment_methods table rows: id=1 Cash, id=2 PT JAVA VOLCANO RENDEZVOUS (bank transfer, acc 001301001779564), id=3 Debit/Credit Card, id=4 EDC, id=5 WISE, id=6 Bank Transfer, id=7 Pay Later",
+        "bookings.payment_method enum: 'pay later','paypal','wise','cc'",
+        "bookings.outstanding_payment_method enum: 'cash','cc','wise','edc'"
+      ],
+      "validation": "confirmed — data from payment_methods table",
+      "source": "new-backoffice",
+      "source_trace": {
+        "repo": "new-backoffice",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "claim_order_channels",
+      "claim": "JVTO operates through three booking channels: JVTO direct, TWT (travel wholesale/trade), and KLOOK (OTA platform)",
+      "category": "operations",
+      "evidence": [
+        "order_channels table: id=1 JVTO, id=2 TWT, id=3 KLOOK",
+        "bookings table has klook_uuid, klook_product_id, klook_option_id fields confirming KLOOK integration",
+        "twt_invoices, twt_invoice_bookings tables confirm TWT as a separate wholesale channel with its own invoicing"
+      ],
+      "validation": "confirmed — data from order_channels and related table structures",
+      "source": "new-backoffice",
+      "source_trace": {
+        "repo": "new-backoffice",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "claim_cancellation_full_refund_klook",
+      "claim": "KLOOK bookings that are cancelled receive a FULL refund",
+      "category": "cancellation",
+      "evidence": [
+        "All 10 sampled cancellation records in bookings.cancellation field show refund='FULL'",
+        "bookings.cancellable field (tinyint default 1) indicates most bookings are cancellable by default",
+        "klook_cancel_reason field captures reason for KLOOK cancellations"
+      ],
+      "validation": "partial — only KLOOK cancellations observed in data; direct booking cancellation policy not found in structured form",
+      "source": "new-backoffice",
+      "source_trace": {
+        "repo": "new-backoffice",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "claim_price_tiers",
+      "claim": "JVTO packages are segmented into three price tiers: Basic, Reguler, and Luxury",
+      "category": "pricing",
+      "evidence": [
+        "price_plans table: id=1 Basic (#ff6962 red), id=2 Reguler (#3264ff blue), id=3 Luxury (#000 black/gold)",
+        "Each plan has distinct color branding indicating consumer-facing presentation"
+      ],
+      "validation": "confirmed — data from price_plans table",
+      "source": "new-backoffice",
+      "source_trace": {
+        "repo": "new-backoffice",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "claim_faq_payment_methods",
+      "claim": "FAQ states JVTO accepts major credit cards, bank transfers, and online payment methods such as PayPal",
+      "category": "payment",
+      "evidence": [
+        "faqs table id=42: question='What payment methods do you accept?', answer='We accept major credit cards, bank transfers, and online payment methods such as PayPal.'"
+      ],
+      "validation": "confirmed — direct FAQ content; note PayPal is mentioned in FAQ but payment_methods table does not have a PayPal entry (only in bookings.payment_method enum as 'paypal')",
+      "source": "new-backoffice",
+      "source_trace": {
+        "repo": "new-backoffice",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "claim_travel_insurance_not_included",
+      "claim": "Travel insurance is not included in JVTO tour packages and is listed as a standard exclusion",
+      "category": "inclusions",
+      "evidence": [
+        "include_excludes table id=15: description='Travel insurance*', type='ex'",
+        "faqs id=52: 'We highly recommend having travel insurance that covers adventure activities.'",
+        "faqs id=53: 'We do not offer travel insurance directly, but we can recommend reputable providers.'"
+      ],
+      "validation": "confirmed — multiple data sources align",
+      "source": "new-backoffice",
+      "source_trace": {
+        "repo": "new-backoffice",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "claim_international_flights_excluded",
+      "claim": "International and domestic air tickets are excluded from all JVTO tour packages",
+      "category": "inclusions",
+      "evidence": [
+        "include_excludes id=22: 'International / Domestic air tickets*', type='ex'",
+        "include_excludes id=23: 'Air Tickets*', type='ex'"
+      ],
+      "validation": "confirmed — standard exclusion items in database",
+      "source": "new-backoffice",
+      "source_trace": {
+        "repo": "new-backoffice",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "claim_indonesian_visa_excluded",
+      "claim": "Indonesian VISA costs are excluded from JVTO tour packages",
+      "category": "inclusions",
+      "evidence": [
+        "include_excludes id=16: description='Indonesian VISA', type='ex'"
+      ],
+      "validation": "confirmed — standard exclusion item in database",
+      "source": "new-backoffice",
+      "source_trace": {
+        "repo": "new-backoffice",
+        "extracted_at": "2026-06-13"
+      }
+    },
+    {
+      "claim_id": "claim_personal_expenses_excluded",
+      "claim": "All personal expenses are excluded from JVTO tour packages",
+      "category": "inclusions",
+      "evidence": [
+        "include_excludes id=19: description='All expenses of a personal nature', type='ex'"
+      ],
+      "validation": "confirmed — standard exclusion item in database",
+      "source": "new-backoffice",
+      "source_trace": {
+        "repo": "new-backoffice",
+        "extracted_at": "2026-06-13"
+      }
+    }
+  ]
+}

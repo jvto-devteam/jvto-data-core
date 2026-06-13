@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-06-13",
+  "total_faq": 15,
+  "source": "llm-wiki",
+  "faq": [
+    {
+      "question": "How does JVTO handle safety on volcano tours?",
+      "answer": "Safety-led planning. Clear boundaries. Plan B when conditions change. JVTO cannot control weather or volcanic conditions, but controls planning and safety decisions. If conditions change, Plan B options are used to keep trips safe and worthwhile. The founder is an active Tourist Police officer (Ditpamobvit) and operations include SAR procedures, risk flag systems, and PVMBG exclusion zone adherence.",
+      "category": "safety"
+    },
+    {
+      "question": "Are JVTO tours private or group tours?",
+      "answer": "Private tours only. Your own vehicle. Your own pace (within safety limits). No mixed groups by default. All 22 packages are private with a dedicated vehicle and crew.",
+      "category": "products"
+    },
+    {
+      "question": "What is included in the tour price?",
+      "answer": "All-inclusive by default. Clear inclusions. Fewer surprise costs. Transparent pricing with written rules. Standard inclusions cover private vehicle, accommodation with breakfast, professional crew, entrance tickets, Ijen safety gear (when applicable), daily water, and a JVTO travel T-shirt. Only inclusions listed on the official tour page AND the Official E-Voucher/Invoice (PDF) are legally binding.",
+      "category": "pricing"
+    },
+    {
+      "question": "Is health screening required for the Ijen crater?",
+      "answer": "Ijen routes include a health-screening layer when required by BBKSDA SE.1658/KSA.9/2024. A nurse or doctor visits the guest hotel the evening before the hike to record vitals and issue a QR-verified health certificate. No valid QR code means no crater zone access. Screening is a safety step, not a JVTO-imposed formality.",
+      "category": "safety"
+    },
+    {
+      "question": "How can I verify JVTO's credentials?",
+      "answer": "Proof you can verify — licenses, partners, press, and documented references. Trust stack, not slogans. Start at /verify-jvto on the website. NIB (1102230032918) and TDUP (1102230032918) are publicly verifiable with SHA-256 anchors.",
+      "category": "trust"
+    },
+    {
+      "question": "Where can I read JVTO guest reviews?",
+      "answer": "Reviews are organized as a registry by platform and theme — not a random quote wall. Trustpilot: 4.8/5 (51 reviews); Google Maps: 4.9/5 (123 reviews); TripAdvisor: 4.95/5 (21 reviews). Check patterns across platforms at /why-jvto/reviews.",
+      "category": "reviews"
+    },
+    {
+      "question": "Who are the guides and drivers on JVTO tours?",
+      "answer": "Meet the people behind your trip — with proof from reviews. JVTO has 14 crew members (7 guides, 7 drivers) with KTA credentials and review-linked profiles. Profiles are published at /why-jvto/our-team and each profile links to review mentions from real guests.",
+      "category": "people"
+    },
+    {
+      "question": "What do JVTO's partner organizations mean for my trip?",
+      "answer": "Partners for context: competence, sustainability, and verification. HPWKI provides guide competence context, INDECON provides ecotourism sustainability alignment, and ISIC supports student verification. These are explained with functional context at /verify-jvto — not just logo displays.",
+      "category": "trust"
+    },
+    {
+      "question": "Has JVTO been featured in any press or guidebooks?",
+      "answer": "Press and recognition are explained with context and third-party references you can evaluate. Coverage includes Detik.com (2021), Radar Jember/Jawa Pos (2021), the Stefan Loose Reiseführer Indonesien guidebook (4th edition, 2018, ISBN 978-3-7701-7881-0), and a Booking 2015 award. See /verify-jvto/press-recognition.",
+      "category": "trust"
+    },
+    {
+      "question": "What is the cancellation policy?",
+      "answer": "Cancellations 48+ hours before Day 1 (WIB, GMT+7) convert 100% of booking value to non-expiring JVTO Travel Credit (transferable with written confirmation). Cancellations less than 48 hours before Day 1 result in forfeiture of up to 100% — Travel Credit and cash refunds are generally not provided. JVTO does not issue cash refunds as standard policy.",
+      "category": "cancellation"
+    },
+    {
+      "question": "What deposit is required to book?",
+      "answer": "A minimum 20% deposit of the total booking value is required to confirm a booking. If Day 1 is within 14 days, up to 100% may be required. The balance is due no later than 5 days before Day 1 for card payments, or 3 days before Day 1 for bank transfer or Wise. All pricing is in IDR only.",
+      "category": "payment"
+    },
+    {
+      "question": "What happens if the tour is cancelled due to volcanic activity or bad weather?",
+      "answer": "Force majeure triggers (volcanic activity, gas conditions, earthquakes, floods, government closures, civil unrest, severe weather) allow JVTO to offer reasonable alternatives, Travel Credit for the unused portion, or a partial/full cash refund net of non-recoverable expenses.",
+      "category": "cancellation"
+    },
+    {
+      "question": "What is the best time of year to visit?",
+      "answer": "Dry season (April–October) is best overall — clear skies for Bromo sunrise and Ijen blue fire, peak season so book 2–4 weeks ahead. Shoulder months (March, November) are viable with slightly lower blue fire odds and fewer crowds. Wet season (December–February) carries more risk from heavy rain affecting trails.",
+      "category": "planning"
+    },
+    {
+      "question": "How long does it take to travel between destinations?",
+      "answer": "Approximate travel times: Surabaya to Bromo (Cemoro Lawang) ~3 hours; Ijen (Paltuding) to Surabaya 5–6 hours; Tumpak Sewu to Bromo 3–4 hours; Bali to Ijen (Banyuwangi side) 5–7 hours.",
+      "category": "planning"
+    },
+    {
+      "question": "What are the temperature conditions at Bromo and Ijen?",
+      "answer": "Mount Bromo pre-dawn: 5–15°C (41–59°F). Kawah Ijen midnight departure and crater rim: 10–15°C (50–59°F). Both destinations require warm layers — layering is recommended over a single thick garment.",
+      "category": "planning"
+    }
+  ]
+}

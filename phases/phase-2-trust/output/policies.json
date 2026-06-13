@@ -1,0 +1,136 @@
+{
+  "generated_at": "2026-06-13",
+  "total_policies": 18,
+  "sources_used": [
+    "llm-wiki",
+    "new-backoffice"
+  ],
+  "policies": [
+    {
+      "policy_id": "policy_deposit_payment",
+      "name": "Deposit & Payment Schedule",
+      "description": "A minimum 20% deposit is required to confirm a booking. If Day 1 is within 14 days, up to 100% may be required. Balance is due no later than 5 days before Day 1 for card payments, or 3 days before Day 1 for bank transfer or Wise. All pricing is in IDR only. Bank accounts: BRI (PT Java Volcano Rendezvous, 001301001779564, SWIFT: BRINIDJAXXX) and BCA (PT Java Volcano Rendezvous, 1200944352, SWIFT: CENAIDJAXXX). Payment is SSL-encrypted and PCI DSS-compliant. JVTO never asks for full card numbers, CVV, or banking credentials via chat or email.",
+      "category": "payment",
+      "source": "llm-wiki"
+    },
+    {
+      "policy_id": "policy_cancellation",
+      "name": "Cancellation Policy",
+      "description": "Cancellations made 48 hours or more before Day 1 (local Indonesia time, WIB GMT+7) receive 100% of booking value as JVTO Travel Credit (non-expiring, transferable with written confirmation). Cancellations made less than 48 hours before Day 1 result in forfeiture of up to 100% of the booking value — Travel Credit and cash refunds are generally not provided. One free reschedule is permitted if made 48 hours or more before Day 1 subject to availability; reschedules less than 48 hours before Day 1 are not permitted.",
+      "category": "cancellation",
+      "source": "llm-wiki"
+    },
+    {
+      "policy_id": "policy_refund",
+      "name": "Refund Policy",
+      "description": "JVTO does not issue cash refunds as standard policy. Approved cancellations (>=48h before Day 1) receive Travel Credit only — non-expiring, transferable with written confirmation, denominated in IDR. For force majeure events (volcanic activity, gas conditions, earthquakes, floods, government closures, civil unrest, severe weather), JVTO may offer reasonable alternatives, Travel Credit for unused portions, or partial/full cash refund net of non-recoverable expenses. If a guest is denied Ijen health clearance, affected components are non-refundable as costs are pre-committed.",
+      "category": "refund",
+      "source": "llm-wiki"
+    },
+    {
+      "policy_id": "policy_inclusions_exclusions",
+      "name": "Inclusions & Exclusions Policy",
+      "description": "Standard inclusions: private air-conditioned vehicle for all land sectors (fuel, tolls, parking), Bromo private 4WD jeep (max 4 guests per jeep when Bromo included), accommodation with breakfast for all overnight stays, professional crew, entrance tickets and park permits, Ijen safety gear (gas mask, trekking poles, medical check, health clearance) when Ijen included, daily bottled water, Java-Bali ferry when listed, 1 JVTO travel T-shirt per participant. Conditional inclusions require written confirmation on the official E-Voucher/Invoice. Standard exclusions: international and domestic flights, long-distance trains, visas, travel insurance, personal expenses (snacks, drinks, souvenirs, laundry), tips and gratuities. Only inclusions listed on the official tour page AND Official E-Voucher/Invoice (PDF) are legally binding.",
+      "category": "operational",
+      "source": "llm-wiki"
+    },
+    {
+      "policy_id": "policy_health_screening_ijen",
+      "name": "Ijen Health Screening Policy",
+      "description": "Health screening applies to Ijen-relevant packages only, per BBKSDA Surat Edaran SE.1658/KSA.9/2024. A nurse or doctor visits the guest hotel the evening before the hike (Bondowoso/Banyuwangi area) to record vitals (SpO2, blood pressure, resting heart rate, respiratory history). A QR-verified health certificate (surat sehat) is issued by Dr. Ahmad Irwandanu SIP and must be presented at the crater gate for BBKSDA QR verification. No Valid QR Code = No Crater Zone Access. If an individual fails screening, their climb is cancelled (not the group's) and screening cost is non-refundable. System: https://health.mountijen.com. Forbidden wording: 'Mandatory health screening' without conditional qualifier referencing BBKSDA SE.1658/KSA.9/2024.",
+      "category": "safety",
+      "source": "llm-wiki"
+    },
+    {
+      "policy_id": "policy_booking_confirmation",
+      "name": "Booking Confirmation Policy",
+      "description": "A booking is confirmed when: (1) package and pricing are agreed, (2) minimum 20% deposit is processed, and (3) an official E-Voucher/Invoice (PDF) is issued. Official booking channels are the JVTO website (https://javavolcano-touroperator.com), WhatsApp (+62 822-4478-8833), and email (hello@javavolcano-touroperator.com). Document precedence order: Official E-Voucher/Invoice, Booking/Payment/Cancellation Policy, Inclusions & Exclusions Policy, Privacy & Data Protection Policy, Travel Guide — Booking Information.",
+      "category": "operational",
+      "source": "llm-wiki"
+    },
+    {
+      "policy_id": "policy_vehicle_room_allocation",
+      "name": "Vehicle & Room Allocation Policy",
+      "description": "Vehicle allocation: 2–3 guests get 1 MPV with driver-guide; 4–9 guests get 1 Toyota Hiace with driver + escort guide; 10–11 guests get 1 Toyota Hiace + 1 MPV. Bromo 4WD jeep is private, max 4 guests per jeep (multiple jeeps for larger groups). Room allocation: 1 room per 2 guests (King or Twin bed); odd-numbered groups get 1 extra bed in one room; max 2 guests per room; King bed on request for couples; Twin beds on request for non-couples.",
+      "category": "operational",
+      "source": "llm-wiki"
+    },
+    {
+      "policy_id": "policy_foc_group",
+      "name": "Free-of-Charge (FOC) Group Policy",
+      "description": "Group FOC tiers based on paying guests: 18+ paying guests = 1 FOC seat; 35+ paying guests = 2 FOC seats; 50+ paying guests = 3 FOC seats + 5% discount on entire group total. FOC seats are not counted toward the threshold. The 5% discount at the 50+ tier applies to the entire group total.",
+      "category": "payment",
+      "source": "llm-wiki"
+    },
+    {
+      "policy_id": "policy_deposit_dp",
+      "name": "Down Payment (Deposit) Policy",
+      "description": "Bookings require a down payment (DP) to confirm the reservation. The deposit field in the bookings table accepts two modes: 'dp' (percentage-based down payment) or 'attachment' (proof of deposit upload). Analysis of 427 bookings with deposits shows an average deposit rate of approximately 28.7% of the grand total, with a modal rate of 10%. No formal written deposit percentage policy was found in a dedicated policy table.",
+      "category": "payment",
+      "source": "new-backoffice"
+    },
+    {
+      "policy_id": "policy_payment_methods",
+      "name": "Accepted Payment Methods",
+      "description": "JVTO accepts the following payment methods: (1) Cash, (2) Bank Transfer to PT JAVA VOLCANO RENDEZVOUS account 001301001779564, (3) Debit/Credit Card, (4) EDC terminal, (5) WISE international transfer, (6) General Bank Transfer, (7) Pay Later. Online payments via PayPal are also referenced in booking records and FAQ.",
+      "category": "payment",
+      "source": "new-backoffice"
+    },
+    {
+      "policy_id": "policy_cancellation_klook",
+      "name": "KLOOK Booking Cancellation Policy",
+      "description": "KLOOK channel bookings that are cancelled receive a FULL refund. Cancellations include a UTC timestamp and optional cancel reason. All sampled cancellation records show refund='FULL'. Bookings have a 'cancellable' flag (default: 1/true) indicating cancellability status.",
+      "category": "cancellation",
+      "source": "new-backoffice"
+    },
+    {
+      "policy_id": "policy_order_channels",
+      "name": "Booking Channel Policy",
+      "description": "JVTO accepts bookings through three channels: (1) JVTO Direct — managed internally; (2) TWT — trade/wholesale channel with separate invoicing system (twt_invoices); (3) KLOOK — OTA integration with dedicated product/option/availability IDs and automated booking status management.",
+      "category": "operations",
+      "source": "new-backoffice"
+    },
+    {
+      "policy_id": "policy_inclusions_standard",
+      "name": "Standard Tour Inclusions",
+      "description": "Standard inclusions across JVTO packages include: local land transfers and airport transfers, accommodations and breakfasts, entrance fees to national parks (Waterfall, Bromo National Park IDR 350,000/pax, Kawah Ijen IDR 150,000/pax), 4WD or Motorcycle for Bromo, Ijen crater guide, gas mask and torch, mineral water during tour, travel T-shirt, meals as indicated on itinerary, private air-conditioned transportation, licensed and certified in-person tour guide, private 4WD Jeep at Bromo, trekking pole, and all permits/entry fees as mentioned in itinerary. 41 active inclusion items are defined in the system.",
+      "category": "inclusions",
+      "source": "new-backoffice"
+    },
+    {
+      "policy_id": "policy_exclusions_standard",
+      "name": "Standard Tour Exclusions",
+      "description": "Standard exclusions across JVTO packages include: optional activities, paragliding (IDR 400,000), travel insurance, Indonesian VISA, horse ride at Mount Bromo, tips/gratuities, all personal expenses, international/domestic air tickets, and accommodation/meals/guides/mineral water when not part of the selected package. 17 active exclusion items are defined in the system.",
+      "category": "inclusions",
+      "source": "new-backoffice"
+    },
+    {
+      "policy_id": "policy_price_tiers",
+      "name": "Package Price Tier Policy",
+      "description": "JVTO offers packages in three pricing tiers: Basic (budget tier, red branding), Reguler (standard tier, blue branding), and Luxury (premium tier, black/gold branding). These tiers determine accommodation quality, vehicle type, and service level.",
+      "category": "pricing",
+      "source": "new-backoffice"
+    },
+    {
+      "policy_id": "policy_travel_insurance",
+      "name": "Travel Insurance Policy",
+      "description": "Travel insurance is not included in any JVTO tour package and is listed as a standard exclusion. JVTO highly recommends that all guests obtain travel insurance that covers adventure activities. JVTO does not sell travel insurance directly but can recommend reputable providers.",
+      "category": "safety",
+      "source": "new-backoffice"
+    },
+    {
+      "policy_id": "policy_cancellation_change",
+      "name": "Booking Change and Cancellation Policy (General)",
+      "description": "Customers can change or cancel bookings. The FAQ states: 'Please refer to our cancellation policy on our website for detailed information.' Refunds are processed according to the cancellation policy and require contacting customer service. Rescheduling is allowed up to a certain time before the tour date per terms and conditions. No specific penalty schedule or cancellation deadline was found in the database — the booking_refund_and_penalties table stores line-item refund transactions rather than a policy schedule.",
+      "category": "cancellation",
+      "source": "new-backoffice"
+    },
+    {
+      "policy_id": "policy_police_escort",
+      "name": "Police Escort Operational Policy",
+      "description": "JVTO coordinates police escort services (Polpar or Police Escort type) for certain bookings. The bookings table has an is_police_escort flag, police_escort_pickup_date, and police_escort_route fields. Police escort records capture start/finish locations, departure time, date, and escort type. This is an operational safety/security policy for high-value or group transfers.",
+      "category": "operations",
+      "source": "new-backoffice"
+    }
+  ]
+}
