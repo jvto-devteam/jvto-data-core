@@ -1,0 +1,41 @@
+name: conflict-detector
+description: Deteksi konflik data antar sumber setelah extraction
+trigger: after_merge
+
+detectors:
+  - name: price_mismatch
+    description: Deteksi perbedaan harga > 5% antar sumber
+    source_a: phases/phase-1-packages/output/packages.json
+    field: price_tiers[].price_idr
+    threshold_pct: 5
+    severity: high
+
+  - name: name_mismatch
+    description: Deteksi perbedaan nama package antar sumber
+    source: phases/phase-1-packages/output/package-conflicts.json
+    filter: conflict_type == "name_mismatch"
+    severity: low
+
+  - name: missing_source
+    description: Deteksi package yang tidak punya source dari semua 3 repo
+    source: phases/phase-1-packages/output/package-sources.json
+    check: entities[].sources | length < 3
+    severity: medium
+
+  - name: policy_conflict
+    description: Deteksi policy dengan deskripsi berbeda antar sumber
+    source: phases/phase-2-trust/output/policies.json
+    check: policies[] | select(.sources | length > 1)
+    severity: medium
+
+output:
+  file: conflicts/conflict-report.json
+  format: |
+    {
+      "generated_at": "<timestamp>",
+      "total_conflicts": <count>,
+      "by_severity": { "high": 0, "medium": 0, "low": 0 },
+      "conflicts": [...]
+    }
+
+on_conflict_found: log_to_conflicts_dir

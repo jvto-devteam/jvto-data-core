@@ -1,0 +1,969 @@
+{
+  "generated_at": "2026-06-13",
+  "total_chunks": 87,
+  "chunk_types": {
+    "package": 35,
+    "trust": 19,
+    "policy": 18,
+    "faq": 15
+  },
+  "chunks": [
+    {
+      "chunk_id": "pkg_bromo_1d1n_chunk_1",
+      "entity_type": "package",
+      "entity_id": "bromo-1d1n",
+      "content": "1 Day Bromo Midnight Experience from Surabaya. Duration: 1D1N. Departing from: Surabaya. Destinations: Mount Bromo. Price from IDR 1,000,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "metadata": {
+        "source": "llm-wiki, jvto-web",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_bromo_2d1n_chunk_1",
+      "entity_type": "package",
+      "entity_id": "bromo-2d1n",
+      "content": "2 Day Bromo Sunrise Adventure from Surabaya. Duration: 2D1N. Departing from: Surabaya. Destinations: Mount Bromo. Price from IDR 1,750,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "metadata": {
+        "source": "llm-wiki, jvto-web",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_ijen_2d1n_chunk_1",
+      "entity_type": "package",
+      "entity_id": "ijen-2d1n",
+      "content": "2 Day Ijen Blue Fire Expedition from Surabaya. Duration: 2D1N. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen). Price from IDR 1,550,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "metadata": {
+        "source": "llm-wiki, jvto-web",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_bali_ijen_bromo_madakaripura_3d2n_chunk_1",
+      "entity_type": "package",
+      "entity_id": "bali/ijen-bromo-madakaripura-3d2n",
+      "content": "3 Day Ijen, Bromo & Madakaripura Waterfall Journey from Bali to Surabaya. Duration: 3D2N. Departing from: Bali. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Madakaripura Waterfall. Price from IDR 2,850,000 per person (group of 2+). Bali-Java ferry crossing included. Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "metadata": {
+        "source": "llm-wiki, jvto-web",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_bromo_madakaripura_ijen_3d2n_chunk_1",
+      "entity_type": "package",
+      "entity_id": "bromo-madakaripura-ijen-3d2n",
+      "content": "3 Day Bromo, Madakaripura & Ijen Overland from Surabaya to Bali. Duration: 3D2N. Departing from: Surabaya. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Madakaripura Waterfall. Price from IDR 2,450,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "metadata": {
+        "source": "llm-wiki, jvto-web",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_bali_ijen_papuma_tumpak_sewu_bromo_4d3n_chunk_1",
+      "entity_type": "package",
+      "entity_id": "bali/ijen-papuma-tumpak-sewu-bromo-4d3n",
+      "content": "4 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Expedition from Bali to Surabaya. Duration: 4D3N. Departing from: Bali. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall. Price from IDR 3,475,000 per person (group of 2+). Bali-Java ferry crossing included. Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "metadata": {
+        "source": "llm-wiki, jvto-web",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_ijen_bromo_madakaripura_4d3n_chunk_1",
+      "entity_type": "package",
+      "entity_id": "ijen-bromo-madakaripura-4d3n",
+      "content": "4 Day Ijen, Bromo & Madakaripura Waterfall Expedition from Surabaya. Duration: 4D3N. Departing from: Surabaya. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Madakaripura Waterfall. Price from IDR 3,025,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "metadata": {
+        "source": "llm-wiki, jvto-web",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_tumpak_sewu_bromo_ijen_4d3n_chunk_1",
+      "entity_type": "package",
+      "entity_id": "tumpak-sewu-bromo-ijen-4d3n",
+      "content": "4 Day Tumpak Sewu, Bromo & Ijen Adventure from Surabaya to Bali. Duration: 4D3N. Departing from: Surabaya. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Tumpak Sewu Waterfall. Price from IDR 3,125,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "metadata": {
+        "source": "llm-wiki, jvto-web",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_bali_ijen_papuma_tumpak_sewu_bromo_5d4n_chunk_1",
+      "entity_type": "package",
+      "entity_id": "bali/ijen-papuma-tumpak-sewu-bromo-5d4n",
+      "content": "5 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Discovery from Bali to Surabaya. Duration: 5D4N. Departing from: Bali. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall. Price from IDR 4,050,000 per person (group of 2+). Bali-Java ferry crossing included. Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "metadata": {
+        "source": "llm-wiki, jvto-web",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_ijen_bromo_madakaripura_malang_5d4n_chunk_1",
+      "entity_type": "package",
+      "entity_id": "ijen-bromo-madakaripura-malang-5d4n",
+      "content": "5 Day Ijen, Bromo, Madakaripura & Malang City Adventure from Surabaya. Duration: 5D4N. Departing from: Surabaya. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Madakaripura Waterfall, Malang City. Price from IDR 3,850,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "metadata": {
+        "source": "llm-wiki, jvto-web",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_ijen_papuma_tumpak_sewu_bromo_malang_6d5n_chunk_1",
+      "entity_type": "package",
+      "entity_id": "ijen-papuma-tumpak-sewu-bromo-malang-6d5n",
+      "content": "6 Day Ijen, Papuma Beach, Tumpak Sewu, Bromo & Malang City Discovery from Surabaya. Duration: 6D5N. Departing from: Surabaya. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall, Malang City. Price from IDR 4,750,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "metadata": {
+        "source": "llm-wiki, jvto-web",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_taman_safari_prigen_bromo_madakaripura_3d2n_chunk_1",
+      "entity_type": "package",
+      "entity_id": "taman-safari-prigen-bromo-madakaripura-3d2n",
+      "content": "3 Day Taman Safari Prigen, Bromo & Madakaripura from Surabaya. Duration: 3D2N. Departing from: Surabaya. Destinations: Mount Bromo, Madakaripura Waterfall, Taman Safari Prigen. Price from IDR 3,450,000 per person (group of 2+). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Specialty tour with unique family-friendly or wildlife experiences. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "metadata": {
+        "source": "llm-wiki, jvto-web",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_bali_bromo_ijen_3d2n_chunk_1",
+      "entity_type": "package",
+      "entity_id": "bali/bromo-ijen-3d2n",
+      "content": "3 Day Bromo & Ijen Volcano Discovery from Bali. Duration: 3D2N. Departing from: Bali. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen). Price from IDR 2,850,000 per person (group of 2+). Bali-Java ferry crossing included. Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "metadata": {
+        "source": "llm-wiki, jvto-web",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_1_day_bromo_midnight_experience_from_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "1-day-bromo-midnight-experience-from-surabaya",
+      "content": "1 Day Bromo Midnight Experience from Surabaya. Duration: 1 Days 1 Nights. Departing from: Surabaya. Destinations: Mount Bromo. Price from IDR 1,000,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_2_day_ijen_blue_fire_expedition_from_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "2-day-ijen-blue-fire-expedition-from-surabaya",
+      "content": "2 Day Ijen Blue Fire Expedition from Surabaya. Duration: 2 Days 1 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen). Price from IDR 1,550,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_2_day_bromo_sunrise_adventure_from_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "2-day-bromo-sunrise-adventure-from-surabaya",
+      "content": "2 Day Bromo Sunrise Adventure from Surabaya. Duration: 2 Days 1 Nights. Departing from: Surabaya. Destinations: Mount Bromo, Madakaripura Waterfall. Price from IDR 1,750,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_3_day_bromo_and_madakaripura_waterfall_and_ijen_overland_from_surabaya_to_bali_chunk_1",
+      "entity_type": "package",
+      "entity_id": "3-day-bromo-and-madakaripura-waterfall-and-ijen-overland-from-surabaya-to-bali",
+      "content": "3 Day Bromo, Madakaripura Waterfall & Ijen Overland from Surabaya to Bali. Duration: 3 Days 2 Nights. Departing from: Surabaya. Destinations: Mount Bromo, Madakaripura Waterfall, Mount Ijen (Kawah Ijen). Price from IDR 2,450,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_3_day_ijen_and_bromo_and_madakaripura_waterfall_from_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "3-day-ijen-and-bromo-and-madakaripura-waterfall-from-surabaya",
+      "content": "3 Day Ijen, Bromo & Madakaripura Waterfall Discovery from Surabaya. Duration: 3 Days 2 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Madakaripura Waterfall. Price from IDR 2,450,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_4_day_ijen_and_bromo_and_madakaripura_waterfall_from_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "4-day-ijen-and-bromo-and-madakaripura-waterfall-from-surabaya",
+      "content": "4 Day Ijen, Bromo & Madakaripura Waterfall Expedition from Surabaya. Duration: 4 Days 3 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Madakaripura Waterfall. Price from IDR 3,025,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_4_day_ijen_and_papuma_beach_and_tumpak_sewu_waterfall_and_bromo_from_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "4-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-surabaya",
+      "content": "4 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Journey from Surabaya. Duration: 4 Days 3 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall, Mount Bromo. Price from IDR 3,125,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_4_day_tumpak_sewu_waterfall_and_bromo_and_ijen_adventure_from_surabaya_to_bali_chunk_1",
+      "entity_type": "package",
+      "entity_id": "4-day-tumpak-sewu-waterfall-and-bromo-and-ijen-adventure-from-surabaya-to-bali",
+      "content": "4 Day Tumpak Sewu, Bromo & Ijen Adventure from Surabaya to Bali. Duration: 4 Days 3 Nights. Departing from: Surabaya. Destinations: Tumpak Sewu Waterfall, Mount Bromo, Mount Ijen (Kawah Ijen). Price from IDR 3,125,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_5_day_ijen_and_bromo_and_madakaripura_waterfall_and_malang_city_adventure_from_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "5-day-ijen-and-bromo-and-madakaripura-waterfall-and-malang-city-adventure-from-surabaya",
+      "content": "5 Day Ijen, Bromo, Madakaripura & Malang City Adventure from Surabaya. Duration: 5 Days 4 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Madakaripura Waterfall, Malang City. Price from IDR 3,850,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_4_day_ijen_and_papuma_beach_and_tumpak_sewu_waterfall_and_bromo_from_bali_to_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "4-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-bali-to-surabaya",
+      "content": "4 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Expedition from Bali to Surabaya. Duration: 4 Days 3 Nights. Departing from: Bali. Destinations: Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall, Mount Bromo. Price from IDR 3,475,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_5_day_ijen_and_papuma_beach_and_tumpak_sewu_waterfall_and_bromo_from_bali_to_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "5-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-bali-to-surabaya",
+      "content": "5 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Discovery from Bali to Surabaya. Duration: 5 Days 4 Nights. Departing from: Bali. Destinations: Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall, Mount Bromo. Price from IDR 4,050,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_5_day_ijen_and_papuma_beach_and_tumpak_sewu_waterfall_and_bromo_from_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "5-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-surabaya",
+      "content": "5 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Nature Trip from Surabaya. Duration: 5 Days 4 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall, Mount Bromo. Price from IDR 3,650,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_3_day_ijen_and_bromo_and_madakaripura_waterfall_from_bali_to_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "3-day-ijen-and-bromo-and-madakaripura-waterfall-from-bali-to-surabaya",
+      "content": "3 Day Ijen, Bromo & Madakaripura Waterfall Journey from Bali to Surabaya. Duration: 3 Days 2 Nights. Departing from: Bali. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Madakaripura Waterfall. Price from IDR 2,850,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_3_day_bromo_and_madakaripura_waterfall_getaway_from_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "3-day-bromo-and-madakaripura-waterfall-getaway-from-surabaya",
+      "content": "3 Day Bromo & Madakaripura Waterfall Getaway from Surabaya. Duration: 3 Days 2 Nights. Departing from: Surabaya. Destinations: Mount Bromo, Madakaripura Waterfall. Price from IDR 2,450,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_6_day_ijen_and_papuma_beach_and_tumpak_sewu_waterfall_and_bromo_and_malang_city_discovery_from_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "6-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-and-malang-city-discovery-from-surabaya",
+      "content": "6 Day Ijen, Papuma Beach, Tumpak Sewu, Bromo & Malang City Discovery from Surabaya. Duration: 6 Days 5 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall, Mount Bromo, Malang City. Price from IDR 4,750,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_3_day_bromo_and_ijen_volcano_discovery_from_bali_chunk_1",
+      "entity_type": "package",
+      "entity_id": "3-day-bromo-and-ijen-volcano-discovery-from-bali",
+      "content": "3 Day Bromo & Ijen Volcano Discovery from Bali. Duration: 3 Days 2 Nights. Departing from: Bali. Destinations: Mount Bromo, Madakaripura Waterfall, Mount Ijen (Kawah Ijen). Price from IDR 2,850,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_3d2n_mount_bromo_madakaripura_waterfall_ijen_crater_tour_from_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "3d2n-mount-bromo-madakaripura-waterfall-ijen-crater-tour-from-surabaya",
+      "content": "3D2N Mount Bromo, Madakaripura Waterfall & Ijen Crater Tour from Surabaya. Duration: 3 Days 2 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo. Price from IDR 2,000,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_4d3n_mount_bromo_ijen_crater_surabaya_night_market_from_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "4d3n-mount-bromo-ijen-crater-surabaya-night-market-from-surabaya",
+      "content": "4D3N Mount Bromo, Ijen Crater & Surabaya Night Market from Surabaya. Duration: 4 Days 3 Nights. Departing from: Surabaya. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Madakaripura Waterfall. Price from IDR 2,500,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_4d3n_ijen_crater_papuma_beach_tumpak_sewu_waterfall_mount_bromo_from_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "4d3n-ijen-crater-papuma-beach-tumpak-sewu-waterfall-mount-bromo-from-surabaya",
+      "content": "4D3N Ijen Crater, Papuma Beach, Tumpak Sewu Waterfal & Mount Bromo from Surabaya. Duration: 4 Days 3 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall, Mount Bromo. Price from IDR 2,580,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_3_day_bromo_and_ijen_volcano_trip_from_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "3-day-bromo-and-ijen-volcano-trip-from-surabaya",
+      "content": "3 Day Bromo & Ijen Volcano Trip from Surabaya. Duration: 3 Days 2 Nights. Departing from: Surabaya. Destinations: Mount Bromo, Madakaripura Waterfall, Mount Ijen (Kawah Ijen). Price from IDR 2,450,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_3_day_tumpak_sewu_waterfall_and_bromo_explorer_from_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "3-day-tumpak-sewu-waterfall-and-bromo-explorer-from-surabaya",
+      "content": "3 Day Tumpak Sewu Waterfall & Bromo Explorer from Surabaya. Duration: 3 Days 2 Nights. Departing from: Surabaya. Destinations: Mount Bromo, Tumpak Sewu Waterfall. Price from IDR 2,450,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "pkg_3_day_taman_safari_prigen_and_bromo_and_madakaripura_waterfall_family_adventure_from_surabaya_chunk_1",
+      "entity_type": "package",
+      "entity_id": "3-day-taman-safari-prigen-and-bromo-and-madakaripura-waterfall-family-adventure-from-surabaya",
+      "content": "3 Day Taman Safari Prigen, Bromo & Madakaripura Family Adventure from Surabaya. Duration: 3 Days 2 Nights. Departing from: Surabaya. Destinations: Mount Bromo, Madakaripura Waterfall, Taman Safari Prigen. Price from IDR 3,450,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "low",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_trust_safety_led_operations_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "trust_safety_led_operations",
+      "content": "JVTO Trust Claim (safety): Volcano travel is unpredictable, so JVTO focuses on operational certainty: disciplined decisions, clear safety boundaries, and realistic expectations. Evidence: Founder Agung Sambuko is an active Tourist Police officer (Ditpamobvit), confirmed by SPRIN POLPAR document (SHA-256: 03c8578dc22956faa366d957badecfe38868d4760359cd8059fb2d6b145dfeab); Detik.com independently confirmed Bripka Agung as active Polpar (2021-03-14); Police vehicle support and escort documentation on file. Validation: pass.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_trust_private_tours_execution_control_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "trust_private_tours_execution_control",
+      "content": "JVTO Trust Claim (operational): JVTO runs private tours by default so timing, pacing, and safety decisions stay consistent for your group. Evidence: All 22 packages are private (dedicated vehicle + crew), confirmed by NIB-1102230032918 and TDUP-1102230032918. Validation: pass.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_trust_all_inclusive_clarity_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "trust_all_inclusive_clarity",
+      "content": "JVTO Trust Claim (operational): JVTO uses an all-inclusive structure by default to reduce surprise costs and mid-trip negotiation. Evidence: Written inclusions/exclusions documented in JVTO Policy Pack v6, confirmed by NIB-1102230032918. Validation: pass.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_trust_ijen_health_screening_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "trust_ijen_health_screening",
+      "content": "JVTO Trust Claim (safety): On routes that include Mount Ijen, JVTO integrates health screening as a practical safety step, not a formality. Evidence: Regulatory basis: BBKSDA Surat Edaran SE.1658/KSA.9/2024; Licensed medical officer Dr. Ahmad Irwandanu (SIP), verifiable via Kemenkes/KKI (STR: QN00001073380217); 7 Ijen incidents (2015–2026), 4 fatalities — 50% fitness-related (heart attack, exhaustion) — directly validates health screening mandate. Validation: pass.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_trust_proof_first_verification_layer_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "trust_proof_first_verification_layer",
+      "content": "JVTO Trust Claim (credentials): JVTO organizes trust signals as a verification layer: clear claims, context, and evidence links — not just marketing statements. Evidence: NIB, TDUP, HPWKI all publicly verifiable with SHA-256 anchors (NIB: 1102230032918, TDUP: 1102230032918); 14-page visual dossier consolidating all 9 claims with verified document exhibits, SHA-256 anchored. Validation: pass.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_trust_reviews_registry_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "trust_reviews_registry",
+      "content": "JVTO Trust Claim (quality): JVTO treats reviews as a registry: grouped by platform and theme, so guests can validate patterns instead of reading random quotes. Evidence: Trustpilot: 4.8/5 (51 reviews); Google Maps: 4.9/5 (123 reviews); TripAdvisor: 4.95/5 (21 reviews). Validation: pass.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_trust_team_registry_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "trust_team_registry",
+      "content": "JVTO Trust Claim (people): JVTO's product is executed by real people. The Team Registry shows roles, routes, and proof from review mentions — not generic bios. Evidence: 14 crew members (7 guides, 7 drivers) with KTA credentials and review-linked profiles; 11 KTA confirmed, 3 KTA pending SSOT verification; HPWKI AHU ID: AHU-0001072.AH.01.07.TAHUN 2024. Validation: partial.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_trust_partners_context_hpwki_indecon_isic_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "trust_partners_context_hpwki_indecon_isic",
+      "content": "JVTO Trust Claim (credentials): JVTO partnerships are explained by function: competence context (HPWKI), sustainability context (INDECON), and verification logic (ISIC). Evidence: HPWKI, INDECON, ISIC partnerships with functional descriptions (proof IDs: hpwki-approval, indecon-live-member, isic-live-provider); BBKSDA-supervised guide training: 250 HPWKI guides, SAR + PPGD (press-bbksda-ijen-guide-training). Validation: partial.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_trust_press_recognition_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "trust_press_recognition",
+      "content": "JVTO Trust Claim (credentials): JVTO lists press and recognition with context so guests can evaluate third-party references, not just branding claims. Evidence: 4 independent press items + Stefan Loose guidebook (4th edition, 2018, ISBN 978-3-7701-7881-0, DuMont Reiseverlag) + Booking 2015 award; Detik.com coverage (2021-03-14); Radar Jember / Jawa Pos coverage (2021-03-24). Validation: pass.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_claim_deposit_10pct_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "claim_deposit_10pct",
+      "content": "JVTO Trust Claim (payment): JVTO requires a down payment (deposit) of approximately 10% of the grand total to confirm bookings Evidence: bookings.dp field stores deposit amount; analysis of 427 bookings with dp>0 shows average dp/grand_total = 28.7%, min 5%, max 137% (outliers suggest some bookings use flat amounts); Most common deposit tier appears to be 10% based on modal values in sample data; bookings.deposit enum values: 'dp' or 'attachment' — indicating two deposit modes. Validation: partial — modal deposit is 10% but average is skewed; no explicit deposit policy table found; policy is inferred from booking data patterns.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_claim_payment_methods_accepted_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "claim_payment_methods_accepted",
+      "content": "JVTO Trust Claim (payment): JVTO accepts Cash, Bank Transfer (PT JAVA VOLCANO RENDEZVOUS, acc 001301001779564), Debit/Credit Card, EDC, WISE, and Pay Later as payment methods Evidence: payment_methods table rows: id=1 Cash, id=2 PT JAVA VOLCANO RENDEZVOUS (bank transfer, acc 001301001779564), id=3 Debit/Credit Card, id=4 EDC, id=5 WISE, id=6 Bank Transfer, id=7 Pay Later; bookings.payment_method enum: 'pay later','paypal','wise','cc'; bookings.outstanding_payment_method enum: 'cash','cc','wise','edc'. Validation: confirmed — data from payment_methods table.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_claim_order_channels_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "claim_order_channels",
+      "content": "JVTO Trust Claim (operations): JVTO operates through three booking channels: JVTO direct, TWT (travel wholesale/trade), and KLOOK (OTA platform) Evidence: order_channels table: id=1 JVTO, id=2 TWT, id=3 KLOOK; bookings table has klook_uuid, klook_product_id, klook_option_id fields confirming KLOOK integration; twt_invoices, twt_invoice_bookings tables confirm TWT as a separate wholesale channel with its own invoicing. Validation: confirmed — data from order_channels and related table structures.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_claim_cancellation_full_refund_klook_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "claim_cancellation_full_refund_klook",
+      "content": "JVTO Trust Claim (cancellation): KLOOK bookings that are cancelled receive a FULL refund Evidence: All 10 sampled cancellation records in bookings.cancellation field show refund='FULL'; bookings.cancellable field (tinyint default 1) indicates most bookings are cancellable by default; klook_cancel_reason field captures reason for KLOOK cancellations. Validation: partial — only KLOOK cancellations observed in data; direct booking cancellation policy not found in structured form.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_claim_price_tiers_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "claim_price_tiers",
+      "content": "JVTO Trust Claim (pricing): JVTO packages are segmented into three price tiers: Basic, Reguler, and Luxury Evidence: price_plans table: id=1 Basic (#ff6962 red), id=2 Reguler (#3264ff blue), id=3 Luxury (#000 black/gold); Each plan has distinct color branding indicating consumer-facing presentation. Validation: confirmed — data from price_plans table.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_claim_faq_payment_methods_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "claim_faq_payment_methods",
+      "content": "JVTO Trust Claim (payment): FAQ states JVTO accepts major credit cards, bank transfers, and online payment methods such as PayPal Evidence: faqs table id=42: question='What payment methods do you accept?', answer='We accept major credit cards, bank transfers, and online payment methods such as PayPal.'. Validation: confirmed — direct FAQ content; note PayPal is mentioned in FAQ but payment_methods table does not have a PayPal entry (only in bookings.payment_method enum as 'paypal').",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_claim_travel_insurance_not_included_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "claim_travel_insurance_not_included",
+      "content": "JVTO Trust Claim (inclusions): Travel insurance is not included in JVTO tour packages and is listed as a standard exclusion Evidence: include_excludes table id=15: description='Travel insurance*', type='ex'; faqs id=52: 'We highly recommend having travel insurance that covers adventure activities.'; faqs id=53: 'We do not offer travel insurance directly, but we can recommend reputable providers.'. Validation: confirmed — multiple data sources align.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_claim_international_flights_excluded_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "claim_international_flights_excluded",
+      "content": "JVTO Trust Claim (inclusions): International and domestic air tickets are excluded from all JVTO tour packages Evidence: include_excludes id=22: 'International / Domestic air tickets*', type='ex'; include_excludes id=23: 'Air Tickets*', type='ex'. Validation: confirmed — standard exclusion items in database.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_claim_indonesian_visa_excluded_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "claim_indonesian_visa_excluded",
+      "content": "JVTO Trust Claim (inclusions): Indonesian VISA costs are excluded from JVTO tour packages Evidence: include_excludes id=16: description='Indonesian VISA', type='ex'. Validation: confirmed — standard exclusion item in database.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "trust_claim_personal_expenses_excluded_chunk_1",
+      "entity_type": "trust",
+      "entity_id": "claim_personal_expenses_excluded",
+      "content": "JVTO Trust Claim (inclusions): All personal expenses are excluded from JVTO tour packages Evidence: include_excludes id=19: description='All expenses of a personal nature', type='ex'. Validation: confirmed — standard exclusion item in database.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "medium",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_deposit_payment_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_deposit_payment",
+      "content": "JVTO Policy — Deposit & Payment Schedule: A minimum 20% deposit is required to confirm a booking. If Day 1 is within 14 days, up to 100% may be required. Balance is due no later than 5 days before Day 1 for card payments, or 3 days before Day 1 for bank transfer or Wise. All pricing is in IDR only. Bank accounts: BRI (PT Java Volcano Rendezvous, 001301001779564, SWIFT: BRINIDJAXXX) and BCA (PT Java Volcano Rendezvous, 1200944352, SWIFT: CENAIDJAXXX). Payment is SSL-encrypted and PCI DSS-compliant. JVTO never asks for full card numbers, CVV, or banking credentials via chat or email. Category: payment.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_cancellation_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_cancellation",
+      "content": "JVTO Policy — Cancellation Policy: Cancellations made 48 hours or more before Day 1 (local Indonesia time, WIB GMT+7) receive 100% of booking value as JVTO Travel Credit (non-expiring, transferable with written confirmation). Cancellations made less than 48 hours before Day 1 result in forfeiture of up to 100% of the booking value — Travel Credit and cash refunds are generally not provided. One free reschedule is permitted if made 48 hours or more before Day 1 subject to availability; reschedules less than 48 hours before Day 1 are not permitted. Category: cancellation.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_refund_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_refund",
+      "content": "JVTO Policy — Refund Policy: JVTO does not issue cash refunds as standard policy. Approved cancellations (>=48h before Day 1) receive Travel Credit only — non-expiring, transferable with written confirmation, denominated in IDR. For force majeure events (volcanic activity, gas conditions, earthquakes, floods, government closures, civil unrest, severe weather), JVTO may offer reasonable alternatives, Travel Credit for unused portions, or partial/full cash refund net of non-recoverable expenses. If a guest is denied Ijen health clearance, affected components are non-refundable as costs are pre-committed. Category: refund.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_inclusions_exclusions_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_inclusions_exclusions",
+      "content": "JVTO Policy — Inclusions & Exclusions Policy: Standard inclusions: private air-conditioned vehicle for all land sectors (fuel, tolls, parking), Bromo private 4WD jeep (max 4 guests per jeep when Bromo included), accommodation with breakfast for all overnight stays, professional crew, entrance tickets and park permits, Ijen safety gear (gas mask, trekking poles, medical check, health clearance) when Ijen included, daily bottled water, Java-Bali ferry when listed, 1 JVTO travel T-shirt per participant. Conditional inclusions require written confirmation on the official E-Voucher/Invoice. Standard exclusions: international and domestic flights, long-distance trains, visas, travel insurance, personal expenses (snacks, drinks, souvenirs, laundry), tips and gratuities. Only inclusions listed on the official tour page AND Official E-Voucher/Invoice (PDF) are legally binding. Category: operational.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_health_screening_ijen_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_health_screening_ijen",
+      "content": "JVTO Policy — Ijen Health Screening Policy: Health screening applies to Ijen-relevant packages only, per BBKSDA Surat Edaran SE.1658/KSA.9/2024. A nurse or doctor visits the guest hotel the evening before the hike (Bondowoso/Banyuwangi area) to record vitals (SpO2, blood pressure, resting heart rate, respiratory history). A QR-verified health certificate (surat sehat) is issued by Dr. Ahmad Irwandanu SIP and must be presented at the crater gate for BBKSDA QR verification. No Valid QR Code = No Crater Zone Access. If an individual fails screening, their climb is cancelled (not the group's) and screening cost is non-refundable. System: https://health.mountijen.com. Forbidden wording: 'Mandatory health screening' without conditional qualifier referencing BBKSDA SE.1658/KSA.9/2024. Category: safety.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_booking_confirmation_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_booking_confirmation",
+      "content": "JVTO Policy — Booking Confirmation Policy: A booking is confirmed when: (1) package and pricing are agreed, (2) minimum 20% deposit is processed, and (3) an official E-Voucher/Invoice (PDF) is issued. Official booking channels are the JVTO website (https://javavolcano-touroperator.com), WhatsApp (+62 822-4478-8833), and email (hello@javavolcano-touroperator.com). Document precedence order: Official E-Voucher/Invoice, Booking/Payment/Cancellation Policy, Inclusions & Exclusions Policy, Privacy & Data Protection Policy, Travel Guide — Booking Information. Category: operational.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_vehicle_room_allocation_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_vehicle_room_allocation",
+      "content": "JVTO Policy — Vehicle & Room Allocation Policy: Vehicle allocation: 2–3 guests get 1 MPV with driver-guide; 4–9 guests get 1 Toyota Hiace with driver + escort guide; 10–11 guests get 1 Toyota Hiace + 1 MPV. Bromo 4WD jeep is private, max 4 guests per jeep (multiple jeeps for larger groups). Room allocation: 1 room per 2 guests (King or Twin bed); odd-numbered groups get 1 extra bed in one room; max 2 guests per room; King bed on request for couples; Twin beds on request for non-couples. Category: operational.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_foc_group_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_foc_group",
+      "content": "JVTO Policy — Free-of-Charge (FOC) Group Policy: Group FOC tiers based on paying guests: 18+ paying guests = 1 FOC seat; 35+ paying guests = 2 FOC seats; 50+ paying guests = 3 FOC seats + 5% discount on entire group total. FOC seats are not counted toward the threshold. The 5% discount at the 50+ tier applies to the entire group total. Category: payment.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_deposit_dp_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_deposit_dp",
+      "content": "JVTO Policy — Down Payment (Deposit) Policy: Bookings require a down payment (DP) to confirm the reservation. The deposit field in the bookings table accepts two modes: 'dp' (percentage-based down payment) or 'attachment' (proof of deposit upload). Analysis of 427 bookings with deposits shows an average deposit rate of approximately 28.7% of the grand total, with a modal rate of 10%. No formal written deposit percentage policy was found in a dedicated policy table. Category: payment.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_payment_methods_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_payment_methods",
+      "content": "JVTO Policy — Accepted Payment Methods: JVTO accepts the following payment methods: (1) Cash, (2) Bank Transfer to PT JAVA VOLCANO RENDEZVOUS account 001301001779564, (3) Debit/Credit Card, (4) EDC terminal, (5) WISE international transfer, (6) General Bank Transfer, (7) Pay Later. Online payments via PayPal are also referenced in booking records and FAQ. Category: payment.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_cancellation_klook_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_cancellation_klook",
+      "content": "JVTO Policy — KLOOK Booking Cancellation Policy: KLOOK channel bookings that are cancelled receive a FULL refund. Cancellations include a UTC timestamp and optional cancel reason. All sampled cancellation records show refund='FULL'. Bookings have a 'cancellable' flag (default: 1/true) indicating cancellability status. Category: cancellation.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_order_channels_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_order_channels",
+      "content": "JVTO Policy — Booking Channel Policy: JVTO accepts bookings through three channels: (1) JVTO Direct — managed internally; (2) TWT — trade/wholesale channel with separate invoicing system (twt_invoices); (3) KLOOK — OTA integration with dedicated product/option/availability IDs and automated booking status management. Category: operations.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_inclusions_standard_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_inclusions_standard",
+      "content": "JVTO Policy — Standard Tour Inclusions: Standard inclusions across JVTO packages include: local land transfers and airport transfers, accommodations and breakfasts, entrance fees to national parks (Waterfall, Bromo National Park IDR 350,000/pax, Kawah Ijen IDR 150,000/pax), 4WD or Motorcycle for Bromo, Ijen crater guide, gas mask and torch, mineral water during tour, travel T-shirt, meals as indicated on itinerary, private air-conditioned transportation, licensed and certified in-person tour guide, private 4WD Jeep at Bromo, trekking pole, and all permits/entry fees as mentioned in itinerary. 41 active inclusion items are defined in the system. Category: inclusions.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_exclusions_standard_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_exclusions_standard",
+      "content": "JVTO Policy — Standard Tour Exclusions: Standard exclusions across JVTO packages include: optional activities, paragliding (IDR 400,000), travel insurance, Indonesian VISA, horse ride at Mount Bromo, tips/gratuities, all personal expenses, international/domestic air tickets, and accommodation/meals/guides/mineral water when not part of the selected package. 17 active exclusion items are defined in the system. Category: inclusions.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_price_tiers_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_price_tiers",
+      "content": "JVTO Policy — Package Price Tier Policy: JVTO offers packages in three pricing tiers: Basic (budget tier, red branding), Reguler (standard tier, blue branding), and Luxury (premium tier, black/gold branding). These tiers determine accommodation quality, vehicle type, and service level. Category: pricing.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_travel_insurance_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_travel_insurance",
+      "content": "JVTO Policy — Travel Insurance Policy: Travel insurance is not included in any JVTO tour package and is listed as a standard exclusion. JVTO highly recommends that all guests obtain travel insurance that covers adventure activities. JVTO does not sell travel insurance directly but can recommend reputable providers. Category: safety.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_cancellation_change_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_cancellation_change",
+      "content": "JVTO Policy — Booking Change and Cancellation Policy (General): Customers can change or cancel bookings. The FAQ states: 'Please refer to our cancellation policy on our website for detailed information.' Refunds are processed according to the cancellation policy and require contacting customer service. Rescheduling is allowed up to a certain time before the tour date per terms and conditions. No specific penalty schedule or cancellation deadline was found in the database — the booking_refund_and_penalties table stores line-item refund transactions rather than a policy schedule. Category: cancellation.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "policy_policy_police_escort_chunk_1",
+      "entity_type": "policy",
+      "entity_id": "policy_police_escort",
+      "content": "JVTO Policy — Police Escort Operational Policy: JVTO coordinates police escort services (Polpar or Police Escort type) for certain bookings. The bookings table has an is_police_escort flag, police_escort_pickup_date, and police_escort_route fields. Police escort records capture start/finish locations, departure time, date, and escort type. This is an operational safety/security policy for high-value or group transfers. Category: operations.",
+      "metadata": {
+        "source": "new-backoffice",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "faq_safety_1_chunk_1",
+      "entity_type": "faq",
+      "entity_id": "faq_safety_1",
+      "content": "FAQ: How does JVTO handle safety on volcano tours? Answer: Safety-led planning. Clear boundaries. Plan B when conditions change. JVTO cannot control weather or volcanic conditions, but controls planning and safety decisions. If conditions change, Plan B options are used to keep trips safe and worthwhile. The founder is an active Tourist Police officer (Ditpamobvit) and operations include SAR procedures, risk flag systems, and PVMBG exclusion zone adherence.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "faq_products_2_chunk_1",
+      "entity_type": "faq",
+      "entity_id": "faq_products_2",
+      "content": "FAQ: Are JVTO tours private or group tours? Answer: Private tours only. Your own vehicle. Your own pace (within safety limits). No mixed groups by default. All 22 packages are private with a dedicated vehicle and crew.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "faq_pricing_3_chunk_1",
+      "entity_type": "faq",
+      "entity_id": "faq_pricing_3",
+      "content": "FAQ: What is included in the tour price? Answer: All-inclusive by default. Clear inclusions. Fewer surprise costs. Transparent pricing with written rules. Standard inclusions cover private vehicle, accommodation with breakfast, professional crew, entrance tickets, Ijen safety gear (when applicable), daily water, and a JVTO travel T-shirt. Only inclusions listed on the official tour page AND the Official E-Voucher/Invoice (PDF) are legally binding.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "faq_safety_4_chunk_1",
+      "entity_type": "faq",
+      "entity_id": "faq_safety_4",
+      "content": "FAQ: Is health screening required for the Ijen crater? Answer: Ijen routes include a health-screening layer when required by BBKSDA SE.1658/KSA.9/2024. A nurse or doctor visits the guest hotel the evening before the hike to record vitals and issue a QR-verified health certificate. No valid QR code means no crater zone access. Screening is a safety step, not a JVTO-imposed formality.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "faq_trust_5_chunk_1",
+      "entity_type": "faq",
+      "entity_id": "faq_trust_5",
+      "content": "FAQ: How can I verify JVTO's credentials? Answer: Proof you can verify — licenses, partners, press, and documented references. Trust stack, not slogans. Start at /verify-jvto on the website. NIB (1102230032918) and TDUP (1102230032918) are publicly verifiable with SHA-256 anchors.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "faq_reviews_6_chunk_1",
+      "entity_type": "faq",
+      "entity_id": "faq_reviews_6",
+      "content": "FAQ: Where can I read JVTO guest reviews? Answer: Reviews are organized as a registry by platform and theme — not a random quote wall. Trustpilot: 4.8/5 (51 reviews); Google Maps: 4.9/5 (123 reviews); TripAdvisor: 4.95/5 (21 reviews). Check patterns across platforms at /why-jvto/reviews.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "faq_people_7_chunk_1",
+      "entity_type": "faq",
+      "entity_id": "faq_people_7",
+      "content": "FAQ: Who are the guides and drivers on JVTO tours? Answer: Meet the people behind your trip — with proof from reviews. JVTO has 14 crew members (7 guides, 7 drivers) with KTA credentials and review-linked profiles. Profiles are published at /why-jvto/our-team and each profile links to review mentions from real guests.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "faq_trust_8_chunk_1",
+      "entity_type": "faq",
+      "entity_id": "faq_trust_8",
+      "content": "FAQ: What do JVTO's partner organizations mean for my trip? Answer: Partners for context: competence, sustainability, and verification. HPWKI provides guide competence context, INDECON provides ecotourism sustainability alignment, and ISIC supports student verification. These are explained with functional context at /verify-jvto — not just logo displays.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "faq_trust_9_chunk_1",
+      "entity_type": "faq",
+      "entity_id": "faq_trust_9",
+      "content": "FAQ: Has JVTO been featured in any press or guidebooks? Answer: Press and recognition are explained with context and third-party references you can evaluate. Coverage includes Detik.com (2021), Radar Jember/Jawa Pos (2021), the Stefan Loose Reiseführer Indonesien guidebook (4th edition, 2018, ISBN 978-3-7701-7881-0), and a Booking 2015 award. See /verify-jvto/press-recognition.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "faq_cancellation_10_chunk_1",
+      "entity_type": "faq",
+      "entity_id": "faq_cancellation_10",
+      "content": "FAQ: What is the cancellation policy? Answer: Cancellations 48+ hours before Day 1 (WIB, GMT+7) convert 100% of booking value to non-expiring JVTO Travel Credit (transferable with written confirmation). Cancellations less than 48 hours before Day 1 result in forfeiture of up to 100% — Travel Credit and cash refunds are generally not provided. JVTO does not issue cash refunds as standard policy.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "faq_payment_11_chunk_1",
+      "entity_type": "faq",
+      "entity_id": "faq_payment_11",
+      "content": "FAQ: What deposit is required to book? Answer: A minimum 20% deposit of the total booking value is required to confirm a booking. If Day 1 is within 14 days, up to 100% may be required. The balance is due no later than 5 days before Day 1 for card payments, or 3 days before Day 1 for bank transfer or Wise. All pricing is in IDR only.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "faq_cancellation_12_chunk_1",
+      "entity_type": "faq",
+      "entity_id": "faq_cancellation_12",
+      "content": "FAQ: What happens if the tour is cancelled due to volcanic activity or bad weather? Answer: Force majeure triggers (volcanic activity, gas conditions, earthquakes, floods, government closures, civil unrest, severe weather) allow JVTO to offer reasonable alternatives, Travel Credit for the unused portion, or a partial/full cash refund net of non-recoverable expenses.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "faq_planning_13_chunk_1",
+      "entity_type": "faq",
+      "entity_id": "faq_planning_13",
+      "content": "FAQ: What is the best time of year to visit? Answer: Dry season (April–October) is best overall — clear skies for Bromo sunrise and Ijen blue fire, peak season so book 2–4 weeks ahead. Shoulder months (March, November) are viable with slightly lower blue fire odds and fewer crowds. Wet season (December–February) carries more risk from heavy rain affecting trails.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "faq_planning_14_chunk_1",
+      "entity_type": "faq",
+      "entity_id": "faq_planning_14",
+      "content": "FAQ: How long does it take to travel between destinations? Answer: Approximate travel times: Surabaya to Bromo (Cemoro Lawang) ~3 hours; Ijen (Paltuding) to Surabaya 5–6 hours; Tumpak Sewu to Bromo 3–4 hours; Bali to Ijen (Banyuwangi side) 5–7 hours.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    },
+    {
+      "chunk_id": "faq_planning_15_chunk_1",
+      "entity_type": "faq",
+      "entity_id": "faq_planning_15",
+      "content": "FAQ: What are the temperature conditions at Bromo and Ijen? Answer: Mount Bromo pre-dawn: 5–15°C (41–59°F). Kawah Ijen midnight departure and crater rim: 10–15°C (50–59°F). Both destinations require warm layers — layering is recommended over a single thick garment.",
+      "metadata": {
+        "source": "llm-wiki",
+        "confidence": "high",
+        "freshness": "fresh"
+      }
+    }
+  ]
+}

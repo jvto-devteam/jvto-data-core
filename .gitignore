@@ -9,4 +9,5 @@ clean-data/
 source-trace/
 conflicts/
 indexes/
+!phases/*/indexes/
 exports/

@@ -1,0 +1,41 @@
+name: post-extract
+description: Auto-validate output JSON files setelah setiap phase extraction selesai
+trigger: after_phase_complete
+
+validations:
+  - name: check_json_valid
+    description: Pastikan semua output file adalah valid JSON
+    command: |
+      for f in phases/*/output/*.json phases/phase-5-index/indexes/*.json; do
+        [ -f "$f" ] && jq empty "$f" 2>/dev/null || echo "INVALID JSON: $f"
+      done
+
+  - name: check_required_fields
+    description: Pastikan field wajib ada di setiap output
+    checks:
+      - file: phases/phase-0-inventory/output/source-catalog.json
+        required: [total_repos, total_sources, repos]
+      - file: phases/phase-1-packages/output/packages.json
+        required: [total_packages, packages]
+      - file: phases/phase-1-packages/output/package-sources.json
+        required: [total_entities, entities]
+      - file: phases/phase-1-packages/output/package-conflicts.json
+        required: [total_conflicts, conflicts]
+      - file: phases/phase-2-trust/output/trust-claims.json
+        required: [total_claims, trust_claims]
+      - file: phases/phase-2-trust/output/policies.json
+        required: [total_policies, policies]
+      - file: phases/phase-3-operational/output/hotels.json
+        required: [hotels]
+      - file: phases/phase-4-booking/output/booking-aggregates.json
+        required: [booking_aggregates, analytics]
+
+  - name: check_no_pii
+    description: Pastikan tidak ada PII di booking aggregates
+    command: |
+      if [ -f phases/phase-4-booking/output/booking-aggregates.json ]; then
+        grep -iE '"email"|"phone"|"passport"|"name"' phases/phase-4-booking/output/booking-aggregates.json \
+          && echo "WARNING: Possible PII detected" || echo "OK: No PII fields found"
+      fi
+
+on_failure: log_and_continue

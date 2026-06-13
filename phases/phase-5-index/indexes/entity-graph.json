@@ -1,0 +1,1477 @@
+{
+  "generated_at": "2026-06-13",
+  "total_nodes": 79,
+  "total_edges": 113,
+  "node_types": {
+    "package": 35,
+    "destination": 7,
+    "policy": 18,
+    "trust": 19
+  },
+  "edge_relations": {
+    "includes": 103,
+    "requires": 10
+  },
+  "nodes": [
+    {
+      "id": "dest_bromo",
+      "type": "destination",
+      "label": "Mount Bromo"
+    },
+    {
+      "id": "dest_ijen",
+      "type": "destination",
+      "label": "Mount Ijen (Kawah Ijen)"
+    },
+    {
+      "id": "dest_madakaripura",
+      "type": "destination",
+      "label": "Madakaripura Waterfall"
+    },
+    {
+      "id": "dest_malang",
+      "type": "destination",
+      "label": "Malang City"
+    },
+    {
+      "id": "dest_papuma",
+      "type": "destination",
+      "label": "Papuma Beach"
+    },
+    {
+      "id": "dest_taman_safari_prigen",
+      "type": "destination",
+      "label": "Taman Safari Prigen"
+    },
+    {
+      "id": "dest_tumpak_sewu",
+      "type": "destination",
+      "label": "Tumpak Sewu Waterfall"
+    },
+    {
+      "id": "bromo-1d1n",
+      "type": "package",
+      "label": "1 Day Bromo Midnight Experience from Surabaya",
+      "properties": {
+        "duration": "1D1N",
+        "origin": "surabaya",
+        "min_price_idr": 1000000,
+        "confidence": "medium",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "bromo-2d1n",
+      "type": "package",
+      "label": "2 Day Bromo Sunrise Adventure from Surabaya",
+      "properties": {
+        "duration": "2D1N",
+        "origin": "surabaya",
+        "min_price_idr": 1750000,
+        "confidence": "medium",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "ijen-2d1n",
+      "type": "package",
+      "label": "2 Day Ijen Blue Fire Expedition from Surabaya",
+      "properties": {
+        "duration": "2D1N",
+        "origin": "surabaya",
+        "min_price_idr": 1550000,
+        "confidence": "medium",
+        "ijen_relevant": true,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "bali/ijen-bromo-madakaripura-3d2n",
+      "type": "package",
+      "label": "3 Day Ijen, Bromo & Madakaripura Waterfall Journey from Bali to Surabaya",
+      "properties": {
+        "duration": "3D2N",
+        "origin": "bali",
+        "min_price_idr": 2850000,
+        "confidence": "medium",
+        "ijen_relevant": true,
+        "visits_madakaripura": true,
+        "is_specialty": false,
+        "ferry_included": true
+      }
+    },
+    {
+      "id": "bromo-madakaripura-ijen-3d2n",
+      "type": "package",
+      "label": "3 Day Bromo, Madakaripura & Ijen Overland from Surabaya to Bali",
+      "properties": {
+        "duration": "3D2N",
+        "origin": "surabaya",
+        "min_price_idr": 2450000,
+        "confidence": "medium",
+        "ijen_relevant": true,
+        "visits_madakaripura": true,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "bali/ijen-papuma-tumpak-sewu-bromo-4d3n",
+      "type": "package",
+      "label": "4 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Expedition from Bali to Surabaya",
+      "properties": {
+        "duration": "4D3N",
+        "origin": "bali",
+        "min_price_idr": 3475000,
+        "confidence": "medium",
+        "ijen_relevant": true,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": true
+      }
+    },
+    {
+      "id": "ijen-bromo-madakaripura-4d3n",
+      "type": "package",
+      "label": "4 Day Ijen, Bromo & Madakaripura Waterfall Expedition from Surabaya",
+      "properties": {
+        "duration": "4D3N",
+        "origin": "surabaya",
+        "min_price_idr": 3025000,
+        "confidence": "medium",
+        "ijen_relevant": true,
+        "visits_madakaripura": true,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "tumpak-sewu-bromo-ijen-4d3n",
+      "type": "package",
+      "label": "4 Day Tumpak Sewu, Bromo & Ijen Adventure from Surabaya to Bali",
+      "properties": {
+        "duration": "4D3N",
+        "origin": "surabaya",
+        "min_price_idr": 3125000,
+        "confidence": "medium",
+        "ijen_relevant": true,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "bali/ijen-papuma-tumpak-sewu-bromo-5d4n",
+      "type": "package",
+      "label": "5 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Discovery from Bali to Surabaya",
+      "properties": {
+        "duration": "5D4N",
+        "origin": "bali",
+        "min_price_idr": 4050000,
+        "confidence": "medium",
+        "ijen_relevant": true,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": true
+      }
+    },
+    {
+      "id": "ijen-bromo-madakaripura-malang-5d4n",
+      "type": "package",
+      "label": "5 Day Ijen, Bromo, Madakaripura & Malang City Adventure from Surabaya",
+      "properties": {
+        "duration": "5D4N",
+        "origin": "surabaya",
+        "min_price_idr": 3850000,
+        "confidence": "medium",
+        "ijen_relevant": true,
+        "visits_madakaripura": true,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "ijen-papuma-tumpak-sewu-bromo-malang-6d5n",
+      "type": "package",
+      "label": "6 Day Ijen, Papuma Beach, Tumpak Sewu, Bromo & Malang City Discovery from Surabaya",
+      "properties": {
+        "duration": "6D5N",
+        "origin": "surabaya",
+        "min_price_idr": 4750000,
+        "confidence": "medium",
+        "ijen_relevant": true,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "taman-safari-prigen-bromo-madakaripura-3d2n",
+      "type": "package",
+      "label": "3 Day Taman Safari Prigen, Bromo & Madakaripura from Surabaya",
+      "properties": {
+        "duration": "3D2N",
+        "origin": "surabaya",
+        "min_price_idr": 3450000,
+        "confidence": "medium",
+        "ijen_relevant": false,
+        "visits_madakaripura": true,
+        "is_specialty": true,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "bali/bromo-ijen-3d2n",
+      "type": "package",
+      "label": "3 Day Bromo & Ijen Volcano Discovery from Bali",
+      "properties": {
+        "duration": "3D2N",
+        "origin": "bali",
+        "min_price_idr": 2850000,
+        "confidence": "medium",
+        "ijen_relevant": true,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": true
+      }
+    },
+    {
+      "id": "1-day-bromo-midnight-experience-from-surabaya",
+      "type": "package",
+      "label": "1 Day Bromo Midnight Experience from Surabaya",
+      "properties": {
+        "duration": "1 Days 1 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 1000000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "2-day-ijen-blue-fire-expedition-from-surabaya",
+      "type": "package",
+      "label": "2 Day Ijen Blue Fire Expedition from Surabaya",
+      "properties": {
+        "duration": "2 Days 1 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 1550000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "2-day-bromo-sunrise-adventure-from-surabaya",
+      "type": "package",
+      "label": "2 Day Bromo Sunrise Adventure from Surabaya",
+      "properties": {
+        "duration": "2 Days 1 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 1750000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "3-day-bromo-and-madakaripura-waterfall-and-ijen-overland-from-surabaya-to-bali",
+      "type": "package",
+      "label": "3 Day Bromo, Madakaripura Waterfall & Ijen Overland from Surabaya to Bali",
+      "properties": {
+        "duration": "3 Days 2 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 2450000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "3-day-ijen-and-bromo-and-madakaripura-waterfall-from-surabaya",
+      "type": "package",
+      "label": "3 Day Ijen, Bromo & Madakaripura Waterfall Discovery from Surabaya",
+      "properties": {
+        "duration": "3 Days 2 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 2450000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "4-day-ijen-and-bromo-and-madakaripura-waterfall-from-surabaya",
+      "type": "package",
+      "label": "4 Day Ijen, Bromo & Madakaripura Waterfall Expedition from Surabaya",
+      "properties": {
+        "duration": "4 Days 3 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 3025000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "4-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-surabaya",
+      "type": "package",
+      "label": "4 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Journey from Surabaya",
+      "properties": {
+        "duration": "4 Days 3 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 3125000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "4-day-tumpak-sewu-waterfall-and-bromo-and-ijen-adventure-from-surabaya-to-bali",
+      "type": "package",
+      "label": "4 Day Tumpak Sewu, Bromo & Ijen Adventure from Surabaya to Bali",
+      "properties": {
+        "duration": "4 Days 3 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 3125000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "5-day-ijen-and-bromo-and-madakaripura-waterfall-and-malang-city-adventure-from-surabaya",
+      "type": "package",
+      "label": "5 Day Ijen, Bromo, Madakaripura & Malang City Adventure from Surabaya",
+      "properties": {
+        "duration": "5 Days 4 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 3850000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "4-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-bali-to-surabaya",
+      "type": "package",
+      "label": "4 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Expedition from Bali to Surabaya",
+      "properties": {
+        "duration": "4 Days 3 Nights",
+        "origin": "Bali",
+        "min_price_idr": 3475000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "5-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-bali-to-surabaya",
+      "type": "package",
+      "label": "5 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Discovery from Bali to Surabaya",
+      "properties": {
+        "duration": "5 Days 4 Nights",
+        "origin": "Bali",
+        "min_price_idr": 4050000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "5-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-surabaya",
+      "type": "package",
+      "label": "5 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Nature Trip from Surabaya",
+      "properties": {
+        "duration": "5 Days 4 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 3650000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "3-day-ijen-and-bromo-and-madakaripura-waterfall-from-bali-to-surabaya",
+      "type": "package",
+      "label": "3 Day Ijen, Bromo & Madakaripura Waterfall Journey from Bali to Surabaya",
+      "properties": {
+        "duration": "3 Days 2 Nights",
+        "origin": "Bali",
+        "min_price_idr": 2850000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "3-day-bromo-and-madakaripura-waterfall-getaway-from-surabaya",
+      "type": "package",
+      "label": "3 Day Bromo & Madakaripura Waterfall Getaway from Surabaya",
+      "properties": {
+        "duration": "3 Days 2 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 2450000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "6-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-and-malang-city-discovery-from-surabaya",
+      "type": "package",
+      "label": "6 Day Ijen, Papuma Beach, Tumpak Sewu, Bromo & Malang City Discovery from Surabaya",
+      "properties": {
+        "duration": "6 Days 5 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 4750000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "3-day-bromo-and-ijen-volcano-discovery-from-bali",
+      "type": "package",
+      "label": "3 Day Bromo & Ijen Volcano Discovery from Bali",
+      "properties": {
+        "duration": "3 Days 2 Nights",
+        "origin": "Bali",
+        "min_price_idr": 2850000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "3d2n-mount-bromo-madakaripura-waterfall-ijen-crater-tour-from-surabaya",
+      "type": "package",
+      "label": "3D2N Mount Bromo, Madakaripura Waterfall & Ijen Crater Tour from Surabaya",
+      "properties": {
+        "duration": "3 Days 2 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 2000000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "4d3n-mount-bromo-ijen-crater-surabaya-night-market-from-surabaya",
+      "type": "package",
+      "label": "4D3N Mount Bromo, Ijen Crater & Surabaya Night Market from Surabaya",
+      "properties": {
+        "duration": "4 Days 3 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 2500000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "4d3n-ijen-crater-papuma-beach-tumpak-sewu-waterfall-mount-bromo-from-surabaya",
+      "type": "package",
+      "label": "4D3N Ijen Crater, Papuma Beach, Tumpak Sewu Waterfal & Mount Bromo from Surabaya",
+      "properties": {
+        "duration": "4 Days 3 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 2580000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "3-day-bromo-and-ijen-volcano-trip-from-surabaya",
+      "type": "package",
+      "label": "3 Day Bromo & Ijen Volcano Trip from Surabaya",
+      "properties": {
+        "duration": "3 Days 2 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 2450000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "3-day-tumpak-sewu-waterfall-and-bromo-explorer-from-surabaya",
+      "type": "package",
+      "label": "3 Day Tumpak Sewu Waterfall & Bromo Explorer from Surabaya",
+      "properties": {
+        "duration": "3 Days 2 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 2450000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "3-day-taman-safari-prigen-and-bromo-and-madakaripura-waterfall-family-adventure-from-surabaya",
+      "type": "package",
+      "label": "3 Day Taman Safari Prigen, Bromo & Madakaripura Family Adventure from Surabaya",
+      "properties": {
+        "duration": "3 Days 2 Nights",
+        "origin": "Surabaya",
+        "min_price_idr": 3450000,
+        "confidence": "low",
+        "ijen_relevant": false,
+        "visits_madakaripura": false,
+        "is_specialty": false,
+        "ferry_included": false
+      }
+    },
+    {
+      "id": "policy_deposit_payment",
+      "type": "policy",
+      "label": "Deposit & Payment Schedule",
+      "properties": {
+        "category": "payment",
+        "source": "llm-wiki"
+      }
+    },
+    {
+      "id": "policy_cancellation",
+      "type": "policy",
+      "label": "Cancellation Policy",
+      "properties": {
+        "category": "cancellation",
+        "source": "llm-wiki"
+      }
+    },
+    {
+      "id": "policy_refund",
+      "type": "policy",
+      "label": "Refund Policy",
+      "properties": {
+        "category": "refund",
+        "source": "llm-wiki"
+      }
+    },
+    {
+      "id": "policy_inclusions_exclusions",
+      "type": "policy",
+      "label": "Inclusions & Exclusions Policy",
+      "properties": {
+        "category": "operational",
+        "source": "llm-wiki"
+      }
+    },
+    {
+      "id": "policy_health_screening_ijen",
+      "type": "policy",
+      "label": "Ijen Health Screening Policy",
+      "properties": {
+        "category": "safety",
+        "source": "llm-wiki"
+      }
+    },
+    {
+      "id": "policy_booking_confirmation",
+      "type": "policy",
+      "label": "Booking Confirmation Policy",
+      "properties": {
+        "category": "operational",
+        "source": "llm-wiki"
+      }
+    },
+    {
+      "id": "policy_vehicle_room_allocation",
+      "type": "policy",
+      "label": "Vehicle & Room Allocation Policy",
+      "properties": {
+        "category": "operational",
+        "source": "llm-wiki"
+      }
+    },
+    {
+      "id": "policy_foc_group",
+      "type": "policy",
+      "label": "Free-of-Charge (FOC) Group Policy",
+      "properties": {
+        "category": "payment",
+        "source": "llm-wiki"
+      }
+    },
+    {
+      "id": "policy_deposit_dp",
+      "type": "policy",
+      "label": "Down Payment (Deposit) Policy",
+      "properties": {
+        "category": "payment",
+        "source": "new-backoffice"
+      }
+    },
+    {
+      "id": "policy_payment_methods",
+      "type": "policy",
+      "label": "Accepted Payment Methods",
+      "properties": {
+        "category": "payment",
+        "source": "new-backoffice"
+      }
+    },
+    {
+      "id": "policy_cancellation_klook",
+      "type": "policy",
+      "label": "KLOOK Booking Cancellation Policy",
+      "properties": {
+        "category": "cancellation",
+        "source": "new-backoffice"
+      }
+    },
+    {
+      "id": "policy_order_channels",
+      "type": "policy",
+      "label": "Booking Channel Policy",
+      "properties": {
+        "category": "operations",
+        "source": "new-backoffice"
+      }
+    },
+    {
+      "id": "policy_inclusions_standard",
+      "type": "policy",
+      "label": "Standard Tour Inclusions",
+      "properties": {
+        "category": "inclusions",
+        "source": "new-backoffice"
+      }
+    },
+    {
+      "id": "policy_exclusions_standard",
+      "type": "policy",
+      "label": "Standard Tour Exclusions",
+      "properties": {
+        "category": "inclusions",
+        "source": "new-backoffice"
+      }
+    },
+    {
+      "id": "policy_price_tiers",
+      "type": "policy",
+      "label": "Package Price Tier Policy",
+      "properties": {
+        "category": "pricing",
+        "source": "new-backoffice"
+      }
+    },
+    {
+      "id": "policy_travel_insurance",
+      "type": "policy",
+      "label": "Travel Insurance Policy",
+      "properties": {
+        "category": "safety",
+        "source": "new-backoffice"
+      }
+    },
+    {
+      "id": "policy_cancellation_change",
+      "type": "policy",
+      "label": "Booking Change and Cancellation Policy (General)",
+      "properties": {
+        "category": "cancellation",
+        "source": "new-backoffice"
+      }
+    },
+    {
+      "id": "policy_police_escort",
+      "type": "policy",
+      "label": "Police Escort Operational Policy",
+      "properties": {
+        "category": "operations",
+        "source": "new-backoffice"
+      }
+    },
+    {
+      "id": "trust_safety_led_operations",
+      "type": "trust",
+      "label": "Volcano travel is unpredictable, so JVTO focuses on operational certai...",
+      "properties": {
+        "category": "safety",
+        "validation": "pass"
+      }
+    },
+    {
+      "id": "trust_private_tours_execution_control",
+      "type": "trust",
+      "label": "JVTO runs private tours by default so timing, pacing, and safety decis...",
+      "properties": {
+        "category": "operational",
+        "validation": "pass"
+      }
+    },
+    {
+      "id": "trust_all_inclusive_clarity",
+      "type": "trust",
+      "label": "JVTO uses an all-inclusive structure by default to reduce surprise cos...",
+      "properties": {
+        "category": "operational",
+        "validation": "pass"
+      }
+    },
+    {
+      "id": "trust_ijen_health_screening",
+      "type": "trust",
+      "label": "On routes that include Mount Ijen, JVTO integrates health screening as...",
+      "properties": {
+        "category": "safety",
+        "validation": "pass"
+      }
+    },
+    {
+      "id": "trust_proof_first_verification_layer",
+      "type": "trust",
+      "label": "JVTO organizes trust signals as a verification layer: clear claims, co...",
+      "properties": {
+        "category": "credentials",
+        "validation": "pass"
+      }
+    },
+    {
+      "id": "trust_reviews_registry",
+      "type": "trust",
+      "label": "JVTO treats reviews as a registry: grouped by platform and theme, so g...",
+      "properties": {
+        "category": "quality",
+        "validation": "pass"
+      }
+    },
+    {
+      "id": "trust_team_registry",
+      "type": "trust",
+      "label": "JVTO's product is executed by real people. The Team Registry shows rol...",
+      "properties": {
+        "category": "people",
+        "validation": "partial"
+      }
+    },
+    {
+      "id": "trust_partners_context_hpwki_indecon_isic",
+      "type": "trust",
+      "label": "JVTO partnerships are explained by function: competence context (HPWKI...",
+      "properties": {
+        "category": "credentials",
+        "validation": "partial"
+      }
+    },
+    {
+      "id": "trust_press_recognition",
+      "type": "trust",
+      "label": "JVTO lists press and recognition with context so guests can evaluate t...",
+      "properties": {
+        "category": "credentials",
+        "validation": "pass"
+      }
+    },
+    {
+      "id": "claim_deposit_10pct",
+      "type": "trust",
+      "label": "JVTO requires a down payment (deposit) of approximately 10% of the gra...",
+      "properties": {
+        "category": "payment",
+        "validation": "partial — modal deposit is 10% but average is skewed; no explicit deposit policy table found; policy is inferred from booking data patterns"
+      }
+    },
+    {
+      "id": "claim_payment_methods_accepted",
+      "type": "trust",
+      "label": "JVTO accepts Cash, Bank Transfer (PT JAVA VOLCANO RENDEZVOUS, acc 0013...",
+      "properties": {
+        "category": "payment",
+        "validation": "confirmed — data from payment_methods table"
+      }
+    },
+    {
+      "id": "claim_order_channels",
+      "type": "trust",
+      "label": "JVTO operates through three booking channels: JVTO direct, TWT (travel...",
+      "properties": {
+        "category": "operations",
+        "validation": "confirmed — data from order_channels and related table structures"
+      }
+    },
+    {
+      "id": "claim_cancellation_full_refund_klook",
+      "type": "trust",
+      "label": "KLOOK bookings that are cancelled receive a FULL refund",
+      "properties": {
+        "category": "cancellation",
+        "validation": "partial — only KLOOK cancellations observed in data; direct booking cancellation policy not found in structured form"
+      }
+    },
+    {
+      "id": "claim_price_tiers",
+      "type": "trust",
+      "label": "JVTO packages are segmented into three price tiers: Basic, Reguler, an...",
+      "properties": {
+        "category": "pricing",
+        "validation": "confirmed — data from price_plans table"
+      }
+    },
+    {
+      "id": "claim_faq_payment_methods",
+      "type": "trust",
+      "label": "FAQ states JVTO accepts major credit cards, bank transfers, and online...",
+      "properties": {
+        "category": "payment",
+        "validation": "confirmed — direct FAQ content; note PayPal is mentioned in FAQ but payment_methods table does not have a PayPal entry (only in bookings.payment_method enum as 'paypal')"
+      }
+    },
+    {
+      "id": "claim_travel_insurance_not_included",
+      "type": "trust",
+      "label": "Travel insurance is not included in JVTO tour packages and is listed a...",
+      "properties": {
+        "category": "inclusions",
+        "validation": "confirmed — multiple data sources align"
+      }
+    },
+    {
+      "id": "claim_international_flights_excluded",
+      "type": "trust",
+      "label": "International and domestic air tickets are excluded from all JVTO tour...",
+      "properties": {
+        "category": "inclusions",
+        "validation": "confirmed — standard exclusion items in database"
+      }
+    },
+    {
+      "id": "claim_indonesian_visa_excluded",
+      "type": "trust",
+      "label": "Indonesian VISA costs are excluded from JVTO tour packages",
+      "properties": {
+        "category": "inclusions",
+        "validation": "confirmed — standard exclusion item in database"
+      }
+    },
+    {
+      "id": "claim_personal_expenses_excluded",
+      "type": "trust",
+      "label": "All personal expenses are excluded from JVTO tour packages",
+      "properties": {
+        "category": "inclusions",
+        "validation": "confirmed — standard exclusion item in database"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "bromo-1d1n",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "bromo-2d1n",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "ijen-2d1n",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "ijen-2d1n",
+      "target": "policy_health_screening_ijen",
+      "relation": "requires"
+    },
+    {
+      "source": "bali/ijen-bromo-madakaripura-3d2n",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "bali/ijen-bromo-madakaripura-3d2n",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "bali/ijen-bromo-madakaripura-3d2n",
+      "target": "dest_madakaripura",
+      "relation": "includes"
+    },
+    {
+      "source": "bali/ijen-bromo-madakaripura-3d2n",
+      "target": "policy_health_screening_ijen",
+      "relation": "requires"
+    },
+    {
+      "source": "bromo-madakaripura-ijen-3d2n",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "bromo-madakaripura-ijen-3d2n",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "bromo-madakaripura-ijen-3d2n",
+      "target": "dest_madakaripura",
+      "relation": "includes"
+    },
+    {
+      "source": "bromo-madakaripura-ijen-3d2n",
+      "target": "policy_health_screening_ijen",
+      "relation": "requires"
+    },
+    {
+      "source": "bali/ijen-papuma-tumpak-sewu-bromo-4d3n",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "bali/ijen-papuma-tumpak-sewu-bromo-4d3n",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "bali/ijen-papuma-tumpak-sewu-bromo-4d3n",
+      "target": "dest_papuma",
+      "relation": "includes"
+    },
+    {
+      "source": "bali/ijen-papuma-tumpak-sewu-bromo-4d3n",
+      "target": "dest_tumpak_sewu",
+      "relation": "includes"
+    },
+    {
+      "source": "bali/ijen-papuma-tumpak-sewu-bromo-4d3n",
+      "target": "policy_health_screening_ijen",
+      "relation": "requires"
+    },
+    {
+      "source": "ijen-bromo-madakaripura-4d3n",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "ijen-bromo-madakaripura-4d3n",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "ijen-bromo-madakaripura-4d3n",
+      "target": "dest_madakaripura",
+      "relation": "includes"
+    },
+    {
+      "source": "ijen-bromo-madakaripura-4d3n",
+      "target": "policy_health_screening_ijen",
+      "relation": "requires"
+    },
+    {
+      "source": "tumpak-sewu-bromo-ijen-4d3n",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "tumpak-sewu-bromo-ijen-4d3n",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "tumpak-sewu-bromo-ijen-4d3n",
+      "target": "dest_tumpak_sewu",
+      "relation": "includes"
+    },
+    {
+      "source": "tumpak-sewu-bromo-ijen-4d3n",
+      "target": "policy_health_screening_ijen",
+      "relation": "requires"
+    },
+    {
+      "source": "bali/ijen-papuma-tumpak-sewu-bromo-5d4n",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "bali/ijen-papuma-tumpak-sewu-bromo-5d4n",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "bali/ijen-papuma-tumpak-sewu-bromo-5d4n",
+      "target": "dest_papuma",
+      "relation": "includes"
+    },
+    {
+      "source": "bali/ijen-papuma-tumpak-sewu-bromo-5d4n",
+      "target": "dest_tumpak_sewu",
+      "relation": "includes"
+    },
+    {
+      "source": "bali/ijen-papuma-tumpak-sewu-bromo-5d4n",
+      "target": "policy_health_screening_ijen",
+      "relation": "requires"
+    },
+    {
+      "source": "ijen-bromo-madakaripura-malang-5d4n",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "ijen-bromo-madakaripura-malang-5d4n",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "ijen-bromo-madakaripura-malang-5d4n",
+      "target": "dest_madakaripura",
+      "relation": "includes"
+    },
+    {
+      "source": "ijen-bromo-madakaripura-malang-5d4n",
+      "target": "dest_malang",
+      "relation": "includes"
+    },
+    {
+      "source": "ijen-bromo-madakaripura-malang-5d4n",
+      "target": "policy_health_screening_ijen",
+      "relation": "requires"
+    },
+    {
+      "source": "ijen-papuma-tumpak-sewu-bromo-malang-6d5n",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "ijen-papuma-tumpak-sewu-bromo-malang-6d5n",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "ijen-papuma-tumpak-sewu-bromo-malang-6d5n",
+      "target": "dest_papuma",
+      "relation": "includes"
+    },
+    {
+      "source": "ijen-papuma-tumpak-sewu-bromo-malang-6d5n",
+      "target": "dest_tumpak_sewu",
+      "relation": "includes"
+    },
+    {
+      "source": "ijen-papuma-tumpak-sewu-bromo-malang-6d5n",
+      "target": "dest_malang",
+      "relation": "includes"
+    },
+    {
+      "source": "ijen-papuma-tumpak-sewu-bromo-malang-6d5n",
+      "target": "policy_health_screening_ijen",
+      "relation": "requires"
+    },
+    {
+      "source": "taman-safari-prigen-bromo-madakaripura-3d2n",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "taman-safari-prigen-bromo-madakaripura-3d2n",
+      "target": "dest_madakaripura",
+      "relation": "includes"
+    },
+    {
+      "source": "taman-safari-prigen-bromo-madakaripura-3d2n",
+      "target": "dest_taman_safari_prigen",
+      "relation": "includes"
+    },
+    {
+      "source": "bali/bromo-ijen-3d2n",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "bali/bromo-ijen-3d2n",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "bali/bromo-ijen-3d2n",
+      "target": "policy_health_screening_ijen",
+      "relation": "requires"
+    },
+    {
+      "source": "1-day-bromo-midnight-experience-from-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "2-day-ijen-blue-fire-expedition-from-surabaya",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "2-day-bromo-sunrise-adventure-from-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "2-day-bromo-sunrise-adventure-from-surabaya",
+      "target": "dest_madakaripura",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-bromo-and-madakaripura-waterfall-and-ijen-overland-from-surabaya-to-bali",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-bromo-and-madakaripura-waterfall-and-ijen-overland-from-surabaya-to-bali",
+      "target": "dest_madakaripura",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-bromo-and-madakaripura-waterfall-and-ijen-overland-from-surabaya-to-bali",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-ijen-and-bromo-and-madakaripura-waterfall-from-surabaya",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-ijen-and-bromo-and-madakaripura-waterfall-from-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-ijen-and-bromo-and-madakaripura-waterfall-from-surabaya",
+      "target": "dest_madakaripura",
+      "relation": "includes"
+    },
+    {
+      "source": "4-day-ijen-and-bromo-and-madakaripura-waterfall-from-surabaya",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "4-day-ijen-and-bromo-and-madakaripura-waterfall-from-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "4-day-ijen-and-bromo-and-madakaripura-waterfall-from-surabaya",
+      "target": "dest_madakaripura",
+      "relation": "includes"
+    },
+    {
+      "source": "4-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-surabaya",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "4-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-surabaya",
+      "target": "dest_papuma",
+      "relation": "includes"
+    },
+    {
+      "source": "4-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-surabaya",
+      "target": "dest_tumpak_sewu",
+      "relation": "includes"
+    },
+    {
+      "source": "4-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "4-day-tumpak-sewu-waterfall-and-bromo-and-ijen-adventure-from-surabaya-to-bali",
+      "target": "dest_tumpak_sewu",
+      "relation": "includes"
+    },
+    {
+      "source": "4-day-tumpak-sewu-waterfall-and-bromo-and-ijen-adventure-from-surabaya-to-bali",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "4-day-tumpak-sewu-waterfall-and-bromo-and-ijen-adventure-from-surabaya-to-bali",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "5-day-ijen-and-bromo-and-madakaripura-waterfall-and-malang-city-adventure-from-surabaya",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "5-day-ijen-and-bromo-and-madakaripura-waterfall-and-malang-city-adventure-from-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "5-day-ijen-and-bromo-and-madakaripura-waterfall-and-malang-city-adventure-from-surabaya",
+      "target": "dest_madakaripura",
+      "relation": "includes"
+    },
+    {
+      "source": "5-day-ijen-and-bromo-and-madakaripura-waterfall-and-malang-city-adventure-from-surabaya",
+      "target": "dest_malang",
+      "relation": "includes"
+    },
+    {
+      "source": "4-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-bali-to-surabaya",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "4-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-bali-to-surabaya",
+      "target": "dest_papuma",
+      "relation": "includes"
+    },
+    {
+      "source": "4-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-bali-to-surabaya",
+      "target": "dest_tumpak_sewu",
+      "relation": "includes"
+    },
+    {
+      "source": "4-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-bali-to-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "5-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-bali-to-surabaya",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "5-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-bali-to-surabaya",
+      "target": "dest_papuma",
+      "relation": "includes"
+    },
+    {
+      "source": "5-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-bali-to-surabaya",
+      "target": "dest_tumpak_sewu",
+      "relation": "includes"
+    },
+    {
+      "source": "5-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-bali-to-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "5-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-surabaya",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "5-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-surabaya",
+      "target": "dest_papuma",
+      "relation": "includes"
+    },
+    {
+      "source": "5-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-surabaya",
+      "target": "dest_tumpak_sewu",
+      "relation": "includes"
+    },
+    {
+      "source": "5-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-ijen-and-bromo-and-madakaripura-waterfall-from-bali-to-surabaya",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-ijen-and-bromo-and-madakaripura-waterfall-from-bali-to-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-ijen-and-bromo-and-madakaripura-waterfall-from-bali-to-surabaya",
+      "target": "dest_madakaripura",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-bromo-and-madakaripura-waterfall-getaway-from-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-bromo-and-madakaripura-waterfall-getaway-from-surabaya",
+      "target": "dest_madakaripura",
+      "relation": "includes"
+    },
+    {
+      "source": "6-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-and-malang-city-discovery-from-surabaya",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "6-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-and-malang-city-discovery-from-surabaya",
+      "target": "dest_papuma",
+      "relation": "includes"
+    },
+    {
+      "source": "6-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-and-malang-city-discovery-from-surabaya",
+      "target": "dest_tumpak_sewu",
+      "relation": "includes"
+    },
+    {
+      "source": "6-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-and-malang-city-discovery-from-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "6-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-and-malang-city-discovery-from-surabaya",
+      "target": "dest_malang",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-bromo-and-ijen-volcano-discovery-from-bali",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-bromo-and-ijen-volcano-discovery-from-bali",
+      "target": "dest_madakaripura",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-bromo-and-ijen-volcano-discovery-from-bali",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "3d2n-mount-bromo-madakaripura-waterfall-ijen-crater-tour-from-surabaya",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "3d2n-mount-bromo-madakaripura-waterfall-ijen-crater-tour-from-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "4d3n-mount-bromo-ijen-crater-surabaya-night-market-from-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "4d3n-mount-bromo-ijen-crater-surabaya-night-market-from-surabaya",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "4d3n-mount-bromo-ijen-crater-surabaya-night-market-from-surabaya",
+      "target": "dest_madakaripura",
+      "relation": "includes"
+    },
+    {
+      "source": "4d3n-ijen-crater-papuma-beach-tumpak-sewu-waterfall-mount-bromo-from-surabaya",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "4d3n-ijen-crater-papuma-beach-tumpak-sewu-waterfall-mount-bromo-from-surabaya",
+      "target": "dest_papuma",
+      "relation": "includes"
+    },
+    {
+      "source": "4d3n-ijen-crater-papuma-beach-tumpak-sewu-waterfall-mount-bromo-from-surabaya",
+      "target": "dest_tumpak_sewu",
+      "relation": "includes"
+    },
+    {
+      "source": "4d3n-ijen-crater-papuma-beach-tumpak-sewu-waterfall-mount-bromo-from-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-bromo-and-ijen-volcano-trip-from-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-bromo-and-ijen-volcano-trip-from-surabaya",
+      "target": "dest_madakaripura",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-bromo-and-ijen-volcano-trip-from-surabaya",
+      "target": "dest_ijen",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-tumpak-sewu-waterfall-and-bromo-explorer-from-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-tumpak-sewu-waterfall-and-bromo-explorer-from-surabaya",
+      "target": "dest_tumpak_sewu",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-taman-safari-prigen-and-bromo-and-madakaripura-waterfall-family-adventure-from-surabaya",
+      "target": "dest_bromo",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-taman-safari-prigen-and-bromo-and-madakaripura-waterfall-family-adventure-from-surabaya",
+      "target": "dest_madakaripura",
+      "relation": "includes"
+    },
+    {
+      "source": "3-day-taman-safari-prigen-and-bromo-and-madakaripura-waterfall-family-adventure-from-surabaya",
+      "target": "dest_taman_safari_prigen",
+      "relation": "includes"
+    }
+  ]
+}

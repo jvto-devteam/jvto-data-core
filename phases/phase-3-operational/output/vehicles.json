@@ -1,0 +1,450 @@
+{
+  "entity": "vehicles",
+  "count": 21,
+  "extracted_at": "2026-06-13T13:48:41.789169",
+  "duplicates": 0,
+  "avg_completeness": 0.611,
+  "records": [
+    {
+      "id": "vehicle_1",
+      "name": "MPV",
+      "description": "Pax: 1-3, Fuel: 200000.0",
+      "status": "active",
+      "code": "C.1",
+      "vendor_id": null,
+      "garage_id": null,
+      "capacity": {
+        "min": 1,
+        "max": 3
+      },
+      "price": 250000.0,
+      "price_twt": 500000.0,
+      "fuel": 200000.0,
+      "color": "#FD8A8A",
+      "completeness": 0.83,
+      "is_duplicate": false,
+      "last_updated": "2022-10-11",
+      "created_at": "2022-10-11"
+    },
+    {
+      "id": "vehicle_2",
+      "name": "Innova",
+      "description": "Pax: 3-3, Fuel: 200000.0",
+      "status": "active",
+      "code": "C.2",
+      "vendor_id": 6,
+      "garage_id": 1,
+      "capacity": {
+        "min": 3,
+        "max": 3
+      },
+      "price": 350000.0,
+      "price_twt": 570000.0,
+      "fuel": 200000.0,
+      "color": "#ECA869",
+      "completeness": 1.0,
+      "is_duplicate": false,
+      "last_updated": "2022-10-11",
+      "created_at": "2022-10-11"
+    },
+    {
+      "id": "vehicle_4",
+      "name": "Avanza",
+      "description": "Pax: 1-3, Fuel: None",
+      "status": "active",
+      "code": null,
+      "vendor_id": 6,
+      "garage_id": 1,
+      "capacity": {
+        "min": 1,
+        "max": 3
+      },
+      "price": 750000.0,
+      "price_twt": null,
+      "fuel": null,
+      "color": null,
+      "completeness": 0.83,
+      "is_duplicate": false,
+      "last_updated": "2022-10-11",
+      "created_at": "2022-10-11"
+    },
+    {
+      "id": "vehicle_5",
+      "name": "Hiace",
+      "description": "Pax: 4-0, Fuel: 200000.0",
+      "status": "active",
+      "code": "C.3",
+      "vendor_id": 6,
+      "garage_id": 1,
+      "capacity": {
+        "min": 4,
+        "max": 0
+      },
+      "price": 1100000.0,
+      "price_twt": 1100000.0,
+      "fuel": 200000.0,
+      "color": "#FFACAC",
+      "completeness": 0.83,
+      "is_duplicate": false,
+      "last_updated": "2022-10-11",
+      "created_at": "2022-10-11"
+    },
+    {
+      "id": "vehicle_7",
+      "name": "Ertiga",
+      "description": "Pax: 1-3, Fuel: 230000.0",
+      "status": "active",
+      "code": null,
+      "vendor_id": 8,
+      "garage_id": null,
+      "capacity": {
+        "min": 1,
+        "max": 3
+      },
+      "price": 250000.0,
+      "price_twt": null,
+      "fuel": 230000.0,
+      "color": "#E5FDD1",
+      "completeness": 0.83,
+      "is_duplicate": false,
+      "last_updated": "2023-03-02",
+      "created_at": "2023-02-15"
+    },
+    {
+      "id": "vehicle_8",
+      "name": "Ertiga",
+      "description": "Pax: 1-3, Fuel: 230000.0",
+      "status": "active",
+      "code": null,
+      "vendor_id": null,
+      "garage_id": null,
+      "capacity": {
+        "min": 1,
+        "max": 3
+      },
+      "price": 250000.0,
+      "price_twt": null,
+      "fuel": 230000.0,
+      "color": null,
+      "completeness": 0.67,
+      "is_duplicate": false,
+      "last_updated": "2023-03-02",
+      "created_at": "2023-03-02"
+    },
+    {
+      "id": "vehicle_9",
+      "name": "Ertiga",
+      "description": "Pax: 1-3, Fuel: 230000.0",
+      "status": "active",
+      "code": null,
+      "vendor_id": null,
+      "garage_id": null,
+      "capacity": {
+        "min": 1,
+        "max": 3
+      },
+      "price": 250000.0,
+      "price_twt": null,
+      "fuel": 230000.0,
+      "color": null,
+      "completeness": 0.67,
+      "is_duplicate": false,
+      "last_updated": "2023-03-02",
+      "created_at": "2023-03-02"
+    },
+    {
+      "id": "vehicle_14",
+      "name": "Hiace Premio",
+      "description": "Pax: 4-0, Fuel: None",
+      "status": "active",
+      "code": "C.4",
+      "vendor_id": 6,
+      "garage_id": 1,
+      "capacity": {
+        "min": 4,
+        "max": 0
+      },
+      "price": 1300000.0,
+      "price_twt": 1300000.0,
+      "fuel": null,
+      "color": null,
+      "completeness": 0.83,
+      "is_duplicate": false,
+      "last_updated": "2023-08-31",
+      "created_at": "2023-08-31"
+    },
+    {
+      "id": "vehicle_15",
+      "name": "Xenia",
+      "description": "Pax: None-None, Fuel: None",
+      "status": "active",
+      "code": null,
+      "vendor_id": null,
+      "garage_id": null,
+      "capacity": {
+        "min": null,
+        "max": null
+      },
+      "price": null,
+      "price_twt": null,
+      "fuel": null,
+      "color": null,
+      "completeness": 0.17,
+      "is_duplicate": false,
+      "last_updated": "2023-10-26",
+      "created_at": "2023-10-26"
+    },
+    {
+      "id": "vehicle_16",
+      "name": "Toyota Calya",
+      "description": "Pax: None-None, Fuel: None",
+      "status": "active",
+      "code": null,
+      "vendor_id": 11,
+      "garage_id": null,
+      "capacity": {
+        "min": null,
+        "max": null
+      },
+      "price": null,
+      "price_twt": null,
+      "fuel": null,
+      "color": null,
+      "completeness": 0.33,
+      "is_duplicate": false,
+      "last_updated": "2026-03-28",
+      "created_at": "2024-02-04"
+    },
+    {
+      "id": "vehicle_17",
+      "name": "Avanza",
+      "description": "Pax: 1-3, Fuel: None",
+      "status": "active",
+      "code": null,
+      "vendor_id": null,
+      "garage_id": null,
+      "capacity": {
+        "min": 1,
+        "max": 3
+      },
+      "price": null,
+      "price_twt": null,
+      "fuel": null,
+      "color": null,
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2024-02-06",
+      "created_at": "2024-02-06"
+    },
+    {
+      "id": "vehicle_18",
+      "name": "Avanza",
+      "description": "Pax: None-None, Fuel: None",
+      "status": "active",
+      "code": null,
+      "vendor_id": null,
+      "garage_id": null,
+      "capacity": {
+        "min": null,
+        "max": null
+      },
+      "price": null,
+      "price_twt": null,
+      "fuel": null,
+      "color": null,
+      "completeness": 0.17,
+      "is_duplicate": false,
+      "last_updated": "2024-02-07",
+      "created_at": "2024-02-07"
+    },
+    {
+      "id": "vehicle_19",
+      "name": "Avanza",
+      "description": "Pax: 1-3, Fuel: None",
+      "status": "active",
+      "code": null,
+      "vendor_id": 12,
+      "garage_id": null,
+      "capacity": {
+        "min": 1,
+        "max": 3
+      },
+      "price": null,
+      "price_twt": null,
+      "fuel": null,
+      "color": null,
+      "completeness": 0.67,
+      "is_duplicate": false,
+      "last_updated": "2024-02-06",
+      "created_at": "2024-02-06"
+    },
+    {
+      "id": "vehicle_20",
+      "name": "Avanza",
+      "description": "Pax: None-None, Fuel: None",
+      "status": "active",
+      "code": null,
+      "vendor_id": null,
+      "garage_id": null,
+      "capacity": {
+        "min": null,
+        "max": null
+      },
+      "price": null,
+      "price_twt": null,
+      "fuel": null,
+      "color": null,
+      "completeness": 0.17,
+      "is_duplicate": false,
+      "last_updated": "2024-02-06",
+      "created_at": "2024-02-06"
+    },
+    {
+      "id": "vehicle_21",
+      "name": "Premio",
+      "description": "Pax: 4-0, Fuel: 200000.0",
+      "status": "active",
+      "code": null,
+      "vendor_id": null,
+      "garage_id": 1,
+      "capacity": {
+        "min": 4,
+        "max": 0
+      },
+      "price": 1300000.0,
+      "price_twt": 1300000.0,
+      "fuel": 200000.0,
+      "color": "#FFACAC",
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2022-10-11",
+      "created_at": "2022-10-11"
+    },
+    {
+      "id": "vehicle_22",
+      "name": "MPV",
+      "description": "Pax: 1-3, Fuel: None",
+      "status": "active",
+      "code": "A2.2",
+      "vendor_id": 11,
+      "garage_id": null,
+      "capacity": {
+        "min": 1,
+        "max": 3
+      },
+      "price": 225000.0,
+      "price_twt": null,
+      "fuel": null,
+      "color": null,
+      "completeness": 0.83,
+      "is_duplicate": false,
+      "last_updated": "2024-09-05",
+      "created_at": "2024-09-05"
+    },
+    {
+      "id": "vehicle_23",
+      "name": "MPV",
+      "description": "Pax: 1-3, Fuel: None",
+      "status": "active",
+      "code": "D1.10",
+      "vendor_id": 12,
+      "garage_id": null,
+      "capacity": {
+        "min": 1,
+        "max": 3
+      },
+      "price": 225000.0,
+      "price_twt": null,
+      "fuel": null,
+      "color": null,
+      "completeness": 0.83,
+      "is_duplicate": false,
+      "last_updated": "2025-04-24",
+      "created_at": "2025-04-24"
+    },
+    {
+      "id": "vehicle_24",
+      "name": "Medium Bus",
+      "description": "Pax: None-None, Fuel: None",
+      "status": "active",
+      "code": "D2.12",
+      "vendor_id": 6,
+      "garage_id": 1,
+      "capacity": {
+        "min": null,
+        "max": null
+      },
+      "price": 1800000.0,
+      "price_twt": null,
+      "fuel": null,
+      "color": null,
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2025-04-24",
+      "created_at": "2025-04-24"
+    },
+    {
+      "id": "vehicle_25",
+      "name": "Mini Bus (Elf)",
+      "description": "Pax: 2-13, Fuel: None",
+      "status": "active",
+      "code": "D2.13",
+      "vendor_id": null,
+      "garage_id": null,
+      "capacity": {
+        "min": 2,
+        "max": 13
+      },
+      "price": 1350000.0,
+      "price_twt": null,
+      "fuel": null,
+      "color": null,
+      "completeness": 0.67,
+      "is_duplicate": false,
+      "last_updated": "2025-04-24",
+      "created_at": "2025-04-24"
+    },
+    {
+      "id": "vehicle_26",
+      "name": "MPV",
+      "description": "Pax: None-None, Fuel: None",
+      "status": "active",
+      "code": "D2.15",
+      "vendor_id": 12,
+      "garage_id": null,
+      "capacity": {
+        "min": null,
+        "max": null
+      },
+      "price": 225000.0,
+      "price_twt": null,
+      "fuel": null,
+      "color": null,
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2025-06-21",
+      "created_at": "2025-06-21"
+    },
+    {
+      "id": "vehicle_27",
+      "name": "Avanza",
+      "description": "Pax: None-None, Fuel: None",
+      "status": "active",
+      "code": "C666",
+      "vendor_id": 10,
+      "garage_id": null,
+      "capacity": {
+        "min": null,
+        "max": null
+      },
+      "price": 250000.0,
+      "price_twt": null,
+      "fuel": null,
+      "color": null,
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2026-03-31",
+      "created_at": "2026-03-31"
+    }
+  ]
+}

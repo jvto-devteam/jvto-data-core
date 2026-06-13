@@ -1,0 +1,712 @@
+{
+  "entity": "destinations",
+  "count": 37,
+  "extracted_at": "2026-06-13T13:48:41.790998",
+  "duplicates": 12,
+  "avg_completeness": 0.451,
+  "records": [
+    {
+      "id": "destination_1",
+      "name": "Mount Bromo",
+      "description": "Experience the majesty of Mount Bromo, an active volcano that stands within the sea of sand in Bromo Tengger Semeru National Park. The sunrise over Bromo is a magical moment, with golden light illuminating landscape.",
+      "status": "active",
+      "code": "DST_002",
+      "difficulty": "Level 2 - Easy to moderate",
+      "route_type": "Out & back",
+      "length_km": 5.5,
+      "elevation_gain": 246.0,
+      "coordinates": {
+        "lat": -7.94227,
+        "lng": 112.95301
+      },
+      "completeness": 1.0,
+      "is_duplicate": false,
+      "last_updated": "2022-05-28",
+      "created_at": "2022-05-28"
+    },
+    {
+      "id": "destination_2",
+      "name": "Mount Ijen",
+      "description": "Venture to the stunning Ijen Crater, where you'll witness the mesmerizing blue flames and a turquoise sulfur lake amidst the starlit sky.Famous for blue fire phenomenon and sunrise view at the crater rim.",
+      "status": "active",
+      "code": "DST_001",
+      "difficulty": "Level 4 - Moderate to hard",
+      "route_type": "Out & Back",
+      "length_km": 9.3,
+      "elevation_gain": 577.0,
+      "coordinates": {
+        "lat": -8.05795,
+        "lng": 114.24165
+      },
+      "completeness": 1.0,
+      "is_duplicate": false,
+      "last_updated": "2022-05-28",
+      "created_at": "2022-05-28"
+    },
+    {
+      "id": "destination_3",
+      "name": "Bali",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -8.162,
+        "lng": 114.43548
+      },
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2022-05-28",
+      "created_at": "2022-05-28"
+    },
+    {
+      "id": "destination_4",
+      "name": "Surabaya",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -7.2462,
+        "lng": 112.7377
+      },
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2022-05-28",
+      "created_at": "2022-05-28"
+    },
+    {
+      "id": "destination_5",
+      "name": "Malang City",
+      "description": null,
+      "status": "active",
+      "code": "DST_005",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -7.9841691,
+        "lng": 112.6401538
+      },
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2022-05-28",
+      "created_at": "2022-05-28"
+    },
+    {
+      "id": "destination_6",
+      "name": "Madakaripura Waterfall",
+      "description": null,
+      "status": "active",
+      "code": "DST_003",
+      "difficulty": "Level 1 - Easy",
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -7.8551394,
+        "lng": 113.0076892
+      },
+      "completeness": 0.67,
+      "is_duplicate": false,
+      "last_updated": "2022-05-28",
+      "created_at": "2022-05-28"
+    },
+    {
+      "id": "destination_7",
+      "name": "Tumpak Sewu Waterfall",
+      "description": "Discover the raw beauty of Tumpak Sewu Waterfall, a spectacular cascade in a lush, green amphitheater-like setting. Often referred to as the 'Niagara of Java",
+      "status": "active",
+      "code": "DST_004",
+      "difficulty": "Level 4 - Moderate to hard",
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -8.2302713,
+        "lng": 112.9165192
+      },
+      "completeness": 0.83,
+      "is_duplicate": false,
+      "last_updated": "2022-05-28",
+      "created_at": "2022-05-28"
+    },
+    {
+      "id": "destination_8",
+      "name": "Bromo Area",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -7.87149,
+        "lng": 113.063431
+      },
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2022-07-01",
+      "created_at": "2022-07-01"
+    },
+    {
+      "id": "destination_9",
+      "name": "Papuma Beach",
+      "description": "Relax and rejuvenate at Papuma Beach, known for its pristine white sands and clear waters. As the sun sets, the sky transforms into a canvas of colors, offering a perfect backdrop for a tranquil evening.",
+      "status": "active",
+      "code": "DST_006",
+      "difficulty": "Level 1 - Easy",
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -8.43278,
+        "lng": 113.55354
+      },
+      "completeness": 0.83,
+      "is_duplicate": false,
+      "last_updated": "2022-07-01",
+      "created_at": "2022-07-01"
+    },
+    {
+      "id": "destination_10",
+      "name": "Jember City",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -8.18108,
+        "lng": 113.70938
+      },
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2022-09-19",
+      "created_at": "2022-09-19"
+    },
+    {
+      "id": "destination_11",
+      "name": "Djawatan",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -8.431429,
+        "lng": 114.226137
+      },
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2023-02-14",
+      "created_at": "2023-02-14"
+    },
+    {
+      "id": "destination_12",
+      "name": "Banyuwangi City",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -8.18296,
+        "lng": 114.38151
+      },
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2022-05-28",
+      "created_at": "2022-05-28"
+    },
+    {
+      "id": "destination_13",
+      "name": "I Gusti Ngurah Rai International Airport - Bali",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -8.7420145,
+        "lng": 115.163694
+      },
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2022-05-28",
+      "created_at": "2022-05-28"
+    },
+    {
+      "id": "destination_14",
+      "name": "Bondowoso City",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -7.91315,
+        "lng": 113.82213
+      },
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2022-05-28",
+      "created_at": "2022-05-28"
+    },
+    {
+      "id": "destination_15",
+      "name": "Juanda International Aiport Surabaya",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -7.3747119,
+        "lng": 112.7946133
+      },
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2022-05-28",
+      "created_at": "2022-05-28"
+    },
+    {
+      "id": "destination_16",
+      "name": "Pronojiwo, Lumajang",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -8.21207,
+        "lng": 112.94181
+      },
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2022-05-28",
+      "created_at": "2022-05-28"
+    },
+    {
+      "id": "destination_17",
+      "name": "Yogyakarta",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -7.7893,
+        "lng": 110.36333
+      },
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2023-07-17",
+      "created_at": "2023-07-17"
+    },
+    {
+      "id": "destination_18",
+      "name": "Coffee & Cocoa Science Technopark",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -8.2574643,
+        "lng": 113.6127264
+      },
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2023-07-17",
+      "created_at": "2023-07-17"
+    },
+    {
+      "id": "destination_19",
+      "name": "Bangsring Underwater",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -8.05316,
+        "lng": 114.43159
+      },
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2023-09-20",
+      "created_at": "2023-09-20"
+    },
+    {
+      "id": "destination_20",
+      "name": "Timang Beach",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "completeness": 0.17,
+      "is_duplicate": true,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_21",
+      "name": "Borobudur Temple",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -7.60796,
+        "lng": 110.20382
+      },
+      "completeness": 0.5,
+      "is_duplicate": true,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_22",
+      "name": "Prambanan Temple",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -7.7520157,
+        "lng": 110.4914556
+      },
+      "completeness": 0.5,
+      "is_duplicate": true,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_23",
+      "name": "Timang Beach",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "completeness": 0.17,
+      "is_duplicate": true,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_24",
+      "name": "Prambanan Temple",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "completeness": 0.17,
+      "is_duplicate": true,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_25",
+      "name": "Batik Vilage",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "completeness": 0.17,
+      "is_duplicate": false,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_26",
+      "name": "Punthuk Setumbu Hill",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -7.6074102,
+        "lng": 110.1778383
+      },
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_27",
+      "name": "Phuntuk Setumbu Hill",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "completeness": 0.17,
+      "is_duplicate": false,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_28",
+      "name": "Borobudur Temple",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "completeness": 0.17,
+      "is_duplicate": true,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_29",
+      "name": "Taman Sari",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "completeness": 0.17,
+      "is_duplicate": true,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_30",
+      "name": "Taman Sari",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "completeness": 0.17,
+      "is_duplicate": true,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_31",
+      "name": "Sultan Palace",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -7.8076,
+        "lng": 110.36387
+      },
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_32",
+      "name": "Pinus Pengger Forest",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "completeness": 0.17,
+      "is_duplicate": true,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_33",
+      "name": "Timang Beach",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "completeness": 0.17,
+      "is_duplicate": true,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_34",
+      "name": "Pinus Pengger Forest",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -7.8712189,
+        "lng": 110.4590975
+      },
+      "completeness": 0.5,
+      "is_duplicate": true,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_35",
+      "name": "Pinus Pengger Forest",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "completeness": 0.17,
+      "is_duplicate": true,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_36",
+      "name": "Jomblang Cave",
+      "description": null,
+      "status": "active",
+      "code": "",
+      "difficulty": null,
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "completeness": 0.17,
+      "is_duplicate": false,
+      "last_updated": "2023-10-08",
+      "created_at": "2023-10-08"
+    },
+    {
+      "id": "destination_38",
+      "name": "Taman Safari Prigen",
+      "description": "Immerse yourself in the heart of nature at Taman Safari Prigen, Southeast Asia's largest safari park. Nestled amidst lush greenery, this wildlife haven offers an unforgettable journey through diverse habitats, where you can encounter animals from around the globe in a naturalistic setting. From the thrill of an open-air safari to interactive experiences like feeding gentle giraffes, Taman Safari Prigen is a perfect blend of adventure, education, and conservation.",
+      "status": "active",
+      "code": "DST_007",
+      "difficulty": "Level 1 - Easy",
+      "route_type": null,
+      "length_km": null,
+      "elevation_gain": null,
+      "coordinates": {
+        "lat": -7.75839,
+        "lng": 112.66388
+      },
+      "completeness": 0.83,
+      "is_duplicate": false,
+      "last_updated": "2025-01-09",
+      "created_at": "2025-01-09"
+    }
+  ]
+}

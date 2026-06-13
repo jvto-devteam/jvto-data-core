@@ -1,0 +1,260 @@
+{
+  "server": {
+    "name": "jvto-data-core",
+    "version": "1.0.0",
+    "description": "MCP gateway to JVTO (Java Volcano Tour Operator) clean data — packages, trust claims, policies, booking analytics, and source lineage."
+  },
+  "tools": [
+    {
+      "name": "search_packages",
+      "description": "Search JVTO tour packages by keyword. Returns matching packages with pricing and destination info.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search query (e.g. 'bromo midnight', 'ijen blue fire', 'from bali', '2 day')"
+          }
+        },
+        "required": ["query"]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string" },
+          "total_results": { "type": "integer" },
+          "packages": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "package_id": { "type": "string" },
+                "name": { "type": "string" },
+                "duration": { "type": "string" },
+                "origin": { "type": "string" },
+                "destinations": { "type": "array", "items": { "type": "string" } },
+                "min_price_idr": { "type": ["number", "null"] },
+                "public_url": { "type": "string" },
+                "confidence": { "type": "string", "enum": ["high", "medium", "low"] }
+              }
+            }
+          }
+        }
+      },
+      "examples": [
+        { "input": { "query": "bromo" }, "description": "Find all Bromo packages" },
+        { "input": { "query": "ijen blue fire" }, "description": "Find Ijen packages" },
+        { "input": { "query": "from bali 3 days" }, "description": "Find multi-day Bali departure packages" }
+      ]
+    },
+    {
+      "name": "get_package",
+      "description": "Get full details of a specific tour package by its ID, including all price tiers, destinations, flags, and source provenance.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Package ID or slug (e.g. 'bromo-1d1n', 'ijen-2d1n', 'bromo-ijen-4d3n')"
+          }
+        },
+        "required": ["id"]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "package": {
+            "type": "object",
+            "properties": {
+              "package_id": { "type": "string" },
+              "name": { "type": "string" },
+              "duration": { "type": "string" },
+              "origin": { "type": "string" },
+              "destinations": { "type": "array", "items": { "type": "string" } },
+              "price_tiers": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "min_pax": { "type": "integer" },
+                    "max_pax": { "type": ["integer", "null"] },
+                    "price_idr": { "type": "number" },
+                    "currency": { "type": "string" }
+                  }
+                }
+              },
+              "flags": { "type": "object" },
+              "ferry_included": { "type": ["boolean", "null"] },
+              "public_url": { "type": "string" },
+              "confidence": { "type": "string" },
+              "sources": { "type": "array" }
+            }
+          },
+          "error": { "type": "string" }
+        }
+      },
+      "examples": [
+        { "input": { "id": "bromo-1d1n" }, "description": "Get 1-day Bromo package details" },
+        { "input": { "id": "ijen-2d1n" }, "description": "Get 2-day Ijen package details" }
+      ]
+    },
+    {
+      "name": "check_conflicts",
+      "description": "Check for data conflicts across all package sources (llm-wiki, jvto-web, backoffice). Returns conflict list with resolution notes.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "total_conflicts": { "type": "integer" },
+          "conflicts": { "type": "array" },
+          "notes": { "type": "array", "items": { "type": "string" } },
+          "generated_at": { "type": "string" }
+        }
+      },
+      "examples": [
+        { "input": {}, "description": "Check all current data conflicts" }
+      ]
+    },
+    {
+      "name": "get_source_trace",
+      "description": "Trace the data lineage for any entity (package, policy, trust claim). Returns source repos, SHA-256 fingerprints, and entity graph relationships.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "entity_id": {
+            "type": "string",
+            "description": "Entity ID — package slug (e.g. 'bromo-1d1n'), policy ID (e.g. 'policy_deposit_payment'), or trust claim ID (e.g. 'trust_safety_led_operations')"
+          }
+        },
+        "required": ["entity_id"]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "entity_id": { "type": "string" },
+          "found_in": { "type": "array", "items": { "type": "string" } },
+          "package_sources": { "type": ["object", "null"] },
+          "graph_node": { "type": ["object", "null"] },
+          "graph_edges": { "type": ["array", "null"] },
+          "trust_claim": { "type": ["object", "null"] },
+          "policy": { "type": ["object", "null"] },
+          "error": { "type": "string" }
+        }
+      },
+      "examples": [
+        { "input": { "entity_id": "bromo-1d1n" }, "description": "Trace Bromo 1D package to source repos" },
+        { "input": { "entity_id": "trust_safety_led_operations" }, "description": "Trace safety trust claim" }
+      ]
+    },
+    {
+      "name": "search_trust_claims",
+      "description": "Search JVTO trust and credibility claims by keyword. Returns claims with evidence documentation and source provenance.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search query (e.g. 'safety', 'police officer', 'guide certified', 'environmental', 'private')"
+          }
+        },
+        "required": ["query"]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string" },
+          "total_results": { "type": "integer" },
+          "trust_claims": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "claim_id": { "type": "string" },
+                "claim": { "type": "string" },
+                "category": { "type": "string" },
+                "evidence": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          }
+        }
+      },
+      "examples": [
+        { "input": { "query": "safety police" }, "description": "Find safety-related trust claims" },
+        { "input": { "query": "environmental conservation" }, "description": "Find environmental claims" }
+      ]
+    },
+    {
+      "name": "get_policy",
+      "description": "Get the full text and metadata of a specific JVTO business policy (cancellation, payment, health requirements, etc.).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "policy_id": {
+            "type": "string",
+            "description": "Policy ID (e.g. 'policy_deposit_payment', 'policy_cancellation', 'policy_health_fitness')"
+          }
+        },
+        "required": ["policy_id"]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "policy": {
+            "type": "object",
+            "properties": {
+              "policy_id": { "type": "string" },
+              "name": { "type": "string" },
+              "description": { "type": "string" },
+              "category": { "type": "string" },
+              "source": { "type": "string" }
+            }
+          },
+          "error": { "type": "string" },
+          "available_policies": { "type": "array" }
+        }
+      },
+      "examples": [
+        { "input": { "policy_id": "policy_deposit_payment" }, "description": "Get payment deposit policy" },
+        { "input": { "policy_id": "policy_cancellation" }, "description": "Get cancellation policy" }
+      ]
+    },
+    {
+      "name": "get_booking_analytics",
+      "description": "Get aggregated booking analytics: total revenue, channel breakdown, operational status distribution, monthly revenue trends, and top bookings by value.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "summary": {
+            "type": "object",
+            "properties": {
+              "total_bookings": { "type": "integer" },
+              "bookings_with_revenue": { "type": "integer" },
+              "total_gross_revenue_idr": { "type": "number" },
+              "total_profit_estimate_idr": { "type": "number" },
+              "avg_revenue_per_booking_idr": { "type": "number" },
+              "avg_pax_per_booking": { "type": "number" },
+              "total_pax": { "type": "number" }
+            }
+          },
+          "by_channel": { "type": "object" },
+          "by_operational_status": { "type": "object" },
+          "by_payment_status": { "type": "object" },
+          "monthly_revenue_idr": { "type": "object" },
+          "top_5_bookings_by_revenue": { "type": "array" }
+        }
+      },
+      "examples": [
+        { "input": {}, "description": "Get full booking analytics dashboard" }
+      ]
+    }
+  ]
+}

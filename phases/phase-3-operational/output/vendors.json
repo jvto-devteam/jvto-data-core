@@ -1,0 +1,153 @@
+{
+  "entity": "vendors",
+  "count": 12,
+  "extracted_at": "2026-06-13T13:48:41.788932",
+  "duplicates": 0,
+  "avg_completeness": 0.5,
+  "records": [
+    {
+      "id": "vendor_1",
+      "name": "Baratha Hotel",
+      "description": null,
+      "status": "active",
+      "phone": null,
+      "category": "Accommodation",
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2025-04-21",
+      "created_at": "2025-04-21"
+    },
+    {
+      "id": "vendor_2",
+      "name": "Joglo Kecombrang",
+      "description": null,
+      "status": "active",
+      "phone": null,
+      "category": "Accommodation",
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2025-04-21",
+      "created_at": "2025-04-21"
+    },
+    {
+      "id": "vendor_3",
+      "name": "Riverside",
+      "description": null,
+      "status": "active",
+      "phone": null,
+      "category": "Accommodation",
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2025-04-21",
+      "created_at": "2025-04-21"
+    },
+    {
+      "id": "vendor_4",
+      "name": "Widhi Bromo",
+      "description": null,
+      "status": "active",
+      "phone": null,
+      "category": "Activities",
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2025-04-21",
+      "created_at": "2025-04-21"
+    },
+    {
+      "id": "vendor_5",
+      "name": "Ijen Ticket",
+      "description": null,
+      "status": "active",
+      "phone": null,
+      "category": "Activities",
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2025-04-21",
+      "created_at": "2025-04-21"
+    },
+    {
+      "id": "vendor_6",
+      "name": "Garage",
+      "description": null,
+      "status": "active",
+      "phone": null,
+      "category": "Transportation",
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2025-04-21",
+      "created_at": "2025-04-21"
+    },
+    {
+      "id": "vendor_7",
+      "name": "Kubik",
+      "description": null,
+      "status": "active",
+      "phone": null,
+      "category": "Others",
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2025-04-21",
+      "created_at": "2025-04-21"
+    },
+    {
+      "id": "vendor_8",
+      "name": "Ertiga",
+      "description": null,
+      "status": "active",
+      "phone": null,
+      "category": "Transportation",
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2025-04-21",
+      "created_at": "2025-04-21"
+    },
+    {
+      "id": "vendor_9",
+      "name": "Mineral Water",
+      "description": null,
+      "status": "active",
+      "phone": null,
+      "category": "Others",
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2025-04-21",
+      "created_at": "2025-04-21"
+    },
+    {
+      "id": "vendor_10",
+      "name": "Boy",
+      "description": null,
+      "status": "active",
+      "phone": null,
+      "category": "Transportation",
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2025-04-21",
+      "created_at": "2025-04-21"
+    },
+    {
+      "id": "vendor_11",
+      "name": "Yandi",
+      "description": null,
+      "status": "active",
+      "phone": null,
+      "category": "Transportation",
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2025-04-21",
+      "created_at": "2025-04-21"
+    },
+    {
+      "id": "vendor_12",
+      "name": "Pak Yus",
+      "description": null,
+      "status": "active",
+      "phone": null,
+      "category": "Transportation",
+      "completeness": 0.5,
+      "is_duplicate": false,
+      "last_updated": "2025-04-21",
+      "created_at": "2025-04-21"
+    }
+  ]
+}
