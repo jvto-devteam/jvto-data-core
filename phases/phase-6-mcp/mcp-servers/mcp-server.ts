@@ -4,7 +4,7 @@ import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
-import { readFileSync } from "fs";
+import { readFileSync, existsSync } from "fs";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
 
@@ -13,25 +13,84 @@ const DATA = resolve(__dirname, "../../");
 
 // ── Data loaders ──────────────────────────────────────────────────────────────
 
-function load<T>(relPath: string): T {
-  return JSON.parse(readFileSync(resolve(DATA, relPath), "utf-8")) as T;
+function load<T>(relPath: string, fallback: T): T {
+  const fullPath = resolve(DATA, relPath);
+  if (!existsSync(fullPath)) return fallback;
+  try {
+    return JSON.parse(readFileSync(fullPath, "utf-8")) as T;
+  } catch {
+    return fallback;
+  }
+}
+
+// ── Interfaces (new API format) ───────────────────────────────────────────────
+
+interface PriceTier {
+  sku: string;
+  paxMin: number;
+  paxMax: number;
+  pricePerPerson: number;
+}
+
+interface ItineraryDay {
+  day: number;
+  title: string;
+  summary: string;
+  activities: Array<{
+    type: string;
+    name: string;
+    description: string;
+    timeWindow: string;
+  }>;
+  mealsPlan: { breakfast: string; lunch: string; dinner: string };
+  overnight: string | null;
 }
 
 interface Package {
-  package_id: string;
-  name: string;
-  slug: string;
-  duration: string;
-  origin: string;
-  public_url: string;
-  destinations: string[];
-  flags: Record<string, boolean | null>;
-  ferry_included: boolean | null;
-  price_tiers: Array<{ min_pax: number; max_pax: number | null; price_idr: number; currency: string }>;
-  db_id: string | null;
-  is_publish: boolean | null;
-  sources: Array<{ repo: string; sha_registry: string; sha_pricing: string }>;
-  confidence: string;
+  id: number;
+  packageId: string;
+  product: {
+    packageId: string;
+    slug: string;
+    name: string;
+    shortLabel?: string;
+    originCity: string;
+    endCity: string;
+    category: string;
+    durationDays: number;
+    durationNights: number;
+    marketedDurationLabel: string;
+    route: string[];
+    description: string;
+    physicalDifficulty: string;
+    offers: {
+      currency: string;
+      aggregateOffer: { lowPrice: number; highPrice: number };
+      tiers: PriceTier[];
+    };
+    inclusions: string[];
+    exclusions: string[];
+    itineraryDays: ItineraryDay[];
+    accommodationPlan: Array<{ night: number; name: string; area: string }>;
+    gear: { provided: string[]; recommended: string[] };
+    tags: string[];
+    marketing: {
+      highlightsBullets: string[];
+      perfectFor: string[];
+      safetyPositioning?: string;
+    };
+    keyExperiences?: Array<{ name: string; highlight: string }>;
+    aggregateRating?: { ratingValue: number; reviewCount: number };
+    provider?: {
+      legalEntity?: string;
+      nib?: string;
+      official?: { website: string; whatsapp: string; email: string };
+    };
+    channelMetadata?: {
+      status?: string;
+      orderChannelEnabled?: Record<string, boolean>;
+    };
+  };
 }
 
 interface TrustClaim {
@@ -58,7 +117,6 @@ interface BookingAggregate {
   travel_year: number | null;
   pax_count: number | null;
   pickup_city: string | null;
-  dropoff_city: string | null;
   gross_revenue: number | null;
   cost_total: number | null;
   profit_estimate: number | null;
@@ -76,17 +134,52 @@ interface SearchDoc {
   searchable_fields: Record<string, string>;
 }
 
-// Load all data at startup
-const packagesData = load<{ packages: Package[] }>("phase-1-packages/output/packages.json");
-const conflictsData = load<{ generated_at: string; total_conflicts: number; conflicts: unknown[]; notes: string[] }>("phase-1-packages/output/package-conflicts.json");
-const sourcesData = load<{ entities: Array<{ entity_id: string; entity_type: string; sources: Array<{ repo: string; sha_registry: string; sha_pricing: string; extracted_at: string }> }> }>("phase-1-packages/output/package-sources.json");
-const trustData = load<{ trust_claims: TrustClaim[] }>("phase-2-trust/output/trust-claims.json");
-const policiesData = load<{ policies: Policy[] }>("phase-2-trust/output/policies.json");
-const bookingData = load<{ booking_aggregates: BookingAggregate[] }>("phase-4-booking/output/booking-aggregates.json");
-const searchIndex = load<{ documents: SearchDoc[] }>("phase-5-index/indexes/search-index.json");
-const entityGraph = load<{ nodes: Array<{ id: string; type: string; label: string; properties?: Record<string, unknown> }>; edges: Array<{ source: string; target: string; relation: string }> }>("phase-5-index/indexes/entity-graph.json");
+// ── Load data at startup ──────────────────────────────────────────────────────
 
-// ── Search helpers ────────────────────────────────────────────────────────────
+const packagesData = load<{ packages: Package[] }>(
+  "phase-1-packages/output/packages.json",
+  { packages: [] }
+);
+const conflictsData = load<{
+  generated_at: string;
+  total_conflicts: number;
+  conflicts: unknown[];
+  notes: string[];
+}>("phase-1-packages/output/package-conflicts.json", {
+  generated_at: "",
+  total_conflicts: 0,
+  conflicts: [],
+  notes: [],
+});
+const sourcesData = load<{
+  entities: Array<{
+    entity_id: string;
+    entity_type: string;
+    sources: Array<{ repo: string; sha_registry: string; sha_pricing: string; extracted_at: string }>;
+  }>;
+}>("phase-1-packages/output/package-sources.json", { entities: [] });
+const trustData = load<{ trust_claims: TrustClaim[] }>(
+  "phase-2-trust/output/trust-claims.json",
+  { trust_claims: [] }
+);
+const policiesData = load<{ policies: Policy[] }>(
+  "phase-2-trust/output/policies.json",
+  { policies: [] }
+);
+const bookingData = load<{ booking_aggregates: BookingAggregate[] }>(
+  "phase-4-booking/output/booking-aggregates.json",
+  { booking_aggregates: [] }
+);
+const searchIndex = load<{ documents: SearchDoc[] }>(
+  "phase-5-index/indexes/search-index.json",
+  { documents: [] }
+);
+const entityGraph = load<{
+  nodes: Array<{ id: string; type: string; label: string; properties?: Record<string, unknown> }>;
+  edges: Array<{ source: string; target: string; relation: string }>;
+}>("phase-5-index/indexes/entity-graph.json", { nodes: [], edges: [] });
+
+// ── Search helpers ─────────────────────────────────────────────────────────────
 
 function tokenize(text: string): string[] {
   return text.toLowerCase().replace(/[^a-z0-9\s]/g, " ").split(/\s+/).filter(Boolean);
@@ -113,40 +206,149 @@ function searchDocs(query: string, type?: string): SearchDoc[] {
     .map(({ doc }) => doc);
 }
 
-// ── Tool handlers ─────────────────────────────────────────────────────────────
+// Score a package directly against query tokens (for packages not in search index)
+function scorePackage(pkg: Package, queryTokens: string[]): number {
+  const prod = pkg.product;
+  const text = [
+    prod.name,
+    prod.description,
+    prod.originCity,
+    prod.endCity,
+    prod.category,
+    prod.marketedDurationLabel,
+    ...(prod.route ?? []),
+    ...(prod.tags ?? []),
+    ...(prod.marketing?.highlightsBullets ?? []),
+    ...(prod.marketing?.perfectFor ?? []),
+    pkg.packageId,
+    prod.slug,
+  ].join(" ").toLowerCase();
+
+  return queryTokens.reduce((score, token) => {
+    if (prod.name.toLowerCase().includes(token)) return score + 3;
+    if ((prod.route ?? []).some((r) => r.toLowerCase().includes(token))) return score + 2;
+    if (text.includes(token)) return score + 1;
+    return score;
+  }, 0);
+}
+
+// ── Package summary helper ─────────────────────────────────────────────────────
+
+function pkgSummary(p: Package) {
+  const prod = p.product;
+  const tiers = prod.offers?.tiers ?? [];
+  const priceFrom = tiers.length > 0 ? Math.min(...tiers.map((t) => t.pricePerPerson)) : null;
+  const priceTo = tiers.length > 0 ? Math.max(...tiers.map((t) => t.pricePerPerson)) : null;
+  return {
+    package_id: p.packageId,
+    name: prod.name,
+    duration: prod.marketedDurationLabel,
+    origin: prod.originCity,
+    end: prod.endCity,
+    destinations: prod.route,
+    category: prod.category,
+    difficulty: prod.physicalDifficulty,
+    price_from_idr: priceFrom,
+    price_to_idr: priceTo,
+    channels_active: prod.channelMetadata?.orderChannelEnabled
+      ? Object.entries(prod.channelMetadata.orderChannelEnabled)
+          .filter(([, v]) => v)
+          .map(([k]) => k)
+      : [],
+    tags: prod.tags ?? [],
+    rating: prod.aggregateRating ?? null,
+    status: prod.channelMetadata?.status ?? null,
+  };
+}
+
+// ── Tool handlers ──────────────────────────────────────────────────────────────
 
 function searchPackages(query: string): object {
-  const hits = searchDocs(query, "package");
-  const ids = new Set(hits.map((h) => h.id));
-  const matched = packagesData.packages.filter((p) => ids.has(p.package_id));
-  // Preserve search rank order
-  matched.sort((a, b) => {
-    const ia = hits.findIndex((h) => h.id === a.package_id);
-    const ib = hits.findIndex((h) => h.id === b.package_id);
-    return ia - ib;
-  });
+  const tokens = tokenize(query);
+  if (tokens.length === 0) return { query, total_results: 0, packages: [] };
+
+  // Score all packages directly (handles new format correctly)
+  const scored = packagesData.packages
+    .map((p) => ({ pkg: p, score: scorePackage(p, tokens) }))
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score);
+
   return {
     query,
-    total_results: matched.length,
-    packages: matched.map((p) => ({
-      package_id: p.package_id,
-      name: p.name,
-      duration: p.duration,
-      origin: p.origin,
-      destinations: p.destinations,
-      min_price_idr: p.price_tiers.length > 0 ? Math.min(...p.price_tiers.map((t) => t.price_idr)) : null,
-      public_url: p.public_url,
-      confidence: p.confidence,
-    })),
+    total_results: scored.length,
+    packages: scored.map(({ pkg }) => pkgSummary(pkg)),
   };
 }
 
 function getPackage(id: string): object {
   const pkg = packagesData.packages.find(
-    (p) => p.package_id === id || p.slug === id
+    (p) =>
+      p.packageId === id ||
+      p.product?.packageId === id ||
+      p.product?.slug === id ||
+      p.product?.slug?.endsWith(id) ||
+      p.product?.name?.toLowerCase().includes(id.toLowerCase())
   );
-  if (!pkg) return { error: `Package '${id}' not found`, available_ids: packagesData.packages.map((p) => p.package_id) };
-  return { package: pkg };
+
+  if (!pkg) {
+    return {
+      error: `Package '${id}' not found`,
+      available_ids: packagesData.packages.map((p) => ({
+        package_id: p.packageId,
+        name: p.product?.name,
+        duration: p.product?.marketedDurationLabel,
+      })),
+    };
+  }
+
+  const prod = pkg.product;
+  const tiers = prod.offers?.tiers ?? [];
+
+  return {
+    package_id: pkg.packageId,
+    name: prod.name,
+    duration: prod.marketedDurationLabel,
+    duration_days: prod.durationDays,
+    duration_nights: prod.durationNights,
+    origin: prod.originCity,
+    end: prod.endCity,
+    category: prod.category,
+    difficulty: prod.physicalDifficulty,
+    description: prod.description,
+    route: prod.route,
+    tags: prod.tags,
+    rating: prod.aggregateRating,
+    highlights: prod.marketing?.highlightsBullets,
+    perfect_for: prod.marketing?.perfectFor,
+    safety_positioning: prod.marketing?.safetyPositioning,
+    pricing: {
+      currency: prod.offers?.currency,
+      price_from_idr: tiers.length > 0 ? Math.min(...tiers.map((t) => t.pricePerPerson)) : null,
+      price_to_idr: tiers.length > 0 ? Math.max(...tiers.map((t) => t.pricePerPerson)) : null,
+      tiers: tiers.map((t) => ({
+        pax_min: t.paxMin,
+        pax_max: t.paxMax === 0 ? null : t.paxMax,
+        price_per_person_idr: t.pricePerPerson,
+      })),
+    },
+    inclusions: prod.inclusions,
+    exclusions: prod.exclusions,
+    itinerary: prod.itineraryDays?.map((d) => ({
+      day: d.day,
+      title: d.title,
+      summary: d.summary,
+      activities: d.activities?.map((a) => ({ time: a.timeWindow, name: a.name, description: a.description })),
+      meals: d.mealsPlan,
+      overnight: d.overnight,
+    })),
+    accommodation: prod.accommodationPlan,
+    gear_provided: prod.gear?.provided,
+    gear_recommended: prod.gear?.recommended,
+    key_experiences: prod.keyExperiences,
+    channels: prod.channelMetadata?.orderChannelEnabled,
+    provider: prod.provider?.official,
+    status: prod.channelMetadata?.status,
+  };
 }
 
 function checkConflicts(): object {
@@ -159,36 +361,35 @@ function checkConflicts(): object {
 }
 
 function getSourceTrace(entityId: string): object {
-  // Check package sources
+  const pkgByNewId = packagesData.packages.find(
+    (p) => p.packageId === entityId || p.product?.packageId === entityId
+  );
   const pkgSource = sourcesData.entities.find((e) => e.entity_id === entityId);
-
-  // Check entity graph
   const graphNode = entityGraph.nodes.find((n) => n.id === entityId);
   const graphEdges = entityGraph.edges.filter(
     (e) => e.source === entityId || e.target === entityId
   );
-
-  // Check trust claims
   const trustClaim = trustData.trust_claims.find((t) => t.claim_id === entityId);
-
-  // Check policy
   const policy = policiesData.policies.find((p) => p.policy_id === entityId);
 
-  if (!pkgSource && !graphNode && !trustClaim && !policy) {
+  if (!pkgByNewId && !pkgSource && !graphNode && !trustClaim && !policy) {
     return {
-      error: `Entity '${entityId}' not found`,
-      hint: "Use a package_id (e.g. 'bromo-1d1n'), claim_id (e.g. 'trust_safety_led_operations'), or policy_id (e.g. 'policy_deposit_payment')",
+      error: `Entity '${entityId}' not found in any dataset`,
+      hint: "Use a package_id (e.g. 'package-SUB-4D3N-001'), claim_id (e.g. 'trust_safety_led_operations'), or policy_id (e.g. 'policy_deposit_payment')",
+      available_package_ids: packagesData.packages.slice(0, 5).map((p) => p.packageId),
     };
   }
 
   return {
     entity_id: entityId,
     found_in: [
+      pkgByNewId ? "packages" : null,
       pkgSource ? "package-sources" : null,
       graphNode ? "entity-graph" : null,
       trustClaim ? "trust-claims" : null,
       policy ? "policies" : null,
     ].filter(Boolean),
+    package_summary: pkgByNewId ? pkgSummary(pkgByNewId) : null,
     package_sources: pkgSource ?? null,
     graph_node: graphNode ?? null,
     graph_edges: graphEdges.length > 0 ? graphEdges : null,
@@ -209,11 +410,7 @@ function searchTrustClaims(query: string): object {
     .sort((a, b) => b.score - a.score)
     .map(({ claim }) => claim);
 
-  return {
-    query,
-    total_results: scored.length,
-    trust_claims: scored,
-  };
+  return { query, total_results: scored.length, trust_claims: scored };
 }
 
 function getPolicy(policyId: string): object {
@@ -221,7 +418,11 @@ function getPolicy(policyId: string): object {
   if (!policy) {
     return {
       error: `Policy '${policyId}' not found`,
-      available_policies: policiesData.policies.map((p) => ({ policy_id: p.policy_id, name: p.name, category: p.category })),
+      available_policies: policiesData.policies.map((p) => ({
+        policy_id: p.policy_id,
+        name: p.name,
+        category: p.category,
+      })),
     };
   }
   return { policy };
@@ -230,48 +431,31 @@ function getPolicy(policyId: string): object {
 function getBookingAnalytics(): object {
   const bookings = bookingData.booking_aggregates;
   const total = bookings.length;
-
-  // Revenue
   const validRevenue = bookings.filter((b) => (b.gross_revenue ?? 0) > 0);
   const totalRevenue = bookings.reduce((s, b) => s + (b.gross_revenue ?? 0), 0);
   const totalProfit = bookings.reduce((s, b) => s + (b.profit_estimate ?? 0), 0);
 
-  // Channels
   const byChannel: Record<string, number> = {};
+  const byOpStatus: Record<string, number> = {};
+  const byPayStatus: Record<string, number> = {};
+  const byMonth: Record<string, number> = {};
+
   for (const b of bookings) {
     const ch = b.channel ?? "unknown";
     byChannel[ch] = (byChannel[ch] ?? 0) + 1;
-  }
-
-  // Operational status
-  const byOpStatus: Record<string, number> = {};
-  for (const b of bookings) {
-    const st = b.operational_status ?? "unknown";
-    byOpStatus[st] = (byOpStatus[st] ?? 0) + 1;
-  }
-
-  // Payment status
-  const byPayStatus: Record<string, number> = {};
-  for (const b of bookings) {
-    const st = b.payment_status ?? "unknown";
-    byPayStatus[st] = (byPayStatus[st] ?? 0) + 1;
-  }
-
-  // Monthly revenue (travel month/year)
-  const byMonth: Record<string, number> = {};
-  for (const b of bookings) {
+    const op = b.operational_status ?? "unknown";
+    byOpStatus[op] = (byOpStatus[op] ?? 0) + 1;
+    const pay = b.payment_status ?? "unknown";
+    byPayStatus[pay] = (byPayStatus[pay] ?? 0) + 1;
     if (b.travel_year && b.travel_month) {
       const key = `${b.travel_year}-${String(b.travel_month).padStart(2, "0")}`;
       byMonth[key] = (byMonth[key] ?? 0) + (b.gross_revenue ?? 0);
     }
   }
 
-  // PAX stats
   const validPax = bookings.filter((b) => (b.pax_count ?? 0) > 0);
   const totalPax = validPax.reduce((s, b) => s + (b.pax_count ?? 0), 0);
-  const avgPax = validPax.length > 0 ? totalPax / validPax.length : 0;
 
-  // Top revenue bookings
   const topBookings = [...bookings]
     .filter((b) => (b.gross_revenue ?? 0) > 0)
     .sort((a, b) => (b.gross_revenue ?? 0) - (a.gross_revenue ?? 0))
@@ -279,7 +463,10 @@ function getBookingAnalytics(): object {
     .map((b) => ({
       booking_id_hash: b.booking_id_hash,
       channel: b.channel,
-      travel_period: b.travel_year && b.travel_month ? `${b.travel_year}-${String(b.travel_month).padStart(2, "0")}` : null,
+      travel_period:
+        b.travel_year && b.travel_month
+          ? `${b.travel_year}-${String(b.travel_month).padStart(2, "0")}`
+          : null,
       pax_count: b.pax_count,
       gross_revenue_idr: b.gross_revenue,
       operational_status: b.operational_status,
@@ -288,11 +475,13 @@ function getBookingAnalytics(): object {
   return {
     summary: {
       total_bookings: total,
+      total_packages_in_catalog: packagesData.packages.length,
       bookings_with_revenue: validRevenue.length,
       total_gross_revenue_idr: totalRevenue,
       total_profit_estimate_idr: totalProfit,
-      avg_revenue_per_booking_idr: validRevenue.length > 0 ? totalRevenue / validRevenue.length : 0,
-      avg_pax_per_booking: Math.round(avgPax * 100) / 100,
+      avg_revenue_per_booking_idr:
+        validRevenue.length > 0 ? Math.round(totalRevenue / validRevenue.length) : 0,
+      avg_pax_per_booking: validPax.length > 0 ? Math.round((totalPax / validPax.length) * 100) / 100 : 0,
       total_pax: totalPax,
     },
     by_channel: byChannel,
@@ -305,10 +494,10 @@ function getBookingAnalytics(): object {
   };
 }
 
-// ── MCP Server setup ──────────────────────────────────────────────────────────
+// ── MCP Server ─────────────────────────────────────────────────────────────────
 
 const server = new Server(
-  { name: "jvto-data-core", version: "1.0.0" },
+  { name: "jvto-data-core", version: "2.0.0" },
   { capabilities: { tools: {} } }
 );
 
@@ -316,53 +505,61 @@ server.setRequestHandler(ListToolsRequestSchema, async () => ({
   tools: [
     {
       name: "search_packages",
-      description: "Search JVTO tour packages by keyword. Returns matching packages with pricing and destination info.",
+      description: "Search JVTO tour packages by keyword. Returns matching packages with pricing, destinations, and channel info.",
       inputSchema: {
         type: "object",
         properties: {
-          query: { type: "string", description: "Search query (e.g. 'bromo midnight', 'ijen blue fire', 'from bali')" },
+          query: {
+            type: "string",
+            description: "Search query (e.g. 'bromo midnight', 'ijen blue fire', '4 day', 'from surabaya')",
+          },
         },
         required: ["query"],
       },
     },
     {
       name: "get_package",
-      description: "Get full details of a specific tour package by its ID, including all price tiers, destinations, flags, and source provenance.",
+      description: "Get full details of a tour package by package_id. Includes pricing tiers, full itinerary, inclusions/exclusions, accommodation, gear, and booking channel status.",
       inputSchema: {
         type: "object",
         properties: {
-          id: { type: "string", description: "Package ID or slug (e.g. 'bromo-1d1n', 'ijen-2d1n')" },
+          id: {
+            type: "string",
+            description: "Package ID (e.g. 'package-SUB-4D3N-001') or partial name/slug",
+          },
         },
         required: ["id"],
       },
     },
     {
       name: "check_conflicts",
-      description: "Check for data conflicts across all package sources. Returns conflict list, notes, and audit metadata.",
-      inputSchema: {
-        type: "object",
-        properties: {},
-        required: [],
-      },
+      description: "Check for data conflicts across all package sources. Returns conflict list and audit metadata.",
+      inputSchema: { type: "object", properties: {}, required: [] },
     },
     {
       name: "get_source_trace",
-      description: "Trace the data lineage for any entity (package, policy, trust claim). Returns source repos, SHA fingerprints, and graph relationships.",
+      description: "Trace data lineage for any entity (package, policy, trust claim). Returns source provenance and graph relationships.",
       inputSchema: {
         type: "object",
         properties: {
-          entity_id: { type: "string", description: "Entity ID (e.g. 'bromo-1d1n', 'policy_deposit_payment', 'trust_safety_led_operations')" },
+          entity_id: {
+            type: "string",
+            description: "Entity ID (e.g. 'package-SUB-4D3N-001', 'policy_deposit_payment', 'trust_safety_led_operations')",
+          },
         },
         required: ["entity_id"],
       },
     },
     {
       name: "search_trust_claims",
-      description: "Search JVTO trust and credibility claims by keyword. Returns claims with evidence and source documentation.",
+      description: "Search JVTO trust and credibility claims. Returns claims with evidence and sources.",
       inputSchema: {
         type: "object",
         properties: {
-          query: { type: "string", description: "Search query (e.g. 'safety', 'police', 'guide certified', 'environmental')" },
+          query: {
+            type: "string",
+            description: "Search query (e.g. 'safety', 'police', 'guide certified', 'environmental')",
+          },
         },
         required: ["query"],
       },
@@ -373,29 +570,26 @@ server.setRequestHandler(ListToolsRequestSchema, async () => ({
       inputSchema: {
         type: "object",
         properties: {
-          policy_id: { type: "string", description: "Policy ID (e.g. 'policy_deposit_payment', 'policy_cancellation')" },
+          policy_id: {
+            type: "string",
+            description: "Policy ID (e.g. 'policy_deposit_payment', 'policy_cancellation')",
+          },
         },
         required: ["policy_id"],
       },
     },
     {
       name: "get_booking_analytics",
-      description: "Get aggregated booking analytics: revenue totals, channel breakdown, operational status distribution, monthly trends, and top bookings.",
-      inputSchema: {
-        type: "object",
-        properties: {},
-        required: [],
-      },
+      description: "Get aggregated booking analytics: revenue totals, channel breakdown, operational status, monthly trends, and top bookings.",
+      inputSchema: { type: "object", properties: {}, required: [] },
     },
   ],
 }));
 
 server.setRequestHandler(CallToolRequestSchema, async (request) => {
   const { name, arguments: args } = request.params;
-
   try {
     let result: object;
-
     switch (name) {
       case "search_packages":
         result = searchPackages((args as { query: string }).query);
@@ -424,10 +618,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           isError: true,
         };
     }
-
-    return {
-      content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
-    };
+    return { content: [{ type: "text", text: JSON.stringify(result, null, 2) }] };
   } catch (err) {
     return {
       content: [{ type: "text", text: JSON.stringify({ error: String(err) }) }],
@@ -436,7 +627,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   }
 });
 
-// ── Start ─────────────────────────────────────────────────────────────────────
+// ── Start ──────────────────────────────────────────────────────────────────────
 
 async function main() {
   const transport = new StdioServerTransport();
