@@ -1,21 +1,39 @@
 {
-  "generated_at": "2026-06-13",
-  "total_conflicts": 1,
-  "by_severity": { "high": 0, "medium": 1, "low": 0 },
+  "generated_at": "2026-06-15T06:31:00Z",
+  "generator": "scripts/validate-data.mjs",
+  "total_conflicts": 4,
   "conflicts": [
     {
-      "type": "missing_source_match",
+      "type": "malformed_package_id",
+      "severity": "low",
+      "ids": [
+        "2D1N",
+        "1D1N"
+      ],
+      "detail": "packageId breaks the package-<ORIGIN>-<DUR>-NNN convention"
+    },
+    {
+      "type": "orphan_source_entities",
       "severity": "medium",
-      "description": "35 packages hanya tercatat di llm-wiki + jvto-web (identik). Tidak ada slug match dengan backoffice DB. Backoffice packages menggunakan numeric ID, slug mapping belum diverifikasi.",
-      "affected_packages": 35,
-      "recommendation": "Verifikasi manual slug di backoffice DB vs slug di static JSON. Kemungkinan perbedaan format slug (e.g. DB: 'bromo-1d1n' vs JSON: 'bromo-1d1n-surabaya')."
+      "count": 22,
+      "of": 35,
+      "detail": "package-sources.json still carries the pre-regeneration 35-entity slug set; these do not map to the 16 published packages"
+    },
+    {
+      "type": "cost_total_zero",
+      "severity": "high",
+      "count": 546,
+      "detail": "get_booking_analytics reports revenue mislabeled as profit; needs real expense data from source (phase-4 extract.py)"
+    },
+    {
+      "type": "booking_package_id_null",
+      "severity": "high",
+      "count": 546,
+      "detail": "real booking↔package FK is null on all rows; only heuristic package_id_inferred exists — run phase-4 extract.py against the live DB"
     }
   ],
-  "checks_passed": {
-    "price_mismatch": true,
-    "name_mismatch": true,
-    "trust_claims_without_evidence": true,
-    "policies_without_source": true,
-    "pii_in_bookings": true
-  }
+  "notes": [
+    "Reconciled, computed report. Supersedes phases/phase-1-packages/output/package-conflicts.json.",
+    "Validated 16 packages, 546 bookings."
+  ]
 }

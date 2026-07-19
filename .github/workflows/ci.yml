@@ -1,0 +1,37 @@
+name: data-core CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # Indexes must be freshly derivable from committed inputs. Rebuild and fail
+      # if the committed indexes differ — this catches the "packages.json was
+      # regenerated but indexes weren't rebuilt" staleness class of bug.
+      - name: Rebuild phase-5 indexes (determinism guard)
+        run: |
+          python3 phases/phase-5-index/build-index.py
+          git diff --exit-code -- phases/phase-5-index/indexes \
+            || (echo "::error::phase-5 indexes are stale — run build-index.py and commit"; exit 1)
+
+      # Data-integrity guard: referential integrity, PII, staleness, non-empty core.
+      - name: Validate served data
+        run: node scripts/validate-data.mjs
+
+      # Tool smoke test against the committed data.
+      - name: MCP tool smoke test
+        run: node phases/phase-6-mcp/mcp-servers/test-tools.mjs

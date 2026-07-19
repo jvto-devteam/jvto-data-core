@@ -9,7 +9,24 @@ import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA = resolve(__dirname, "../../");
+
+// Resolve the `phases/` data root by walking UP from wherever this file runs,
+// looking for a stable marker. This survives running from source
+// (phases/phase-6-mcp/mcp-servers/) or a compiled build (…/dist/), where a fixed
+// "../../" would silently point at the wrong depth and serve all-empty data.
+function findDataRoot(start: string): string {
+  const marker = "phase-1-packages/output/packages.json";
+  let dir = start;
+  for (let i = 0; i < 8; i++) {
+    if (existsSync(resolve(dir, marker))) return dir;
+    const parent = dirname(dir);
+    if (parent === dir) break;
+    dir = parent;
+  }
+  // Fall back to the legacy fixed depth; a health warning below will flag emptiness.
+  return resolve(start, "../../");
+}
+const DATA = findDataRoot(__dirname);
 
 // ── Data loaders ──────────────────────────────────────────────────────────────
 
@@ -178,6 +195,40 @@ const entityGraph = load<{
   nodes: Array<{ id: string; type: string; label: string; properties?: Record<string, unknown> }>;
   edges: Array<{ source: string; target: string; relation: string }>;
 }>("phase-5-index/indexes/entity-graph.json", { nodes: [], edges: [] });
+
+// Reconciled, repo-level conflict report (validator-generated). Lives one level
+// above the phases/ data root. Preferred over the stale per-phase file below.
+const conflictReport = load<{
+  generated_at: string;
+  total_conflicts: number;
+  conflicts: unknown[];
+  notes: string[];
+}>("../conflicts/conflict-report.json", {
+  generated_at: "",
+  total_conflicts: 0,
+  conflicts: [],
+  notes: [],
+});
+
+// ── Startup health check: fail LOUDLY (stderr) instead of silently serving empty.
+{
+  const core: Array<[string, number]> = [
+    ["packages", packagesData.packages.length],
+    ["trust_claims", trustData.trust_claims.length],
+    ["policies", policiesData.policies.length],
+    ["booking_aggregates", bookingData.booking_aggregates.length],
+    ["search_docs", searchIndex.documents.length],
+    ["graph_nodes", entityGraph.nodes.length],
+  ];
+  const empty = core.filter(([, n]) => n === 0).map(([k]) => k);
+  if (empty.length) {
+    console.error(
+      `[jvto-data-core] WARNING: empty core dataset(s) [${empty.join(", ")}] — ` +
+        `data root resolved to '${DATA}'. The server will answer with degraded/empty ` +
+        `results. Check the build output depth or missing phase outputs.`
+    );
+  }
+}
 
 // ── Search helpers ─────────────────────────────────────────────────────────────
 
@@ -352,19 +403,44 @@ function getPackage(id: string): object {
 }
 
 function checkConflicts(): object {
+  // Prefer the reconciled repo-level report; the per-phase package-conflicts.json
+  // is stale (dated 2026-06-13, pre-regeneration) and under-reports.
+  const primary =
+    conflictReport.generated_at || conflictReport.total_conflicts > 0
+      ? conflictReport
+      : conflictsData;
+  const notes = [...(primary.notes ?? [])];
+  if (primary === conflictReport && conflictsData.total_conflicts !== primary.total_conflicts) {
+    notes.push(
+      `Note: legacy phase-1 package-conflicts.json reports ${conflictsData.total_conflicts} ` +
+        `conflict(s) and is superseded by this reconciled report.`
+    );
+  }
   return {
-    total_conflicts: conflictsData.total_conflicts,
-    conflicts: conflictsData.conflicts,
-    notes: conflictsData.notes,
-    generated_at: conflictsData.generated_at,
+    total_conflicts: primary.total_conflicts,
+    conflicts: primary.conflicts,
+    notes,
+    generated_at: primary.generated_at,
+    source: primary === conflictReport ? "conflicts/conflict-report.json" : "package-conflicts.json",
   };
+}
+
+// Slug tail bridge: scheme-A packageId <-> scheme-B source entity_id share a slug tail.
+function slugTail(s: string | undefined): string {
+  return String(s ?? "").replace(/\/+$/, "").split("/").pop() ?? "";
 }
 
 function getSourceTrace(entityId: string): object {
   const pkgByNewId = packagesData.packages.find(
     (p) => p.packageId === entityId || p.product?.packageId === entityId
   );
-  const pkgSource = sourcesData.entities.find((e) => e.entity_id === entityId);
+  // Direct match on entity_id, else bridge a packageId to its source via slug tail.
+  const bridgeTail = pkgByNewId ? slugTail(pkgByNewId.product?.slug) : slugTail(entityId);
+  const pkgSource =
+    sourcesData.entities.find((e) => e.entity_id === entityId) ??
+    (bridgeTail
+      ? sourcesData.entities.find((e) => slugTail(e.entity_id) === bridgeTail)
+      : undefined);
   const graphNode = entityGraph.nodes.find((n) => n.id === entityId);
   const graphEdges = entityGraph.edges.filter(
     (e) => e.source === entityId || e.target === entityId
@@ -497,7 +573,7 @@ function getBookingAnalytics(): object {
 // ── MCP Server ─────────────────────────────────────────────────────────────────
 
 const server = new Server(
-  { name: "jvto-data-core", version: "2.1.0" },
+  { name: "jvto-data-core", version: "2.2.0" },
   { capabilities: { tools: {} } }
 );
 

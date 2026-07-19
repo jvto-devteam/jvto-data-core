@@ -18,6 +18,9 @@ const sourcesData   = load("phase-1-packages/output/package-sources.json", { ent
 const trustData     = load("phase-2-trust/output/trust-claims.json", { trust_claims: [] });
 const policiesData  = load("phase-2-trust/output/policies.json", { policies: [] });
 const bookingData   = load("phase-4-booking/output/booking-aggregates.json", { booking_aggregates: [] });
+const conflictReport = load("../conflicts/conflict-report.json", null);
+
+const slugTail = (s) => String(s ?? "").replace(/\/+$/, "").split("/").pop();
 
 // ── helpers ──────────────────────────────────────────────────────────────────
 
@@ -79,7 +82,8 @@ test("search_packages('bromo sunrise')", () => {
     .map(p => ({ pkg: p, score: scorePackage(p, tokens) }))
     .filter(x => x.score > 0)
     .sort((a, b) => b.score - a.score);
-  return { query: "bromo sunrise", total_results: results.length, top: results[0] ? pkgSummary(results[0].pkg) : null };
+  if (results.length === 0) return { error: "no packages matched — empty/broken packages.json?" };
+  return { query: "bromo sunrise", total_results: results.length, top: pkgSummary(results[0].pkg) };
 });
 
 test("search_packages('ijen blue fire')", () => {
@@ -115,26 +119,31 @@ test("get_package by packageId (first package)", () => {
 
 // ── Tool 3: check_conflicts ───────────────────────────────────────────────────
 
-test("check_conflicts()", () => {
+test("check_conflicts() reads reconciled report", () => {
+  const src = conflictReport ?? conflictsData;
+  if (!conflictReport) return { error: "conflicts/conflict-report.json missing — run scripts/validate-data.mjs" };
   return {
-    total_conflicts: conflictsData.total_conflicts,
-    notes_count: conflictsData.notes?.length,
-    has_data: !!conflictsData,
+    source: conflictReport ? "conflict-report.json" : "package-conflicts.json",
+    total_conflicts: src.total_conflicts,
+    types: (src.conflicts ?? []).map((c) => c.type),
   };
 });
 
 // ── Tool 4: get_source_trace ──────────────────────────────────────────────────
 
-test("get_source_trace (first package packageId)", () => {
-  const id = packagesData.packages[0]?.packageId;
+test("get_source_trace bridges packageId → sources via slug", () => {
+  const pkg = packagesData.packages[0];
+  const id = pkg?.packageId;
   const pkgMatch = packagesData.packages.find(p => p.packageId === id);
-  const sourceMatch = sourcesData.entities.find(e => e.entity_id === id);
-  return {
-    entity_id: id,
-    found_in_packages: !!pkgMatch,
-    found_in_sources: !!sourceMatch,
-    note: !sourceMatch ? "sources file uses old slug IDs — expected mismatch" : "ok",
-  };
+  // bridge: packageId's slug tail should resolve to a source entity (the fix)
+  const bridgeTail = slugTail(pkg?.product?.slug);
+  const sourceMatch =
+    sourcesData.entities.find(e => e.entity_id === id) ??
+    sourcesData.entities.find(e => slugTail(e.entity_id) === bridgeTail);
+  if (!pkgMatch || !sourceMatch) {
+    return { error: `source trace did not join for ${id} (pkg=${!!pkgMatch}, source=${!!sourceMatch})` };
+  }
+  return { entity_id: id, found_in: ["packages", "package-sources"], bridged_via: bridgeTail };
 });
 
 // ── Tool 5: search_trust_claims ───────────────────────────────────────────────
@@ -163,6 +172,7 @@ test("get_policy (first available)", () => {
 
 test("get_booking_analytics()", () => {
   const bookings = bookingData.booking_aggregates;
+  if (bookings.length === 0) return { error: "no bookings — empty/broken booking-aggregates.json?" };
   const totalRevenue = bookings.reduce((s, b) => s + (b.gross_revenue ?? 0), 0);
   const byChannel = {};
   for (const b of bookings) {
@@ -182,4 +192,5 @@ test("get_booking_analytics()", () => {
 
 console.log(`\n${"─".repeat(60)}`);
 console.log(`Result: ${passed} passed, ${failed} failed (out of 7 tools)`);
-if (failed > 0) console.log("⚠️  Warnings above may indicate missing data files.");
+if (failed > 0) console.log("❌  Tool checks failed — missing/empty/degraded data.");
+process.exit(failed > 0 ? 1 : 0);

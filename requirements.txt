@@ -1,0 +1,4 @@
+# Python deps for the data-core extractors (phase-3 operational, phase-4 booking).
+# Install: pip install -r requirements.txt
+# DB credentials are read from env (DB_HOST/DB_PORT/DB_USER/DB_PASS/DB_NAME).
+PyMySQL>=1.1,<2
