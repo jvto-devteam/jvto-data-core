@@ -1,7 +1,43 @@
 # Gap 3 — `payment_status` stuck at "pending" (100%, zero variance) — Diagnosis
 
-**Date:** 2026-07-19 · **Effort:** high · **Status:** strong Branch-B lean; final
-confirmation BLOCKED pending DB.
+**Date:** 2026-07-19 · **Effort:** high · **Status:** ✅ **ROOT CAUSE CONFIRMED — Branch A (a real payments table exists)**, from `new-backoffice` source. This *overturns* the earlier snapshot-only Branch-B lean (retained below for provenance).
+
+---
+
+## ✅ UPDATE — source-confirmed from `jvto-devteam/new-backoffice` (Laravel)
+
+Cloned into the session; the models/controllers confirm a real payment source exists:
+
+- `Booking::bookingPayment()` = `hasMany(BookingPayment::class, 'booking_id')` — a
+  dedicated **`booking_payments`** table.
+- `booking_payments.is_paid` ('0'/'1') is used throughout finance logic (e.g.
+  `DashboardController` updates `booking_payments where is_paid='1'`; a global `paid`
+  scope exists), and `bookings.outstanding_payment_amount` tracks the balance.
+- Xendit is integrated (`xendit_payouts` table with `channel_code`), and there is a
+  full TWT invoicing set (`twt_invoices`, `twt_invoice_payments`, `twt_invoice_bookings`).
+
+→ **This is Branch A, not Branch B.** `payment_status` was uniformly "pending" only
+because the phase-4 query read a dead/default `bookings.payment_status` column instead
+of deriving from the real payment records.
+
+**Confirmed fix — derive payment status in a new phase-4 query:**
+```sql
+SELECT b.booking_id,
+  CASE
+    WHEN COALESCE(b.outstanding_payment_amount, b.gross_revenue) <= 0 THEN 'paid'
+    WHEN COALESCE(SUM(CASE WHEN p.is_paid = '1' THEN p.amount END), 0) > 0 THEN 'partial'
+    ELSE 'pending'
+  END AS payment_status_derived
+FROM bookings b
+LEFT JOIN booking_payments p ON p.booking_id = b.booking_id
+GROUP BY b.booking_id;
+```
+(Confirm the exact `booking_payments` amount column + whether `outstanding_payment_amount`
+is authoritative when validating on live data.) The Xendit interim recommendation to Sam
+still stands for *automation*, but the data to fix `payment_status` **already exists** —
+no new integration is required to unblock it.
+
+---
 
 ## Environment note
 
