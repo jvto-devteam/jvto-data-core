@@ -42,6 +42,31 @@ from decimal import Decimal
 from pathlib import Path
 
 OUTPUT = Path(__file__).resolve().parent / "output" / "booking-aggregates.json"
+# Catalog used by phase-6-mcp: booking_details.package_id is new-backoffice's raw
+# packages.id FK, but get_package()/check_conflicts resolve the catalog `packageId`
+# string (e.g. "package-SUB-4D3N-001"). packages.json carries BOTH the numeric id
+# and that string, so we translate FK -> catalog packageId at write time.
+PACKAGES = Path(__file__).resolve().parents[1] / "phase-1-packages" / "output" / "packages.json"
+
+
+def load_package_id_map() -> dict:
+    """{ new-backoffice packages.id (int) -> catalog packageId (str) } from packages.json."""
+    if not PACKAGES.exists():
+        return {}
+    try:
+        data = json.loads(PACKAGES.read_text(encoding="utf-8"))
+    except (ValueError, OSError):
+        return {}
+    id_map = {}
+    for p in data.get("packages", []):
+        pkgid = p.get("packageId") or (p.get("product") or {}).get("packageId")
+        for raw in (p.get("id"), (p.get("product") or {}).get("id")):
+            if raw is not None and pkgid:
+                try:
+                    id_map[int(raw)] = pkgid
+                except (TypeError, ValueError):
+                    pass
+    return id_map
 
 # 12-month window, mirroring the original phase-4 query.
 SQL = """
@@ -107,7 +132,7 @@ def derive_payment_status(payment, balance):
     return "partial"
 
 
-def build_record(r: dict) -> dict:
+def build_record(r: dict, id_map: dict) -> dict:
     gross = num(r.get("grand_total")) or 0
     cost = num(r.get("expense_internal_total")) or 0
     tds = r.get("travel_date_start")
@@ -115,11 +140,19 @@ def build_record(r: dict) -> dict:
     tyear = tds.year if isinstance(tds, (datetime, date)) else None
     seed = str(r.get("booking_code") or r.get("id") or "")
     created = r.get("created_at")
+    raw_fk = r.get("bd_package_id")
+    try:
+        catalog_pkgid = id_map.get(int(raw_fk)) if raw_fk is not None else None
+    except (TypeError, ValueError):
+        catalog_pkgid = None
     return {
         "booking_id_hash": hashlib.md5(seed.encode("utf-8")).hexdigest(),
         "channel": derive_channel(r.get("agent_id"), r.get("booking_category_id")),
         "channel_tag": r.get("channel_tag"),  # additive OTA override (klook/gyg/viator)
-        "package_id": r.get("bd_package_id"),  # REAL FK from booking_details
+        # package_id = catalog packageId (resolvable via get_package); None if the
+        # booking references a package outside the 16-package published catalog.
+        "package_id": catalog_pkgid,
+        "package_fk": raw_fk,  # raw new-backoffice packages.id, for traceability
         "travel_month": tmonth,
         "travel_year": tyear,
         "pax_count": num(r.get("total_pax")),
@@ -140,16 +173,19 @@ def main() -> int:
     except ImportError:
         return fail("pymysql not installed (pip install pymysql)")
 
-    cfg = {k: os.environ.get(f"DB_{k.upper()}") for k in ("host", "user", "pass", "name")}
+    # Only host/user/name are required. DB_PASS is optional: a passwordless MySQL
+    # user (e.g. the documented local root setup) legitimately has it empty/unset.
+    cfg = {k: os.environ.get(f"DB_{k.upper()}") for k in ("host", "user", "name")}
     missing = [k for k, v in cfg.items() if not v]
     if missing:
         return fail("missing env vars: " + ", ".join(f"DB_{k.upper()}" for k in missing))
+    password = os.environ.get("DB_PASS", "") or ""
     port = int(os.environ.get("DB_PORT", "3306"))
 
     try:
         conn = pymysql.connect(
             host=cfg["host"], port=port, user=cfg["user"],
-            password=cfg["pass"], database=cfg["name"],
+            password=password, database=cfg["name"],
             connect_timeout=8, cursorclass=pymysql.cursors.DictCursor,
         )
     except Exception as e:  # noqa: BLE001 — any connection error => graceful skip
@@ -162,7 +198,8 @@ def main() -> int:
     finally:
         conn.close()
 
-    records = [build_record(r) for r in rows]
+    id_map = load_package_id_map()
+    records = [build_record(r, id_map) for r in rows]
     total = len(records)
     total_revenue = sum(r["gross_revenue"] for r in records)
     total_profit = sum(r["profit_estimate"] for r in records)
@@ -194,7 +231,9 @@ def main() -> int:
         return round(100 * sum(1 for r in records if pred(r)) / total, 1) if total else 0.0
 
     print(f"[phase-4 extract] wrote {total} bookings -> {OUTPUT}")
-    print(f"  package_id filled : {pct(lambda r: r['package_id'] is not None)}%")
+    print(f"  package_id resolved to catalog : {pct(lambda r: r['package_id'] is not None)}%  "
+          f"(FK present: {pct(lambda r: r['package_fk'] is not None)}%; "
+          f"catalog map size: {len(id_map)})")
     print(f"  channel resolved  : {pct(lambda r: r['channel'] != 'unknown')}%  "
           f"(distinct: {sorted({r['channel'] for r in records})})")
     print(f"  payment variety   : {sorted({r['payment_status'] for r in records})}")

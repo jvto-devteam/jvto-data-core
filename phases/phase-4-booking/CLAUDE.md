@@ -56,7 +56,7 @@ Skema asli (diverifikasi dari `new-backoffice`
 
 | Output field | Sumber asli di `new-backoffice` |
 |---|---|
-| `package_id` | `booking_details.package_id` (bookingDetail[0]) — **bukan** di `bookings` |
+| `package_id` | `booking_details.package_id` (bookingDetail[0], **bukan** di `bookings`) → **dipetakan ke catalog `packageId`** (mis. `package-SUB-4D3N-001`) via `packages.json` supaya resolvable di `get_package()`; raw FK disimpan di field `package_fk` |
 | `channel` | diturunkan: `agent_id=1→TWT`; `booking_category_id=3→KLOOK`; else `JVTO` |
 | `channel_tag` | `bookings.channel_tag` ENUM(klook/gyg/viator) — override OTA manual |
 | `payment_status` | `payment=0→pending`; `balance<=0→paid`; else `partial` |
