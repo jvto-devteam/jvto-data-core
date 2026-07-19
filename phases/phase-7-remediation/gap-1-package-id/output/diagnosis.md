@@ -15,19 +15,24 @@ resolve the branch **without needing a live DB**:
 - The phase-4 query selected `bookings.package_id` (absent/never populated) instead of
   joining `booking_details`. → **This is Branch B (pure extraction bug), NOT Branch A.**
 
-**Confirmed fix — corrected phase-4 extraction (structure verified; fill-rate to
-validate on run):**
+**Confirmed fix — corrected phase-4 extraction** (real column names verified against
+`ExportDataBookings.php:81`; note `bookings` PK is `id`, and there is **no**
+`bookings.package_id`):
 ```sql
-SELECT b.booking_id,
-       bd.package_id,          -- real FK from the line-item table
-       bd.price_plan_id,       -- tier (BookingDetail::pricePlan)
-       ...
+SELECT b.id,
+       bd.package_id,          -- real FK from the line-item table (bookingDetail[0])
+       bd.price_plan_id        -- tier (BookingDetail::pricePlan)
 FROM bookings b
-LEFT JOIN booking_details bd ON bd.booking_id = b.booking_id
-WHERE b.created_at >= DATE_SUB(NOW(), INTERVAL 12 MONTH);
+LEFT JOIN booking_details bd
+       ON bd.id = (SELECT MIN(bd2.id) FROM booking_details bd2 WHERE bd2.booking_id = b.id)
+WHERE b.deleted_at IS NULL AND b.status = 'booked'
+  AND b.created_at >= DATE_SUB(NOW(), INTERVAL 12 MONTH);
 ```
-(A booking may have multiple `booking_details` rows; decide 1-row-per-booking vs
-per-line-item during the phase-4 rewrite.)
+`bookingDetail` is a `hasMany`, but every consumer in `new-backoffice` uses
+`bookingDetail[0]` as the canonical package (`ExportDataBookings.php:69,81`), so the
+`MIN(id)` picks that first row. Implemented in
+[`../../../phase-4-booking/extract.py`](../../../phase-4-booking/extract.py). This
+supersedes the heuristic `package_id_inferred` (kept only as a legacy-row fallback).
 
 **Impact:** this replaces the ~75.8% heuristic with a real FK expected near-100%.
 The heuristic `package_id_inferred` stays as a fallback for any legacy booking whose

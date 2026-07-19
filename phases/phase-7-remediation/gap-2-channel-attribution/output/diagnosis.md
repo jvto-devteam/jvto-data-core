@@ -8,27 +8,38 @@
 
 Cloned into the session; schema/seeders resolve Track A's structure without a live DB:
 
-- **The channel lookup table exists.** `database/seeders/OrderChannelSeeder.php` inserts
-  `order_channels` = **{JVTO, TWT, KLOOK}** (3 rows). FK pattern
-  `order_channel_id → order_channels.id` is used elsewhere in the schema.
-- **A second, newer channel field exists on `bookings`:**
-  `2026_05_05_000002_add_channel_tag_to_bookings_table.php` adds
-  `channel_tag ENUM('klook','gyg','viator')` — the OTA attribution tag.
-- The snapshot's `channel = "Website"` is **not** one of the `order_channels` names, so
-  the phase-4 extraction used an **ad-hoc/hardcoded mapping**, not the real lookup —
-  which is exactly why 69.4% failed to resolve.
+> **⚠️ Correction (verified against `app/Http/Controllers/ExportData/ExportDataBookings.php:60`).**
+> An earlier revision of this doc proposed joining an `order_channels` lookup on
+> `bookings.order_channel_id`. That is **wrong**: `bookings` has **no**
+> `order_channel_id` column. The channel is **derived** in code, so the corrected
+> fix below is a `CASE`, not a join.
 
-**Confirmed fix — corrected phase-4 channel resolution:**
+- **Channel is derived, not stored.** `order_channels` = **{1:JVTO, 2:TWT, 3:KLOOK}**
+  (`OrderChannelSeeder.php`) but bookings never reference it. The app derives the
+  channel per booking from `agent_id` + `booking_category_id`
+  (`ExportDataBookings.php:60`; same logic in `DashboardController::summaryOrderChannel`).
+- **A second, newer field exists on `bookings`:**
+  `2026_05_05_000002_add_channel_tag_to_bookings_table.php` adds
+  `channel_tag ENUM('klook','gyg','viator')` — a manual OTA override, separate from the
+  JVTO/TWT/KLOOK classification.
+- The snapshot's `channel = "Website"` is not any of these values, confirming that
+  snapshot was **not** produced from this schema (see provenance caveat at end).
+
+**Confirmed fix — corrected phase-4 channel derivation:**
 ```sql
-SELECT b.booking_id,
-       COALESCE(oc.name, UPPER(b.channel_tag), 'unknown') AS channel
+SELECT b.id,
+  CASE
+    WHEN b.agent_id = 1            THEN 'TWT'
+    WHEN b.booking_category_id = 3 THEN 'KLOOK'
+    ELSE 'JVTO'
+  END AS channel,
+  b.channel_tag        -- additive OTA override (klook/gyg/viator), when set
 FROM bookings b
-LEFT JOIN order_channels oc ON oc.id = b.order_channel_id
--- channel_tag (klook/gyg/viator) carries OTA attribution when order_channel_id is null
+WHERE b.deleted_at IS NULL AND b.status = 'booked';
 ```
-Still to check on the live data (query #1 below): how many rows have `order_channel_id`
-NULL *and* `channel_tag` NULL — those are the genuinely-unattributable remainder
-(Branch A2). Everything else is now resolvable (Branch A1). No values were fabricated.
+Every row resolves to JVTO/TWT/KLOOK (there is no "unknown" once derived correctly), so
+the 69.4%-null problem disappears — it was purely an extraction bug. Implemented in
+`phases/phase-4-booking/extract.py` (`derive_channel`). No values were fabricated.
 
 ---
 
@@ -139,3 +150,18 @@ paths (Klook API, Website form, OTA webhooks) always send an explicit channel id
 Klook merchant dashboard which packages are genuinely live, set
 `orderChannelEnabled.KLOOK = true` for those in `package-registry.json`, then
 re-run `phase-1-packages` so `packages.json` refreshes.
+
+---
+
+## Provenance caveat (applies to all Phase 7 gaps)
+
+The committed `booking-aggregates.json` snapshot uses field names — `order_channel_id`,
+`package_id`, `gross_revenue`, `pax_count`, `pickup_city`, `payment_status`,
+`operational_status`, `travel_date` — that do **not** exist on `new-backoffice.bookings`
+(verified: real names are `agent_id`/`booking_category_id`-derived channel,
+`booking_details.package_id`, `grand_total`, `total_pax`, `meeting_point`,
+`payment`/`balance`, `status`, `travel_date_start/end`). So that snapshot was **not**
+produced from the current `new-backoffice` schema (it came from an older/mock/other DB).
+The corrected extractor `phases/phase-4-booking/extract.py` treats `new-backoffice`
+(via `ExportDataBookings::bookings()`) as the source of truth and maps back to the
+existing output field names so the MCP server keeps working unchanged.

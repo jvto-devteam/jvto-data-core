@@ -8,34 +8,36 @@
 
 Cloned into the session; the models/controllers confirm a real payment source exists:
 
-- `Booking::bookingPayment()` = `hasMany(BookingPayment::class, 'booking_id')` — a
-  dedicated **`booking_payments`** table.
-- `booking_payments.is_paid` ('0'/'1') is used throughout finance logic (e.g.
-  `DashboardController` updates `booking_payments where is_paid='1'`; a global `paid`
-  scope exists), and `bookings.outstanding_payment_amount` tracks the balance.
-- Xendit is integrated (`xendit_payouts` table with `channel_code`), and there is a
-  full TWT invoicing set (`twt_invoices`, `twt_invoice_payments`, `twt_invoice_bookings`).
+> **⚠️ Correction (verified against `ExportDataBookings.php:53-59` & `FinanceController.php:281`).**
+> An earlier revision proposed summing `booking_payments.amount`. Two fixes: the amount
+> column is **`nominal`** (with an implicit `is_paid=1` global scope), *and* the app does
+> **not** recompute status from payments — it reads the denormalized **`bookings.payment`
+> / `bookings.balance`** columns. The corrected derivation below uses those.
+
+- Payment state is denormalized on `bookings`: the app's canonical expression is
+  `payment == 0 → Unpaid`; `balance <= 0 → Paid`; else `DP Paid` (partial)
+  (`FinanceController.php:281`, `ClientController.php:132`, `CrmController.php:201`).
+- Amount *collected* (if needed) = `SUM(booking_payments.nominal)` where `is_paid=1`
+  (global scope) — `DashboardController.php:331`, `ExportDataBookings.php:176`.
+- Xendit (`xendit_payouts`) and TWT invoicing exist too, but are not needed for status.
 
 → **This is Branch A, not Branch B.** `payment_status` was uniformly "pending" only
-because the phase-4 query read a dead/default `bookings.payment_status` column instead
-of deriving from the real payment records.
+because the extraction read a `payment_status` field that isn't the real source.
 
-**Confirmed fix — derive payment status in a new phase-4 query:**
+**Confirmed fix — corrected phase-4 payment derivation:**
 ```sql
-SELECT b.booking_id,
+SELECT b.id,
   CASE
-    WHEN COALESCE(b.outstanding_payment_amount, b.gross_revenue) <= 0 THEN 'paid'
-    WHEN COALESCE(SUM(CASE WHEN p.is_paid = '1' THEN p.amount END), 0) > 0 THEN 'partial'
-    ELSE 'pending'
-  END AS payment_status_derived
+    WHEN b.payment = 0   THEN 'pending'   -- nothing paid
+    WHEN b.balance <= 0  THEN 'paid'      -- fully settled
+    ELSE 'partial'                        -- DP paid, balance remaining
+  END AS payment_status
 FROM bookings b
-LEFT JOIN booking_payments p ON p.booking_id = b.booking_id
-GROUP BY b.booking_id;
+WHERE b.deleted_at IS NULL AND b.status = 'booked';
 ```
-(Confirm the exact `booking_payments` amount column + whether `outstanding_payment_amount`
-is authoritative when validating on live data.) The Xendit interim recommendation to Sam
-still stands for *automation*, but the data to fix `payment_status` **already exists** —
-no new integration is required to unblock it.
+Implemented in `phases/phase-4-booking/extract.py` (`derive_payment_status`). The data
+to fix `payment_status` **already exists** — no new integration is required. The Xendit
+recommendation to Sam stands only for *automation*, not as a prerequisite.
 
 ---
 
