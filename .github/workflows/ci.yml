@@ -29,8 +29,21 @@ jobs:
             || (echo "::error::phase-5 indexes are stale — run build-index.py and commit"; exit 1)
 
       # Data-integrity guard: referential integrity, PII, staleness, non-empty core.
+      # The validator rewrites conflicts/conflict-report.json; fail if the committed
+      # copy is out of date (check_conflicts serves it, so stale = wrong answers).
       - name: Validate served data
-        run: node scripts/validate-data.mjs
+        run: |
+          node scripts/validate-data.mjs
+          git diff --exit-code -- conflicts/conflict-report.json \
+            || (echo "::error::conflicts/conflict-report.json is stale — run scripts/validate-data.mjs and commit"; exit 1)
+
+      # Compile the actual server so a TS/SDK error fails CI (test-tools.mjs is a
+      # standalone reimplementation and never imports mcp-server.ts).
+      - name: Build MCP server (typecheck)
+        working-directory: phases/phase-6-mcp/mcp-servers
+        run: |
+          npm ci
+          npm run build
 
       # Tool smoke test against the committed data.
       - name: MCP tool smoke test

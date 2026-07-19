@@ -124,10 +124,12 @@ const bookingRaw = existsSync(resolve(ROOT, "phases/phase-4-booking/output/booki
   : "";
 const emailRe = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/i;
 if (emailRe.test(bookingRaw)) FAIL("booking-aggregates.json contains an email address (PII)");
-const piiKeys = ["name", "email", "phone", "passport", "whatsapp", "customer_name"];
-const leakedKeys = bookings.length ? piiKeys.filter((k) => k in bookings[0]) : [];
-if (leakedKeys.length) FAIL(`booking record exposes PII field(s): ${leakedKeys.join(", ")}`);
-else PASS("booking output: no PII fields / emails");
+const piiKeys = ["name", "email", "phone", "passport", "whatsapp",
+  "customer_name", "customer_phone", "customer_email", "address"];
+const leaked = new Set();
+for (const b of bookings) for (const k of piiKeys) if (k in b) leaked.add(k);
+if (leaked.size) FAIL(`booking record(s) expose PII field(s): ${[...leaked].join(", ")}`);
+else PASS(`booking output: no PII fields / emails (scanned ${bookings.length} records)`);
 
 // ── 6. Compute the truthful conflict report (recorded, mostly soft) ──────────
 const conflicts = [];
