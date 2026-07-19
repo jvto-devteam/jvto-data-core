@@ -497,7 +497,7 @@ function getBookingAnalytics(): object {
 // ── MCP Server ─────────────────────────────────────────────────────────────────
 
 const server = new Server(
-  { name: "jvto-data-core", version: "2.0.0" },
+  { name: "jvto-data-core", version: "2.1.0" },
   { capabilities: { tools: {} } }
 );
 
