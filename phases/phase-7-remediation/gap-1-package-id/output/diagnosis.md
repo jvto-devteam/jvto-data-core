@@ -1,7 +1,40 @@
 # Gap 1 — `package_id` NULL in 100% of bookings — Diagnosis
 
-**Date:** 2026-07-19 · **Effort:** high · **Status:** root cause *narrowed*, not
-*confirmed* (see environment note).
+**Date:** 2026-07-19 · **Effort:** high · **Status:** ✅ **ROOT CAUSE CONFIRMED — Branch B (extraction bug)**, from `new-backoffice` source code (below). Original snapshot-only analysis retained underneath for provenance.
+
+---
+
+## ✅ UPDATE — source-confirmed from `jvto-devteam/new-backoffice` (Laravel)
+
+The `new-backoffice` repo was cloned into the session and its Eloquent models
+resolve the branch **without needing a live DB**:
+
+- `app/Models/BookingDetail.php` → `package()` = `belongsTo(Package::class, 'package_id')`.
+  **The booking↔package link lives in the `booking_details` line-item table, not on
+  `bookings`.** `Booking::bookingDetail()` is a `hasMany(BookingDetail, 'booking_id')`.
+- The phase-4 query selected `bookings.package_id` (absent/never populated) instead of
+  joining `booking_details`. → **This is Branch B (pure extraction bug), NOT Branch A.**
+
+**Confirmed fix — corrected phase-4 extraction (structure verified; fill-rate to
+validate on run):**
+```sql
+SELECT b.booking_id,
+       bd.package_id,          -- real FK from the line-item table
+       bd.price_plan_id,       -- tier (BookingDetail::pricePlan)
+       ...
+FROM bookings b
+LEFT JOIN booking_details bd ON bd.booking_id = b.booking_id
+WHERE b.created_at >= DATE_SUB(NOW(), INTERVAL 12 MONTH);
+```
+(A booking may have multiple `booking_details` rows; decide 1-row-per-booking vs
+per-line-item during the phase-4 rewrite.)
+
+**Impact:** this replaces the ~75.8% heuristic with a real FK expected near-100%.
+The heuristic `package_id_inferred` stays as a fallback for any legacy booking whose
+`booking_details` row is missing, but `booking_details.package_id` is now the source
+of truth. **This supersedes the "snapshot lean: Branch A" note below.**
+
+---
 
 ## Environment note (read first)
 

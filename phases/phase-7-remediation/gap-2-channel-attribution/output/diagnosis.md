@@ -2,6 +2,36 @@
 
 **Date:** 2026-07-19 · **Effort:** high · Two independent tracks.
 
+---
+
+## ✅ UPDATE — source-confirmed from `jvto-devteam/new-backoffice` (Laravel)
+
+Cloned into the session; schema/seeders resolve Track A's structure without a live DB:
+
+- **The channel lookup table exists.** `database/seeders/OrderChannelSeeder.php` inserts
+  `order_channels` = **{JVTO, TWT, KLOOK}** (3 rows). FK pattern
+  `order_channel_id → order_channels.id` is used elsewhere in the schema.
+- **A second, newer channel field exists on `bookings`:**
+  `2026_05_05_000002_add_channel_tag_to_bookings_table.php` adds
+  `channel_tag ENUM('klook','gyg','viator')` — the OTA attribution tag.
+- The snapshot's `channel = "Website"` is **not** one of the `order_channels` names, so
+  the phase-4 extraction used an **ad-hoc/hardcoded mapping**, not the real lookup —
+  which is exactly why 69.4% failed to resolve.
+
+**Confirmed fix — corrected phase-4 channel resolution:**
+```sql
+SELECT b.booking_id,
+       COALESCE(oc.name, UPPER(b.channel_tag), 'unknown') AS channel
+FROM bookings b
+LEFT JOIN order_channels oc ON oc.id = b.order_channel_id
+-- channel_tag (klook/gyg/viator) carries OTA attribution when order_channel_id is null
+```
+Still to check on the live data (query #1 below): how many rows have `order_channel_id`
+NULL *and* `channel_tag` NULL — those are the genuinely-unattributable remainder
+(Branch A2). Everything else is now resolvable (Branch A1). No values were fabricated.
+
+---
+
 ## Environment note
 
 Track A's diagnostic SQL needs the live `new-backoffice` MySQL, which is
