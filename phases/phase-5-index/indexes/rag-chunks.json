@@ -1,395 +1,186 @@
 {
-  "generated_at": "2026-06-13",
-  "total_chunks": 87,
+  "generated_at": "2026-06-15T06:31:00Z",
+  "total_chunks": 68,
   "chunk_types": {
-    "package": 35,
+    "package": 16,
     "trust": 19,
     "policy": 18,
     "faq": 15
   },
   "chunks": [
     {
-      "chunk_id": "pkg_bromo_1d1n_chunk_1",
+      "chunk_id": "pkg_package_SUB_3D2N_003_chunk_1",
       "entity_type": "package",
-      "entity_id": "bromo-1d1n",
-      "content": "1 Day Bromo Midnight Experience from Surabaya. Duration: 1D1N. Departing from: Surabaya. Destinations: Mount Bromo. Price from IDR 1,000,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "entity_id": "package-SUB-3D2N-003",
+      "content": "3 Day Bromo, Madakaripura & Ijen Overland from Surabaya to Bali. Duration: 3D2N. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Madakaripura Waterfall. Price from IDR 2,450,000 per person (group of 2+). Bali-Java ferry crossing included. Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable.",
       "metadata": {
-        "source": "llm-wiki, jvto-web",
-        "confidence": "medium",
+        "source": "jvto-web, llm-wiki",
+        "confidence": "high",
         "freshness": "fresh"
       }
     },
     {
-      "chunk_id": "pkg_bromo_2d1n_chunk_1",
+      "chunk_id": "pkg_package_SUB_3D2N_002_chunk_1",
       "entity_type": "package",
-      "entity_id": "bromo-2d1n",
-      "content": "2 Day Bromo Sunrise Adventure from Surabaya. Duration: 2D1N. Departing from: Surabaya. Destinations: Mount Bromo. Price from IDR 1,750,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "entity_id": "package-SUB-3D2N-002",
+      "content": "3 Day Ijen, Bromo & Madakaripura Waterfall Discovery from Surabaya. Duration: 3D2N. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Madakaripura Waterfall. Price from IDR 2,450,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable.",
       "metadata": {
-        "source": "llm-wiki, jvto-web",
-        "confidence": "medium",
+        "source": "jvto-web, llm-wiki",
+        "confidence": "high",
         "freshness": "fresh"
       }
     },
     {
-      "chunk_id": "pkg_ijen_2d1n_chunk_1",
+      "chunk_id": "pkg_package_SUB_4D3N_001_chunk_1",
       "entity_type": "package",
-      "entity_id": "ijen-2d1n",
-      "content": "2 Day Ijen Blue Fire Expedition from Surabaya. Duration: 2D1N. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen). Price from IDR 1,550,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "entity_id": "package-SUB-4D3N-001",
+      "content": "4 Day Ijen, Bromo & Madakaripura Waterfall Expedition from Surabaya. Duration: 4D3N. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Madakaripura Waterfall. Price from IDR 3,025,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable.",
       "metadata": {
-        "source": "llm-wiki, jvto-web",
-        "confidence": "medium",
+        "source": "jvto-web, llm-wiki",
+        "confidence": "high",
         "freshness": "fresh"
       }
     },
     {
-      "chunk_id": "pkg_bali_ijen_bromo_madakaripura_3d2n_chunk_1",
+      "chunk_id": "pkg_package_SUB_4D3N_002_chunk_1",
       "entity_type": "package",
-      "entity_id": "bali/ijen-bromo-madakaripura-3d2n",
-      "content": "3 Day Ijen, Bromo & Madakaripura Waterfall Journey from Bali to Surabaya. Duration: 3D2N. Departing from: Bali. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Madakaripura Waterfall. Price from IDR 2,850,000 per person (group of 2+). Bali-Java ferry crossing included. Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "entity_id": "package-SUB-4D3N-002",
+      "content": "4 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Journey from Surabaya. Duration: 4D3N. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Papuma Beach. Price from IDR 3,125,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable.",
       "metadata": {
-        "source": "llm-wiki, jvto-web",
-        "confidence": "medium",
+        "source": "jvto-web, llm-wiki",
+        "confidence": "high",
         "freshness": "fresh"
       }
     },
     {
-      "chunk_id": "pkg_bromo_madakaripura_ijen_3d2n_chunk_1",
+      "chunk_id": "pkg_package_SUB_4D3N_003_chunk_1",
       "entity_type": "package",
-      "entity_id": "bromo-madakaripura-ijen-3d2n",
-      "content": "3 Day Bromo, Madakaripura & Ijen Overland from Surabaya to Bali. Duration: 3D2N. Departing from: Surabaya. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Madakaripura Waterfall. Price from IDR 2,450,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "entity_id": "package-SUB-4D3N-003",
+      "content": "4 Day Tumpak Sewu, Bromo & Ijen Adventure from Surabaya to Bali. Duration: 4D3N. Departing from: Surabaya. Destinations: Mount Bromo, Tumpak Sewu Waterfall, Mount Ijen (Kawah Ijen). Price from IDR 3,125,000 per person (group of 2+). Bali-Java ferry crossing included. Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable.",
       "metadata": {
-        "source": "llm-wiki, jvto-web",
-        "confidence": "medium",
+        "source": "jvto-web, llm-wiki",
+        "confidence": "high",
         "freshness": "fresh"
       }
     },
     {
-      "chunk_id": "pkg_bali_ijen_papuma_tumpak_sewu_bromo_4d3n_chunk_1",
+      "chunk_id": "pkg_package_SUB_5D4N_002_chunk_1",
       "entity_type": "package",
-      "entity_id": "bali/ijen-papuma-tumpak-sewu-bromo-4d3n",
-      "content": "4 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Expedition from Bali to Surabaya. Duration: 4D3N. Departing from: Bali. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall. Price from IDR 3,475,000 per person (group of 2+). Bali-Java ferry crossing included. Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "entity_id": "package-SUB-5D4N-002",
+      "content": "5 Day Ijen, Bromo, Madakaripura & Malang City Adventure from Surabaya. Duration: 5D4N. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Madakaripura Waterfall. Price from IDR 3,850,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable.",
       "metadata": {
-        "source": "llm-wiki, jvto-web",
-        "confidence": "medium",
+        "source": "jvto-web, llm-wiki",
+        "confidence": "high",
         "freshness": "fresh"
       }
     },
     {
-      "chunk_id": "pkg_ijen_bromo_madakaripura_4d3n_chunk_1",
+      "chunk_id": "pkg_package_SUB_2D1N_001_chunk_1",
       "entity_type": "package",
-      "entity_id": "ijen-bromo-madakaripura-4d3n",
-      "content": "4 Day Ijen, Bromo & Madakaripura Waterfall Expedition from Surabaya. Duration: 4D3N. Departing from: Surabaya. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Madakaripura Waterfall. Price from IDR 3,025,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "entity_id": "package-SUB-2D1N-001",
+      "content": "2 Day Ijen Blue Fire Expedition from Surabaya. Duration: 2D1N. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen). Price from IDR 1,550,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable.",
       "metadata": {
-        "source": "llm-wiki, jvto-web",
-        "confidence": "medium",
+        "source": "jvto-web, llm-wiki",
+        "confidence": "high",
         "freshness": "fresh"
       }
     },
     {
-      "chunk_id": "pkg_tumpak_sewu_bromo_ijen_4d3n_chunk_1",
+      "chunk_id": "pkg_2D1N_chunk_1",
       "entity_type": "package",
-      "entity_id": "tumpak-sewu-bromo-ijen-4d3n",
-      "content": "4 Day Tumpak Sewu, Bromo & Ijen Adventure from Surabaya to Bali. Duration: 4D3N. Departing from: Surabaya. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Tumpak Sewu Waterfall. Price from IDR 3,125,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "entity_id": "2D1N",
+      "content": "2 Day Bromo Sunrise Adventure from Surabaya. Duration: 2D1N. Departing from: Surabaya. Destinations: Mount Bromo, Madakaripura Waterfall. Price from IDR 1,750,000 per person (group of 2+). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable.",
       "metadata": {
-        "source": "llm-wiki, jvto-web",
-        "confidence": "medium",
+        "source": "jvto-web, llm-wiki",
+        "confidence": "high",
         "freshness": "fresh"
       }
     },
     {
-      "chunk_id": "pkg_bali_ijen_papuma_tumpak_sewu_bromo_5d4n_chunk_1",
+      "chunk_id": "pkg_package_BALI_4D3N_001_chunk_1",
       "entity_type": "package",
-      "entity_id": "bali/ijen-papuma-tumpak-sewu-bromo-5d4n",
-      "content": "5 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Discovery from Bali to Surabaya. Duration: 5D4N. Departing from: Bali. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall. Price from IDR 4,050,000 per person (group of 2+). Bali-Java ferry crossing included. Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "entity_id": "package-BALI-4D3N-001",
+      "content": "4 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Expedition from Bali to Surabaya. Duration: 4D3N. Departing from: Bali. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Papuma Beach. Price from IDR 3,475,000 per person (group of 2+). Bali-Java ferry crossing included. Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable.",
       "metadata": {
-        "source": "llm-wiki, jvto-web",
-        "confidence": "medium",
+        "source": "jvto-web, llm-wiki",
+        "confidence": "high",
         "freshness": "fresh"
       }
     },
     {
-      "chunk_id": "pkg_ijen_bromo_madakaripura_malang_5d4n_chunk_1",
+      "chunk_id": "pkg_package_BALI_5D4N_001_chunk_1",
       "entity_type": "package",
-      "entity_id": "ijen-bromo-madakaripura-malang-5d4n",
-      "content": "5 Day Ijen, Bromo, Madakaripura & Malang City Adventure from Surabaya. Duration: 5D4N. Departing from: Surabaya. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Madakaripura Waterfall, Malang City. Price from IDR 3,850,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "entity_id": "package-BALI-5D4N-001",
+      "content": "5 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Discovery from Bali to Surabaya. Duration: 5D4N. Departing from: Bali. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Papuma Beach. Price from IDR 4,050,000 per person (group of 2+). Bali-Java ferry crossing included. Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable.",
       "metadata": {
-        "source": "llm-wiki, jvto-web",
-        "confidence": "medium",
+        "source": "jvto-web, llm-wiki",
+        "confidence": "high",
         "freshness": "fresh"
       }
     },
     {
-      "chunk_id": "pkg_ijen_papuma_tumpak_sewu_bromo_malang_6d5n_chunk_1",
+      "chunk_id": "pkg_package_SUB_5D4N_001_chunk_1",
       "entity_type": "package",
-      "entity_id": "ijen-papuma-tumpak-sewu-bromo-malang-6d5n",
-      "content": "6 Day Ijen, Papuma Beach, Tumpak Sewu, Bromo & Malang City Discovery from Surabaya. Duration: 6D5N. Departing from: Surabaya. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall, Malang City. Price from IDR 4,750,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "entity_id": "package-SUB-5D4N-001",
+      "content": "5 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Nature Trip from Surabaya. Duration: 5D4N. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Papuma Beach. Price from IDR 3,650,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable.",
       "metadata": {
-        "source": "llm-wiki, jvto-web",
-        "confidence": "medium",
+        "source": "jvto-web, llm-wiki",
+        "confidence": "high",
         "freshness": "fresh"
       }
     },
     {
-      "chunk_id": "pkg_taman_safari_prigen_bromo_madakaripura_3d2n_chunk_1",
+      "chunk_id": "pkg_package_BALI_3D2N_003_chunk_1",
       "entity_type": "package",
-      "entity_id": "taman-safari-prigen-bromo-madakaripura-3d2n",
-      "content": "3 Day Taman Safari Prigen, Bromo & Madakaripura from Surabaya. Duration: 3D2N. Departing from: Surabaya. Destinations: Mount Bromo, Madakaripura Waterfall, Taman Safari Prigen. Price from IDR 3,450,000 per person (group of 2+). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Specialty tour with unique family-friendly or wildlife experiences. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "entity_id": "package-BALI-3D2N-003",
+      "content": "3 Day Ijen, Bromo & Madakaripura Waterfall Journey from Bali to Surabaya. Duration: 3D2N. Departing from: Bali. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Madakaripura Waterfall. Price from IDR 2,850,000 per person (group of 2+). Bali-Java ferry crossing included. Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable.",
       "metadata": {
-        "source": "llm-wiki, jvto-web",
-        "confidence": "medium",
+        "source": "jvto-web, llm-wiki",
+        "confidence": "high",
         "freshness": "fresh"
       }
     },
     {
-      "chunk_id": "pkg_bali_bromo_ijen_3d2n_chunk_1",
+      "chunk_id": "pkg_1D1N_chunk_1",
       "entity_type": "package",
-      "entity_id": "bali/bromo-ijen-3d2n",
-      "content": "3 Day Bromo & Ijen Volcano Discovery from Bali. Duration: 3D2N. Departing from: Bali. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen). Price from IDR 2,850,000 per person (group of 2+). Bali-Java ferry crossing included. Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: medium.",
+      "entity_id": "1D1N",
+      "content": "1 Day Bromo Midnight Experience from Surabaya. Duration: 1D1N. Departing from: Surabaya. Destinations: Mount Bromo. Price from IDR 1,000,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable.",
       "metadata": {
-        "source": "llm-wiki, jvto-web",
-        "confidence": "medium",
+        "source": "jvto-web, llm-wiki",
+        "confidence": "high",
         "freshness": "fresh"
       }
     },
     {
-      "chunk_id": "pkg_1_day_bromo_midnight_experience_from_surabaya_chunk_1",
+      "chunk_id": "pkg_package_SUB_6D5N_001_chunk_1",
       "entity_type": "package",
-      "entity_id": "1-day-bromo-midnight-experience-from-surabaya",
-      "content": "1 Day Bromo Midnight Experience from Surabaya. Duration: 1 Days 1 Nights. Departing from: Surabaya. Destinations: Mount Bromo. Price from IDR 1,000,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "entity_id": "package-SUB-6D5N-001",
+      "content": "6 Day Ijen, Papuma Beach, Tumpak Sewu, Bromo & Malang City Discovery from Surabaya. Duration: 6D5N. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Malang City, Papuma Beach. Price from IDR 4,750,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable.",
       "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
+        "source": "jvto-web, llm-wiki",
+        "confidence": "high",
         "freshness": "fresh"
       }
     },
     {
-      "chunk_id": "pkg_2_day_ijen_blue_fire_expedition_from_surabaya_chunk_1",
+      "chunk_id": "pkg_package_BALI_3D2N_001_chunk_1",
       "entity_type": "package",
-      "entity_id": "2-day-ijen-blue-fire-expedition-from-surabaya",
-      "content": "2 Day Ijen Blue Fire Expedition from Surabaya. Duration: 2 Days 1 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen). Price from IDR 1,550,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "entity_id": "package-BALI-3D2N-001",
+      "content": "3 Day Bromo & Ijen Volcano Discovery from Bali. Duration: 3D2N. Departing from: Bali. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Madakaripura Waterfall. Price from IDR 2,850,000 per person (group of 2+). Includes Kawah Ijen crater — health screening required (BBKSDA SE.1658/KSA.9/2024). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable.",
       "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
+        "source": "jvto-web, llm-wiki",
+        "confidence": "high",
         "freshness": "fresh"
       }
     },
     {
-      "chunk_id": "pkg_2_day_bromo_sunrise_adventure_from_surabaya_chunk_1",
+      "chunk_id": "pkg_package_SUB_3D2N_006_chunk_1",
       "entity_type": "package",
-      "entity_id": "2-day-bromo-sunrise-adventure-from-surabaya",
-      "content": "2 Day Bromo Sunrise Adventure from Surabaya. Duration: 2 Days 1 Nights. Departing from: Surabaya. Destinations: Mount Bromo, Madakaripura Waterfall. Price from IDR 1,750,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
+      "entity_id": "package-SUB-3D2N-006",
+      "content": "3 Day Taman Safari Prigen, Bromo & Madakaripura Family Tour from Surabaya. Duration: 3D2N. Departing from: Surabaya. Destinations: Taman Safari Prigen, Mount Bromo, Madakaripura Waterfall. Price from IDR 3,450,000 per person (group of 2+). Includes Madakaripura Waterfall — Indonesia's tallest waterfall. Specialty tour with unique family-friendly or wildlife experiences. Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable.",
       "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_3_day_bromo_and_madakaripura_waterfall_and_ijen_overland_from_surabaya_to_bali_chunk_1",
-      "entity_type": "package",
-      "entity_id": "3-day-bromo-and-madakaripura-waterfall-and-ijen-overland-from-surabaya-to-bali",
-      "content": "3 Day Bromo, Madakaripura Waterfall & Ijen Overland from Surabaya to Bali. Duration: 3 Days 2 Nights. Departing from: Surabaya. Destinations: Mount Bromo, Madakaripura Waterfall, Mount Ijen (Kawah Ijen). Price from IDR 2,450,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_3_day_ijen_and_bromo_and_madakaripura_waterfall_from_surabaya_chunk_1",
-      "entity_type": "package",
-      "entity_id": "3-day-ijen-and-bromo-and-madakaripura-waterfall-from-surabaya",
-      "content": "3 Day Ijen, Bromo & Madakaripura Waterfall Discovery from Surabaya. Duration: 3 Days 2 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Madakaripura Waterfall. Price from IDR 2,450,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_4_day_ijen_and_bromo_and_madakaripura_waterfall_from_surabaya_chunk_1",
-      "entity_type": "package",
-      "entity_id": "4-day-ijen-and-bromo-and-madakaripura-waterfall-from-surabaya",
-      "content": "4 Day Ijen, Bromo & Madakaripura Waterfall Expedition from Surabaya. Duration: 4 Days 3 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Madakaripura Waterfall. Price from IDR 3,025,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_4_day_ijen_and_papuma_beach_and_tumpak_sewu_waterfall_and_bromo_from_surabaya_chunk_1",
-      "entity_type": "package",
-      "entity_id": "4-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-surabaya",
-      "content": "4 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Journey from Surabaya. Duration: 4 Days 3 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall, Mount Bromo. Price from IDR 3,125,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_4_day_tumpak_sewu_waterfall_and_bromo_and_ijen_adventure_from_surabaya_to_bali_chunk_1",
-      "entity_type": "package",
-      "entity_id": "4-day-tumpak-sewu-waterfall-and-bromo-and-ijen-adventure-from-surabaya-to-bali",
-      "content": "4 Day Tumpak Sewu, Bromo & Ijen Adventure from Surabaya to Bali. Duration: 4 Days 3 Nights. Departing from: Surabaya. Destinations: Tumpak Sewu Waterfall, Mount Bromo, Mount Ijen (Kawah Ijen). Price from IDR 3,125,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_5_day_ijen_and_bromo_and_madakaripura_waterfall_and_malang_city_adventure_from_surabaya_chunk_1",
-      "entity_type": "package",
-      "entity_id": "5-day-ijen-and-bromo-and-madakaripura-waterfall-and-malang-city-adventure-from-surabaya",
-      "content": "5 Day Ijen, Bromo, Madakaripura & Malang City Adventure from Surabaya. Duration: 5 Days 4 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Madakaripura Waterfall, Malang City. Price from IDR 3,850,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_4_day_ijen_and_papuma_beach_and_tumpak_sewu_waterfall_and_bromo_from_bali_to_surabaya_chunk_1",
-      "entity_type": "package",
-      "entity_id": "4-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-bali-to-surabaya",
-      "content": "4 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Expedition from Bali to Surabaya. Duration: 4 Days 3 Nights. Departing from: Bali. Destinations: Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall, Mount Bromo. Price from IDR 3,475,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_5_day_ijen_and_papuma_beach_and_tumpak_sewu_waterfall_and_bromo_from_bali_to_surabaya_chunk_1",
-      "entity_type": "package",
-      "entity_id": "5-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-bali-to-surabaya",
-      "content": "5 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Discovery from Bali to Surabaya. Duration: 5 Days 4 Nights. Departing from: Bali. Destinations: Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall, Mount Bromo. Price from IDR 4,050,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_5_day_ijen_and_papuma_beach_and_tumpak_sewu_waterfall_and_bromo_from_surabaya_chunk_1",
-      "entity_type": "package",
-      "entity_id": "5-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-from-surabaya",
-      "content": "5 Day Ijen, Papuma Beach, Tumpak Sewu & Bromo Nature Trip from Surabaya. Duration: 5 Days 4 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall, Mount Bromo. Price from IDR 3,650,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_3_day_ijen_and_bromo_and_madakaripura_waterfall_from_bali_to_surabaya_chunk_1",
-      "entity_type": "package",
-      "entity_id": "3-day-ijen-and-bromo-and-madakaripura-waterfall-from-bali-to-surabaya",
-      "content": "3 Day Ijen, Bromo & Madakaripura Waterfall Journey from Bali to Surabaya. Duration: 3 Days 2 Nights. Departing from: Bali. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo, Madakaripura Waterfall. Price from IDR 2,850,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_3_day_bromo_and_madakaripura_waterfall_getaway_from_surabaya_chunk_1",
-      "entity_type": "package",
-      "entity_id": "3-day-bromo-and-madakaripura-waterfall-getaway-from-surabaya",
-      "content": "3 Day Bromo & Madakaripura Waterfall Getaway from Surabaya. Duration: 3 Days 2 Nights. Departing from: Surabaya. Destinations: Mount Bromo, Madakaripura Waterfall. Price from IDR 2,450,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_6_day_ijen_and_papuma_beach_and_tumpak_sewu_waterfall_and_bromo_and_malang_city_discovery_from_surabaya_chunk_1",
-      "entity_type": "package",
-      "entity_id": "6-day-ijen-and-papuma-beach-and-tumpak-sewu-waterfall-and-bromo-and-malang-city-discovery-from-surabaya",
-      "content": "6 Day Ijen, Papuma Beach, Tumpak Sewu, Bromo & Malang City Discovery from Surabaya. Duration: 6 Days 5 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall, Mount Bromo, Malang City. Price from IDR 4,750,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_3_day_bromo_and_ijen_volcano_discovery_from_bali_chunk_1",
-      "entity_type": "package",
-      "entity_id": "3-day-bromo-and-ijen-volcano-discovery-from-bali",
-      "content": "3 Day Bromo & Ijen Volcano Discovery from Bali. Duration: 3 Days 2 Nights. Departing from: Bali. Destinations: Mount Bromo, Madakaripura Waterfall, Mount Ijen (Kawah Ijen). Price from IDR 2,850,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_3d2n_mount_bromo_madakaripura_waterfall_ijen_crater_tour_from_surabaya_chunk_1",
-      "entity_type": "package",
-      "entity_id": "3d2n-mount-bromo-madakaripura-waterfall-ijen-crater-tour-from-surabaya",
-      "content": "3D2N Mount Bromo, Madakaripura Waterfall & Ijen Crater Tour from Surabaya. Duration: 3 Days 2 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Mount Bromo. Price from IDR 2,000,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_4d3n_mount_bromo_ijen_crater_surabaya_night_market_from_surabaya_chunk_1",
-      "entity_type": "package",
-      "entity_id": "4d3n-mount-bromo-ijen-crater-surabaya-night-market-from-surabaya",
-      "content": "4D3N Mount Bromo, Ijen Crater & Surabaya Night Market from Surabaya. Duration: 4 Days 3 Nights. Departing from: Surabaya. Destinations: Mount Bromo, Mount Ijen (Kawah Ijen), Madakaripura Waterfall. Price from IDR 2,500,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_4d3n_ijen_crater_papuma_beach_tumpak_sewu_waterfall_mount_bromo_from_surabaya_chunk_1",
-      "entity_type": "package",
-      "entity_id": "4d3n-ijen-crater-papuma-beach-tumpak-sewu-waterfall-mount-bromo-from-surabaya",
-      "content": "4D3N Ijen Crater, Papuma Beach, Tumpak Sewu Waterfal & Mount Bromo from Surabaya. Duration: 4 Days 3 Nights. Departing from: Surabaya. Destinations: Mount Ijen (Kawah Ijen), Papuma Beach, Tumpak Sewu Waterfall, Mount Bromo. Price from IDR 2,580,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_3_day_bromo_and_ijen_volcano_trip_from_surabaya_chunk_1",
-      "entity_type": "package",
-      "entity_id": "3-day-bromo-and-ijen-volcano-trip-from-surabaya",
-      "content": "3 Day Bromo & Ijen Volcano Trip from Surabaya. Duration: 3 Days 2 Nights. Departing from: Surabaya. Destinations: Mount Bromo, Madakaripura Waterfall, Mount Ijen (Kawah Ijen). Price from IDR 2,450,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_3_day_tumpak_sewu_waterfall_and_bromo_explorer_from_surabaya_chunk_1",
-      "entity_type": "package",
-      "entity_id": "3-day-tumpak-sewu-waterfall-and-bromo-explorer-from-surabaya",
-      "content": "3 Day Tumpak Sewu Waterfall & Bromo Explorer from Surabaya. Duration: 3 Days 2 Nights. Departing from: Surabaya. Destinations: Mount Bromo, Tumpak Sewu Waterfall. Price from IDR 2,450,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
-        "freshness": "fresh"
-      }
-    },
-    {
-      "chunk_id": "pkg_3_day_taman_safari_prigen_and_bromo_and_madakaripura_waterfall_family_adventure_from_surabaya_chunk_1",
-      "entity_type": "package",
-      "entity_id": "3-day-taman-safari-prigen-and-bromo-and-madakaripura-waterfall-family-adventure-from-surabaya",
-      "content": "3 Day Taman Safari Prigen, Bromo & Madakaripura Family Adventure from Surabaya. Duration: 3 Days 2 Nights. Departing from: Surabaya. Destinations: Mount Bromo, Madakaripura Waterfall, Taman Safari Prigen. Price from IDR 3,450,000 per person (group of 2+). Private tour: dedicated vehicle and crew, no mixed groups. All-inclusive: private AC vehicle, accommodation with breakfast, entrance fees, licensed English-speaking guide, Ijen gas mask and safety gear when applicable. Data confidence: low.",
-      "metadata": {
-        "source": "new-backoffice",
-        "confidence": "low",
+        "source": "jvto-web, llm-wiki",
+        "confidence": "high",
         "freshness": "fresh"
       }
     },

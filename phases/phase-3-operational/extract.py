@@ -1,14 +1,44 @@
 #!/usr/bin/env python3
-"""Extract operational master data from jvto MySQL database."""
+"""Extract operational master data from the new-backoffice MySQL database.
+
+Credentials come from ENV only (DB_HOST/DB_PORT/DB_USER/DB_PASS/DB_NAME); DB_PASS
+is optional (passwordless users allowed). Output is written repo-relative. If the
+driver / env / DB are unavailable the script skips cleanly (exit != 0) without
+writing — same pattern as phases/phase-4-booking/extract.py.
+"""
 
 import json
-import pymysql
+import os
+import sys
 import concurrent.futures
 from datetime import datetime, date
 from decimal import Decimal
+from pathlib import Path
 
-DB = dict(host="127.0.0.1", port=3007, user="root", database="jvto", connect_timeout=5)
-OUTPUT = "/Users/macbook/Code/jvto-data-core/phases/phase-3-operational/output"
+try:
+    import pymysql
+except ImportError:
+    print("[phase-3 extract] SKIPPED — pymysql not installed (pip install -r requirements.txt)", file=sys.stderr)
+    sys.exit(2)
+
+OUTPUT = Path(__file__).resolve().parent / "output"
+
+
+def _db_config():
+    cfg = {k: os.environ.get(f"DB_{k.upper()}") for k in ("host", "user", "name")}
+    missing = [k for k, v in cfg.items() if not v]
+    if missing:
+        print("[phase-3 extract] SKIPPED — missing env: "
+              + ", ".join(f"DB_{k.upper()}" for k in missing), file=sys.stderr)
+        sys.exit(2)
+    return dict(
+        host=cfg["host"], port=int(os.environ.get("DB_PORT", "3306")),
+        user=cfg["user"], password=os.environ.get("DB_PASS", "") or "",
+        database=cfg["name"], connect_timeout=8,
+    )
+
+
+DB = _db_config()
 
 
 def conn():
@@ -284,6 +314,14 @@ EXTRACTORS = {
     "activities": extract_activities,
 }
 
+# Preflight: fail fast & clean if the DB isn't reachable — don't write partial output.
+try:
+    conn().close()
+except Exception as e:  # noqa: BLE001
+    print(f"[phase-3 extract] SKIPPED — mysql unreachable: {e}", file=sys.stderr)
+    sys.exit(2)
+
+OUTPUT.mkdir(parents=True, exist_ok=True)
 results = {}
 errors = {}
 

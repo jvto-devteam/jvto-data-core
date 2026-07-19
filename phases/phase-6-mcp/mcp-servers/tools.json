@@ -1,7 +1,7 @@
 {
   "server": {
     "name": "jvto-data-core",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "description": "MCP gateway to JVTO (Java Volcano Tour Operator) clean data — packages, trust claims, policies, booking analytics, and source lineage."
   },
   "tools": [

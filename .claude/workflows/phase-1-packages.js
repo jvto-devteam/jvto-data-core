@@ -119,18 +119,18 @@ Return JSON:
   () => agent(`
 You are extractor-backoffice. Extract package data from a local MySQL database.
 
-The DB credentials (from /Users/macbook/Code/new-backoffice/.env):
-- Host: 127.0.0.1
-- Port: 3007
-- Database: jvto
-- User: root
-- Password: (empty)
+The DB credentials come from environment variables (never hardcode them):
+- Host: $DB_HOST
+- Port: $DB_PORT (default 3306)
+- Database: $DB_NAME
+- User: $DB_USER
+- Password: $DB_PASS (may be empty for a passwordless user)
 
 Run these MySQL queries:
 
 \`\`\`bash
 # Packages with duration name
-mysql -h 127.0.0.1 -P 3007 -u root jvto --batch --silent -e "
+mysql -h "$DB_HOST" -P "${DB_PORT:-3306}" -u "$DB_USER" ${DB_PASS:+-p"$DB_PASS"} "$DB_NAME" --batch --silent -e "
 SELECT p.id, p.slug, p.name, p.is_publish, p.code, d.name as duration_name
 FROM packages p
 LEFT JOIN durations d ON p.duration_id = d.id
@@ -139,7 +139,7 @@ ORDER BY p.id;
 " 2>/dev/null
 
 # Package prices
-mysql -h 127.0.0.1 -P 3007 -u root jvto --batch --silent -e "
+mysql -h "$DB_HOST" -P "${DB_PORT:-3306}" -u "$DB_USER" ${DB_PASS:+-p"$DB_PASS"} "$DB_NAME" --batch --silent -e "
 SELECT pp.package_id, pp.price, pp.klook_retail_price, pt.name as price_tier_name, pt.min_pax, pt.max_pax
 FROM package_prices pp
 LEFT JOIN price_tiers pt ON pp.price_tier_id = pt.id
@@ -148,7 +148,7 @@ ORDER BY pp.package_id, pt.min_pax;
 " 2>/dev/null
 
 # Package destinations
-mysql -h 127.0.0.1 -P 3007 -u root jvto --batch --silent -e "
+mysql -h "$DB_HOST" -P "${DB_PORT:-3306}" -u "$DB_USER" ${DB_PASS:+-p"$DB_PASS"} "$DB_NAME" --batch --silent -e "
 SELECT pd.package_id, d.name as destination_name
 FROM package_destinations pd
 LEFT JOIN destinations d ON pd.destination_id = d.id
@@ -322,29 +322,29 @@ const conflicts_json = {
 
 // Write all 3 files
 await agent(`
-Create directory and write 3 JSON files to phases/phase-1-packages/output/ in /Users/macbook/Code/jvto-data-core.
+Create directory and write 3 JSON files to phases/phase-1-packages/output/ in the repo root.
 
 Run:
-mkdir -p /Users/macbook/Code/jvto-data-core/phases/phase-1-packages/output
+mkdir -p phases/phase-1-packages/output
 
 Write these exact JSON contents to these files using Node.js (node -e "...") or a heredoc. Use node for reliability with large JSON:
 
-FILE 1: /Users/macbook/Code/jvto-data-core/phases/phase-1-packages/output/packages.json
+FILE 1: phases/phase-1-packages/output/packages.json
 Content:
 ${JSON.stringify(packages_json, null, 2)}
 
-FILE 2: /Users/macbook/Code/jvto-data-core/phases/phase-1-packages/output/package-sources.json
+FILE 2: phases/phase-1-packages/output/package-sources.json
 Content:
 ${JSON.stringify(sources_json, null, 2)}
 
-FILE 3: /Users/macbook/Code/jvto-data-core/phases/phase-1-packages/output/package-conflicts.json
+FILE 3: phases/phase-1-packages/output/package-conflicts.json
 Content:
 ${JSON.stringify(conflicts_json, null, 2)}
 
 After writing, verify all 3 files exist and are valid JSON:
-jq '.total_packages' /Users/macbook/Code/jvto-data-core/phases/phase-1-packages/output/packages.json
-jq '.total_entities' /Users/macbook/Code/jvto-data-core/phases/phase-1-packages/output/package-sources.json
-jq '.total_conflicts' /Users/macbook/Code/jvto-data-core/phases/phase-1-packages/output/package-conflicts.json
+jq '.total_packages' phases/phase-1-packages/output/packages.json
+jq '.total_entities' phases/phase-1-packages/output/package-sources.json
+jq '.total_conflicts' phases/phase-1-packages/output/package-conflicts.json
 
 Report: "Written OK - packages: N, entities: N, conflicts: N" or any error.
 `, { label: 'write-outputs', phase: 'Merge & Write' })
